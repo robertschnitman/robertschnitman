@@ -1,0 +1,85 @@
+---
+title: 'mop(): a New Way to sweep()'
+author: Robert Schnitman
+date: '2020-03-24'
+slug: mop-a-new-way-to-sweep
+categories:
+  - R
+tags:
+  - afp
+  - sweep
+  - Data Analysis
+  - Functional Programming
+description: ''
+topics: []
+---
+
+# Introduction
+
+This blog post will compare `sweep()` and a function I've created called `mop()`. I argue that the latter is preferred over the former, as it is more concise in nature.
+
+# The Old Way: `sweep`()
+
+The function `sweep()`[^1] allows one to process data based on a summary statistic function--for example, dividing each element by a column's mean. A problem, however, arises: you are required to explicitly state the summary statistic value in the `STATS` input. So, taking our example of dividing each element by the respective column's average, we would have to do something along the lines of the following:
+
+```{r, eval = FALSE}
+sweep(mtcars, 2, sapply(mtcars, mean), `/`)
+```
+
+Because this way is quite verbose, I have written a function back in 2018 called `mop()`[^2] to handle this issue.
+
+# The New Way: `mop()`
+
+Essentially, `mop()` is a wrapper for `sweep(x, MARGIN, apply(...), FUN)`. This function is useful for indexing variables by their means, for example, so that the magnitude of a value relative to its average is known.
+
+The four required arguments are `x`, `m`, `s`, and `f`--the collection (e.g. matrix), margin (1 for row-wise or 2 for column-wise), summary statistic function, and binary opertaor function, respectively. A fifth, optional argument `...` passes to `sweep()`. The output is typically a matrix or dataframe, depending on the inputs and functions being passed.
+
+```{r}
+mop <- function(x, m, s, f, ...) {
+  
+  # 1. Check inputs.
+  f <- match.fun(f)
+  s <- match.fun(s)
+  
+  diml <- length(dim(x))
+  if (!diml) {
+
+    stop('dim(x) must have a positive length. 
+         Please make sure x is 2D!')
+    
+  }
+  
+  if (!any(m == 1:2)) {
+   
+    stop('The m (margin) input must either 
+         be 1 (row-wise) or 2 (column-wise).') 
+    
+  }
+  
+  # 2. Sweep out the summary statistic function
+  ## apply() allows us to control for margins.
+  summ_stats <- apply(x, m, s) 
+  
+  output <- sweep(x, m, summ_stats, f, ...)
+  
+  # 3. Output should be 2D.
+  ## its class should be the same as x.
+  output
+  
+}
+```
+
+```{r mop1, cache = TRUE}
+head(mop(mtcars, 2, mean, `/`))
+# == head(sweep(mtcars, 2, apply(mtcars, 2, mean), `/`))
+```
+
+# Conclusion
+
+In conclusion, `mop()` offers a superior version to `sweep()` by having the user pass a summary statistic *function* rather than an explicit summary statistic *value*. As such, the former function should be preferred over the latter one.
+
+You can find this function and other functionals from my package, `afp` (Applied Functional Programming).[^3]
+
+[^1]: https://www.r-bloggers.com/sweeping-through-data-in-r/
+[^2]: https://github.com/robertschnitman/afp/blob/master/R/mop.R
+[^3]: https://github.com/robertschnitman/afp

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.68.1" />
+
+  <title>Using Residuals Percent in OLS Diagnostics &middot; Robert Schnitman</title>
+
+    
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/">About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/services/">Services</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/cv/">Curriculum Vitae</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/post/">Blog Archive</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/testimonials/">Testimonials</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/resources/">Resources</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/contact/">Contact</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/RobertSchnitman" rel="me" target="_blank"><i class="fab fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/rschnitman" rel="me" target="_blank"><i class="fab fa-linkedin"></i></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/robertschnitman" rel="me" target="_blank"><i class="fab fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small></small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Using Residuals Percent in OLS Diagnostics</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Robert Schnitman</span>
+    
+  </div>
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2020-03-23</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/data-analysis">Data Analysis</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/ols">OLS</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/ordinary-least-squares">Ordinary Least Squares</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/regression">regression</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/diagnostics">diagnostics</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/graphs">graphs</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>Many students (myself included) were taught to analyze the <em>raw</em> residuals when diagnosing regression models, but not in terms of <em>percent</em>. The benefit of the latter is that we can assess the relative magnitude of error from our regression model.</p>
+<p>To display the residuals as a percent (henceforth <em>Residuals, %</em>), let’s first load some necessary libraries.</p>
+<pre class="r"><code>libs &lt;- c(&#39;tidyverse&#39;, &#39;magrittr&#39;, &#39;ggthemes&#39;, &#39;gridExtra&#39;)
+
+# For each library, check if they are installed.
+## If not, install and load them.
+for (i in libs) {
+  
+  if (!require(i, character.only = TRUE)) {
+    
+    install.packages(i)
+    library(i, character.only = TRUE)
+    
+  }
+  
+}</code></pre>
+<p>Second, let’s estimate a model and generate the fitted values and residuals. We’ll use the <code>mtcars</code> dataset pre-loaded into R for this example.</p>
+<pre class="r"><code># Estimate model.
+## mtcars is pre-loaded into R.
+mymodel &lt;- lm(mpg ~ wt + hp + gear + am, mtcars)
+
+# Generate fitted and residual values.
+fr &lt;- data.frame(fit = predict(mymodel),
+                 res = resid(mymodel))
+
+# Residuals as proportions.
+fr$res_pct &lt;- with(fr, res/(fit + res))</code></pre>
+<p>Third, let’s generate a scatter plot between the residuals percents and the fitted values, as well as a histogram of the former.</p>
+<pre class="r"><code># Set up 1x2 plot.
+par(mfrow = c(1, 2))
+
+# Scatter plot
+with(fr, plot(res_pct ~ fit,
+              ylab = &#39;Residuals, %&#39;,
+              xlab = &#39;Fitted Values&#39;,
+              col  = &#39;cyan4&#39;,
+              main = &#39;Residuals, % vs. Fitted Values&#39;))
+abline(h = 0, lty = 2)
+
+# Histogram
+hist(fr$res_pct, 
+     col  = &#39;salmon&#39;,
+     main = &#39;Distribution of Residuals %&#39;,
+     xlab = &#39;Residuals, %&#39;)</code></pre>
+<p><img src="/post/2020-03-23-using-residuals-percent-in-ols-diagnostics_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>We can replicate these graphs with <code>ggplot2</code> graphics.</p>
+<pre class="r"><code># Scatter plot
+g1 &lt;- ggplot(fr) + 
+  aes(y = res_pct, x = fit) + 
+  geom_point(col = &#39;cyan4&#39;) + 
+  geom_hline(yintercept = 0, linetype = 2) + 
+  labs(y = &#39;Residuals, %&#39;,
+       x = &#39;Fitted Values&#39;,
+       title = &#39;Residuals, % vs. Fitted Values&#39;) + 
+  theme_calc() # From ggthemes.
+
+# Histogram
+g2 &lt;- ggplot(fr) + 
+  aes(x = res_pct) + 
+  geom_histogram(col = &#39;black&#39;, 
+                 fill = &#39;salmon&#39;,
+                 bins = NROW(fr)/2) + 
+  labs(x = &#39;Residuals, %&#39;,
+       title = &#39;Distribution of Residuals %&#39;) + 
+  theme_calc() # From ggthemes.
+
+# Arrange the ggplots in a grid
+grid.arrange(g1, g2, ncol = 2, nrow = 1) # From gridExtra.</code></pre>
+<p><img src="/post/2020-03-23-using-residuals-percent-in-ols-diagnostics_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p>In summary, we have learned how to calculate <em>Residuals, %</em> and graph them with Base R and <code>ggplot2</code>. Try using these techniques the next time you diagnose your models!</p>
+
+  
+  
+
+
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2020/03/22/welcome/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2020/03/22/welcome/">Welcome!</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/2020/03/23/scatter-text-plots-with-base-r/">Scatter-text Plots with Base R</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/2020/03/23/scatter-text-plots-with-base-r/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="/js/menus.js"></script>
+
+
+
+
+
+
+<script src="/js/math-code.js"></script>
+  <script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  
+
+
+</body>
+</html>
+

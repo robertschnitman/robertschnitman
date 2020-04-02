@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/categories/books/</loc>
+    <lastmod>2020-03-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2020-03-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/data-analysis/</loc>
+    <lastmod>2020-03-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/education/</loc>
+    <lastmod>2020-03-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/functional-programming/</loc>
+    <lastmod>2020-03-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020/03/30/bip-aspr/</loc>
+    <lastmod>2020-03-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2020-03-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/r/</loc>
+    <lastmod>2020-03-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-03-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/statistics/</loc>
+    <lastmod>2020-03-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-03-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/diagnoser/</loc>
+    <lastmod>2020-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/diagnostics/</loc>
+    <lastmod>2020-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020/03/29/handbook-for-the-diagnoser-r-package/</loc>
+    <lastmod>2020-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ols/</loc>
+    <lastmod>2020-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/residuals/</loc>
+    <lastmod>2020-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020/03/27/abstract-the-narrator-and-the-noise/</loc>
+    <lastmod>2020-03-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/abstracts/</loc>
+    <lastmod>2020-03-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/finance/</loc>
+    <lastmod>2020-03-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/reports/</loc>
+    <lastmod>2020-03-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/thematic-analysis/</loc>
+    <lastmod>2020-03-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/video-games/</loc>
+    <lastmod>2020-03-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/web-mining/</loc>
+    <lastmod>2020-03-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020/03/27/web-mining-bankrate.com/</loc>
+    <lastmod>2020-03-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/beyblade/</loc>
+    <lastmod>2020-03-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/data-science/</loc>
+    <lastmod>2020-03-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020/03/25/data-science-and-beyblades/</loc>
+    <lastmod>2020-03-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/graphs/</loc>
+    <lastmod>2020-03-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/afp/</loc>
+    <lastmod>2020-03-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/apply/</loc>
+    <lastmod>2020-03-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/data-frames/</loc>
+    <lastmod>2020-03-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/map/</loc>
+    <lastmod>2020-03-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020/03/24/mapping-techniques-to-maintain-data-frame-consistency-in-base-r/</loc>
+    <lastmod>2020-03-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020/03/24/mop-a-new-way-to-sweep/</loc>
+    <lastmod>2020-03-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/polls/</loc>
+    <lastmod>2020-03-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020/03/24/sachse2020/</loc>
+    <lastmod>2020-03-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sweep/</loc>
+    <lastmod>2020-03-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/base-r/</loc>
+    <lastmod>2020-03-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ordinary-least-squares/</loc>
+    <lastmod>2020-03-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/plot/</loc>
+    <lastmod>2020-03-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/regression/</loc>
+    <lastmod>2020-03-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020/03/23/scatter-text-plots-with-base-r/</loc>
+    <lastmod>2020-03-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020/03/23/using-residuals-percent-in-ols-diagnostics/</loc>
+    <lastmod>2020-03-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/blog/</loc>
+    <lastmod>2020-03-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/intro/</loc>
+    <lastmod>2020-03-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/welcome/</loc>
+    <lastmod>2020-03-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020/03/22/welcome/</loc>
+    <lastmod>2020-03-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+  </url>
+  
+  <url>
+    <loc>/authors/</loc>
+  </url>
+  
+  <url>
+    <loc>/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>/cv/</loc>
+  </url>
+  
+  <url>
+    <loc>/resources/</loc>
+  </url>
+  
+  <url>
+    <loc>/services/</loc>
+  </url>
+  
+  <url>
+    <loc>/testimonials/</loc>
+  </url>
+  
+</urlset>

@@ -1,0 +1,99 @@
+"0","# Name libraries to use for analysis."
+"0","libs <- c('tidyverse',  # For data management."
+"0","          'magrittr',   # For data management."
+"0","          'knitr',      # For presenting tables."
+"0","          'kableExtra', # For presenting tables."
+"0","          'broom',      # For tidying models/tests."
+"0","          'gridExtra',  # For placing plots on a grid."
+"0","          'FSA')        # For Dunn's Test"
+"0","# Write function for loading libraries or installing them if not available."
+"0","try_load <- function(x) { "
+"0","  "
+"0","  if (!require(x, character.only = TRUE)) {"
+"0","    "
+"0","    install.packages(x)"
+"0","    library(x, character.only = TRUE)"
+"0","  "
+"0","  }"
+"0","  "
+"0","}"
+"0","# Load libraries"
+"0","Map(try_load, libs)"
+"2","Loading required package: kableExtra
+"
+"2","package ‘kableExtra’ was built under R version 3.6.3"
+"2","
+Attaching package: ‘kableExtra’
+
+"
+"2","The following objects are masked from ‘package:flextable’:
+
+    as_image, footnote
+
+"
+"2","The following object is masked from ‘package:dplyr’:
+
+    group_rows
+
+"
+"2","Loading required package: broom
+"
+"2","Loading required package: gridExtra
+"
+"2","
+Attaching package: ‘gridExtra’
+
+"
+"2","The following object is masked from ‘package:dplyr’:
+
+    combine
+
+"
+"2","Loading required package: FSA
+"
+"2","package ‘FSA’ was built under R version 3.6.2"
+"2","## FSA v0.8.26. See citation('FSA') if used in publication.
+## Run fishR() for related website and fishR('IFAR') for related book.
+"
+"1","$tidyverse
+"
+"1","NULL
+"
+"1","
+"
+"1","$magrittr
+"
+"1","NULL
+"
+"1","
+"
+"1","$knitr
+"
+"1","NULL
+"
+"1","
+"
+"1","$kableExtra
+"
+"1","NULL
+"
+"1","
+"
+"1","$broom
+"
+"1","NULL
+"
+"1","
+"
+"1","$gridExtra
+"
+"1","NULL
+"
+"1","
+"
+"1","$FSA
+"
+"1","NULL
+"
+"1","
+"

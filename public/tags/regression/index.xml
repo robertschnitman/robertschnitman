@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>regression on Robert Schnitman</title>
+    <link>/tags/regression/</link>
+    <description>Recent content in regression on Robert Schnitman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/regression/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using Residuals Percent in OLS Diagnostics</title>
+      <link>/2020/03/23/using-residuals-percent-in-ols-diagnostics/</link>
+      <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/03/23/using-residuals-percent-in-ols-diagnostics/</guid>
+      <description>Many students (myself included) were taught to analyze the raw residuals when diagnosing regression models, but not in terms of percent. The benefit of the latter is that we can assess the relative magnitude of error from our regression model.
+To display the residuals as a percent (henceforth Residuals, %), let’s first load some necessary libraries.
+libs &amp;lt;- c(&amp;#39;tidyverse&amp;#39;, &amp;#39;magrittr&amp;#39;, &amp;#39;ggthemes&amp;#39;, &amp;#39;gridExtra&amp;#39;)# For each library, check if they are installed.</description>
+    </item>
+    
+  </channel>
+</rss>

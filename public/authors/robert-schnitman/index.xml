@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Robert Schnitman</title>
+    <link>/authors/robert-schnitman/</link>
+    <description>Recent content on Robert Schnitman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/authors/robert-schnitman/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Scatter-text Plots with Base R</title>
+      <link>/2020/03/23/scatter-text-plots-with-base-r/</link>
+      <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/03/23/scatter-text-plots-with-base-r/</guid>
+      <description>To make scatter plots with text as points in Base R, we simply need to use plot(), set the scatter points to be white, and then plot the text with text().
+# Trick R into not displaying points.with(mtcars, plot(wt ~ mpg, pch = 1, col = &amp;#39;white&amp;#39;,xlab = &amp;#39;MPG&amp;#39;,ylab = &amp;#39;Weight&amp;#39;,main = &amp;#39;Weight vs. MPG&amp;#39;))# Plot the labels on the graph.with(mtcars, text(mpg, wt, row.</description>
+    </item>
+    
+  </channel>
+</rss>

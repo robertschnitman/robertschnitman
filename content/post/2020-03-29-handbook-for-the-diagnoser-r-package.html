@@ -1,0 +1,68 @@
+---
+title: Handbook for the diagnoser R package
+author: Robert Schnitman
+date: '2020-03-29'
+slug: handbook-for-the-diagnoser-r-package
+categories:
+  - R
+tags:
+  - diagnoser
+  - OLS
+  - residuals
+  - diagnostics
+description: ''
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>The book for my package <code>diagnoser</code> has just been published online! You may view it as a Gitbook (<a href="https://rs-diagnoser.netlify.com/" class="uri">https://rs-diagnoser.netlify.com/</a>) or PDF (<a href="https://github.com/robertschnitman/diagnoser/blob/master/docs/diagnoser_handbook.pdf" class="uri">https://github.com/robertschnitman/diagnoser/blob/master/docs/diagnoser_handbook.pdf</a>).</p>
+<p>I recommend reading it if you are interested in a new perspective on diagnosing your model residuals!</p>
+<div id="installing-diagnoser" class="section level1 unnumbered">
+<h1>Installing <code>diagnoser</code></h1>
+<p>The library diagnoser currently is only installable via GitHub and is contingent on R versions at or above 3.4.2. To install the package, first install devtools so that you may make use of the function install_github, referencing diagnoser by the package creator’s username (“robertschnitman”) followed by “/diagnoser” as shown in the code below:</p>
+<pre class="r"><code>## Ensure that you are running R 3.4.2 or higher.
+## Package Dependencies:
+#     lazyeval (&gt;= 0.2.1)
+#  Package Imports:
+#     ggplot2 (&gt;= 2.2.1), 
+#     gridExtra (&gt;= 2.3), 
+#     scales (&gt;= 0.5.0), 
+#     car (&gt;= 2.1)
+
+# Install library necessary for installing diagnoser.
+install.packages(&quot;devtools&quot;) 
+
+# Install diagnoser via devtools.
+devtools::install_github(&quot;robertschnitman/diagnoser&quot;)</code></pre>
+</div>
+<div id="example-1-diagnose" class="section level1">
+<h1>Example 1: <code>diagnose()</code></h1>
+<pre class="r"><code>model.lm &lt;- lm(data = mtcars, formula = mpg ~ wt + gear)
+
+diagnose(model.lm, 
+         fit_type      = &#39;response&#39;, 
+         residual_type = &#39;response&#39;)</code></pre>
+<p><img src="/post/2020-03-29-handbook-for-the-diagnoser-r-package_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+</div>
+<div id="example-2-ggdiagnose" class="section level1">
+<h1>Example 2: <code>ggdiagnose()</code></h1>
+<pre class="r"><code>ggdiagnose(model.lm, 
+           fit_type      = &#39;response&#39;, 
+           residual_type = &#39;response&#39;,
+           freqpct       = TRUE, 
+           alpha         = 0.5)</code></pre>
+<p><img src="/post/2020-03-29-handbook-for-the-diagnoser-r-package_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+</div>
+<div id="example-3-cdiagnose" class="section level1">
+<h1>Example 3: <code>cdiagnose()</code></h1>
+<pre class="r"><code>model.lm &lt;- lm(data = Orange, formula = log(circumference) ~ age)
+
+cdiagnose(model.lm, 
+          fit_type      = &#39;response&#39;,
+          residual_type = &#39;response&#39;,
+          se            = FALSE,
+          alpha         = 1)</code></pre>
+<p><img src="/post/2020-03-29-handbook-for-the-diagnoser-r-package_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p><a href="https://rs-diagnoser.netlify.com/">See these functions and more from my book!</a></p>
+</div>

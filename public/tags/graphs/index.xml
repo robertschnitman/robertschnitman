@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>graphs on Robert Schnitman</title>
+    <link>/tags/graphs/</link>
+    <description>Recent content in graphs on Robert Schnitman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 25 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/graphs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Data Science and Beyblades</title>
+      <link>/2020/03/25/data-science-and-beyblades/</link>
+      <pubDate>Wed, 25 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/03/25/data-science-and-beyblades/</guid>
+      <description>IntroductionBeyblade has proven itself to be a strong-running franchise, spanning several TV series and toys. In the shows and on the boxes of said toys, there is an emphasis on the attributes of the beyblades: their Attack, Defense, and Stamina for each component that make up the beyblade. While the validity of these statistics can be questioned, one cannot help but wonder about the relationship between these three traits among the beyblades.</description>
+    </item>
+    
+    <item>
+      <title>Presenting the Sachse, TX January 2020 Special Election Pre-runoff Results with R</title>
+      <link>/2020/03/24/sachse2020/</link>
+      <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/03/24/sachse2020/</guid>
+      <description>PrefaceThe contents of this blog post originate from the PDF version (https://github.com/robertschnitman/RS_Reports/blob/master/Polls/Sachse/sachse2020.pdf) and its GitBook equivalent (https://rs-sachse2020.netlify.com/).
+EDIT 2020-03-27: This post has been updated to use flextable instead of kableExtra to produce a cleaner table for HTML. The PDF and Gitbook reports use the latter, as it is better for PDFs.
+IntroductionThe purpose of this document is to demonstrate the utility of using the R programming language in reporting polls by walking through the process via the software itself.</description>
+    </item>
+    
+    <item>
+      <title>Scatter-text Plots with Base R</title>
+      <link>/2020/03/23/scatter-text-plots-with-base-r/</link>
+      <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/03/23/scatter-text-plots-with-base-r/</guid>
+      <description>To make scatter plots with text as points in Base R, we simply need to use plot(), set the scatter points to be white, and then plot the text with text().
+# Trick R into not displaying points.with(mtcars, plot(wt ~ mpg, pch = 1, col = &amp;#39;white&amp;#39;,xlab = &amp;#39;MPG&amp;#39;,ylab = &amp;#39;Weight&amp;#39;,main = &amp;#39;Weight vs. MPG&amp;#39;))# Plot the labels on the graph.with(mtcars, text(mpg, wt, row.</description>
+    </item>
+    
+    <item>
+      <title>Using Residuals Percent in OLS Diagnostics</title>
+      <link>/2020/03/23/using-residuals-percent-in-ols-diagnostics/</link>
+      <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/03/23/using-residuals-percent-in-ols-diagnostics/</guid>
+      <description>Many students (myself included) were taught to analyze the raw residuals when diagnosing regression models, but not in terms of percent. The benefit of the latter is that we can assess the relative magnitude of error from our regression model.
+To display the residuals as a percent (henceforth Residuals, %), let’s first load some necessary libraries.
+libs &amp;lt;- c(&amp;#39;tidyverse&amp;#39;, &amp;#39;magrittr&amp;#39;, &amp;#39;ggthemes&amp;#39;, &amp;#39;gridExtra&amp;#39;)# For each library, check if they are installed.</description>
+    </item>
+    
+  </channel>
+</rss>

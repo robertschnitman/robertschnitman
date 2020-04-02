@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>doki doki literature club on Robert Schnitman</title>
+    <link>/tags/doki-doki-literature-club/</link>
+    <description>Recent content in doki doki literature club on Robert Schnitman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/doki-doki-literature-club/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ABSTRACT: The Narrator and the Noise</title>
+      <link>/2020/03/27/abstract-the-narrator-and-the-noise/</link>
+      <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/03/27/abstract-the-narrator-and-the-noise/</guid>
+      <description>PrefaceThis blog post is simply the summary of The Narrator and the Noise. Please read the full version at either of the following locations:
+Gitbook version: https://rs-ddlc.netlify.com/
+PDF version: https://github.com/robertschnitman/RS_Reports/blob/master/DDLC/DDLC.pdf
+AbstractThe focus of this study is to determine the existence and extent of statistical bias towards any of the Doki Doki Literature Club characters with respect to the points distribution of the Poem Minigame.</description>
+    </item>
+    
+  </channel>
+</rss>

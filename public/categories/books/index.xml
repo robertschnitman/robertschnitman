@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Books on Robert Schnitman</title>
+    <link>/categories/books/</link>
+    <description>Recent content in Books on Robert Schnitman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/books/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>New Book: A Short Introduction to Applied Statistical Programming in R</title>
+      <link>/2020/03/30/bip-aspr/</link>
+      <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/03/30/bip-aspr/</guid>
+      <description>I have a new book in progress called A Short Introduction to Applied Statistical Programming in R, which can be viewed online as a Gitbook (https://rs-aspr.netlify.com/) or as a PDF (https://github.com/robertschnitman/aspr/blob/master/aspr.pdf). [EDIT 2020-04-01: I will primarily focus on the Gitbook version, as I am running into some typesetting issues with the PDF at the moment.]
+[EDIT 2020-04-02: The Gitbook version is fairly complete and I do not foresee many major updates to it unless they are requested or if I think of anything else significant to add.</description>
+    </item>
+    
+  </channel>
+</rss>

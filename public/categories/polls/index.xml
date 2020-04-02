@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Polls on Robert Schnitman</title>
+    <link>/categories/polls/</link>
+    <description>Recent content in Polls on Robert Schnitman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 24 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/polls/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Presenting the Sachse, TX January 2020 Special Election Pre-runoff Results with R</title>
+      <link>/2020/03/24/sachse2020/</link>
+      <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/03/24/sachse2020/</guid>
+      <description>PrefaceThe contents of this blog post originate from the PDF version (https://github.com/robertschnitman/RS_Reports/blob/master/Polls/Sachse/sachse2020.pdf) and its GitBook equivalent (https://rs-sachse2020.netlify.com/).
+IntroductionThe purpose of this document is to demonstrate the utility of using the R programming language in reporting polls by walking through the process via the software itself. To showcase its benefits, I use the results of the Sachse, TX January 2020 Special Election (pre-runoff). Ultimately, the advantages are (1) automated reporting, (2) visualizations, and (3) clean presentations of the results.</description>
+    </item>
+    
+  </channel>
+</rss>

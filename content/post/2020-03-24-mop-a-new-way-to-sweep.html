@@ -1,0 +1,95 @@
+---
+title: 'mop(): a New Way to sweep()'
+author: Robert Schnitman
+date: '2020-03-24'
+slug: mop-a-new-way-to-sweep
+categories:
+  - R
+tags:
+  - afp
+  - sweep
+  - Data Analysis
+  - Functional Programming
+description: ''
+topics: []
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<div id="introduction" class="section level1">
+<h1>Introduction</h1>
+<p>This blog post will compare <code>sweep()</code> and a function I’ve created called <code>mop()</code>. I argue that the latter is preferred over the former, as it is more concise in nature.</p>
+</div>
+<div id="the-old-way-sweep" class="section level1">
+<h1>The Old Way: <code>sweep</code>()</h1>
+<p>The function <code>sweep()</code><a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> allows one to process data based on a summary statistic function–for example, dividing each element by a column’s mean. A problem, however, arises: you are required to explicitly state the summary statistic value in the <code>STATS</code> input. So, taking our example of dividing each element by the respective column’s average, we would have to do something along the lines of the following:</p>
+<pre class="r"><code>sweep(mtcars, 2, sapply(mtcars, mean), `/`)</code></pre>
+<p>Because this way is quite verbose, I have written a function back in 2018 called <code>mop()</code><a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> to handle this issue.</p>
+</div>
+<div id="the-new-way-mop" class="section level1">
+<h1>The New Way: <code>mop()</code></h1>
+<p>Essentially, <code>mop()</code> is a wrapper for <code>sweep(x, MARGIN, apply(...), FUN)</code>. This function is useful for indexing variables by their means, for example, so that the magnitude of a value relative to its average is known.</p>
+<p>The four required arguments are <code>x</code>, <code>m</code>, <code>s</code>, and <code>f</code>–the collection (e.g. matrix), margin (1 for row-wise or 2 for column-wise), summary statistic function, and binary opertaor function, respectively. A fifth, optional argument <code>...</code> passes to <code>sweep()</code>. The output is typically a matrix or dataframe, depending on the inputs and functions being passed.</p>
+<pre class="r"><code>mop &lt;- function(x, m, s, f, ...) {
+  
+  # 1. Check inputs.
+  f &lt;- match.fun(f)
+  s &lt;- match.fun(s)
+  
+  diml &lt;- length(dim(x))
+  if (!diml) {
+
+    stop(&#39;dim(x) must have a positive length. 
+         Please make sure x is 2D!&#39;)
+    
+  }
+  
+  if (!any(m == 1:2)) {
+   
+    stop(&#39;The m (margin) input must either 
+         be 1 (row-wise) or 2 (column-wise).&#39;) 
+    
+  }
+  
+  # 2. Sweep out the summary statistic function
+  ## apply() allows us to control for margins.
+  summ_stats &lt;- apply(x, m, s) 
+  
+  output &lt;- sweep(x, m, summ_stats, f, ...)
+  
+  # 3. Output should be 2D.
+  ## its class should be the same as x.
+  output
+  
+}</code></pre>
+<pre class="r"><code>head(mop(mtcars, 2, mean, `/`))</code></pre>
+<pre><code>##                         mpg       cyl      disp        hp      drat        wt
+## Mazda RX4         1.0452636 0.9696970 0.6934756 0.7498935 1.0843688 0.8143601
+## Mazda RX4 Wag     1.0452636 0.9696970 0.6934756 0.7498935 1.0843688 0.8936203
+## Datsun 710        1.1348577 0.6464646 0.4680961 0.6340009 1.0704666 0.7211128
+## Hornet 4 Drive    1.0651734 0.9696970 1.1182295 0.7498935 0.8563733 0.9993006
+## Hornet Sportabout 0.9307824 1.2929293 1.5603202 1.1930124 0.8758363 1.0692361
+## Valiant           0.9009177 0.9696970 0.9752001 0.7158074 0.7673994 1.0754526
+##                        qsec       vs       am      gear      carb
+## Mazda RX4         0.9221934 0.000000 2.461538 1.0847458 1.4222222
+## Mazda RX4 Wag     0.9535682 0.000000 2.461538 1.0847458 1.4222222
+## Datsun 710        1.0426500 2.285714 2.461538 1.0847458 0.3555556
+## Hornet 4 Drive    1.0891519 2.285714 0.000000 0.8135593 0.3555556
+## Hornet Sportabout 0.9535682 0.000000 0.000000 0.8135593 0.7111111
+## Valiant           1.1328524 2.285714 0.000000 0.8135593 0.3555556</code></pre>
+<pre class="r"><code># == head(sweep(mtcars, 2, apply(mtcars, 2, mean), `/`))</code></pre>
+</div>
+<div id="conclusion" class="section level1">
+<h1>Conclusion</h1>
+<p>In conclusion, <code>mop()</code> offers a superior version to <code>sweep()</code> by having the user pass a summary statistic <em>function</em> rather than an explicit summary statistic <em>value</em>. As such, the former function should be preferred over the latter one.</p>
+<p>You can find this function and other functionals from my package, <code>afp</code> (Applied Functional Programming).<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></p>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p><a href="https://www.r-bloggers.com/sweeping-through-data-in-r/" class="uri">https://www.r-bloggers.com/sweeping-through-data-in-r/</a><a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p><a href="https://github.com/robertschnitman/afp/blob/master/R/mop.R" class="uri">https://github.com/robertschnitman/afp/blob/master/R/mop.R</a><a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p><a href="https://github.com/robertschnitman/afp" class="uri">https://github.com/robertschnitman/afp</a><a href="#fnref3" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>

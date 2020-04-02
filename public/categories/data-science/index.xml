@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Science on Robert Schnitman</title>
+    <link>/categories/data-science/</link>
+    <description>Recent content in Data Science on Robert Schnitman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 25 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/data-science/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Data Science and Beyblades</title>
+      <link>/2020/03/25/data-science-and-beyblades/</link>
+      <pubDate>Wed, 25 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/03/25/data-science-and-beyblades/</guid>
+      <description>IntroductionSetuplibs &amp;lt;- c(&amp;#39;tidyverse&amp;#39;, &amp;#39;rvest&amp;#39;, &amp;#39;magrittr&amp;#39;, &amp;#39;ggthemes&amp;#39;, &amp;#39;gridExtra&amp;#39;, &amp;#39;knitr&amp;#39;,&amp;#39;kableExtra&amp;#39;)for (i in libs) {if (!require(i, character.only = TRUE)) {install.packages(i)library(i, character.only = TRUE)}}Wiki Miningpage &amp;lt;- &amp;#39;https://mfbeyblade.fandom.com/wiki/Beyblades&amp;#39;bbs &amp;lt;- read_html(page) %&amp;gt;%# List of Beyblades are...in a list.## Find them in the list node.html_nodes(&amp;quot;ul&amp;quot;) %&amp;gt;% # Cover to text.html_text() %&amp;gt;% # Take out the tab separators.gsub(&amp;#39;\t&amp;#39;, &amp;#39;&amp;#39;, .</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Robert Schnitman</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on Robert Schnitman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>New Book: A Short Introduction to Applied Statistical Programming in R</title>
+      <link>/2020/03/30/bip-aspr/</link>
+      <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/03/30/bip-aspr/</guid>
+      <description>I have a new book in progress called A Short Introduction to Applied Statistical Programming in R, which can be viewed online as a Gitbook (https://rs-aspr.netlify.com/) or as a PDF (https://github.com/robertschnitman/aspr/blob/master/aspr.pdf). [EDIT 2020-04-01: I will primarily focus on the Gitbook version, as I am running into some typesetting issues with the PDF at the moment.]
+[EDIT 2020-04-02: The Gitbook version is fairly complete and I do not foresee many major updates to it unless they are requested or if I think of anything else significant to add.</description>
+    </item>
+    
+    <item>
+      <title>Handbook for the diagnoser R package</title>
+      <link>/2020/03/29/handbook-for-the-diagnoser-r-package/</link>
+      <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/03/29/handbook-for-the-diagnoser-r-package/</guid>
+      <description>The book for my package diagnoser has just been published online! You may view it as a Gitbook (https://rs-diagnoser.netlify.com/) or PDF (https://github.com/robertschnitman/diagnoser/blob/master/docs/diagnoser_handbook.pdf).
+I recommend reading it if you are interested in a new perspective on diagnosing your model residuals!
+Installing diagnoserThe library diagnoser currently is only installable via GitHub and is contingent on R versions at or above 3.4.2. To install the package, first install devtools so that you may make use of the function install_github, referencing diagnoser by the package creator’s username (“robertschnitman”) followed by “/diagnoser” as shown in the code below:</description>
+    </item>
+    
+    <item>
+      <title>ABSTRACT: The Narrator and the Noise</title>
+      <link>/2020/03/27/abstract-the-narrator-and-the-noise/</link>
+      <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/03/27/abstract-the-narrator-and-the-noise/</guid>
+      <description>PrefaceThis blog post is simply the summary of The Narrator and the Noise. Please read the full version at either of the following locations:
+Gitbook version: https://rs-ddlc.netlify.com/
+PDF version: https://github.com/robertschnitman/RS_Reports/blob/master/DDLC/DDLC.pdf
+AbstractThe focus of this study is to determine the existence and extent of statistical bias towards any of the Doki Doki Literature Club characters with respect to the points distribution of the Poem Minigame.</description>
+    </item>
+    
+    <item>
+      <title>Web Mining bankrate.com</title>
+      <link>/2020/03/27/web-mining-bankrate.com/</link>
+      <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/03/27/web-mining-bankrate.com/</guid>
+      <description>IntroductionThe purpose of this blog post is to demonstrate how to web mine the bankrate.com, primarily focusing on extracting and graphing with the R programming language the APY and minimum deposits for 1-year1, 3-year2, and 5-year3 CD Rates.
+SetupBefore the analysis, some necessary libraries will be loaded. First, tidyverse4 and magrittr5 for their data management functions; second, flextable6 for table formatting; third, rvest7 for web mining; and fourth, plotly8 to display interactive graphs.</description>
+    </item>
+    
+    <item>
+      <title>Data Science and Beyblades</title>
+      <link>/2020/03/25/data-science-and-beyblades/</link>
+      <pubDate>Wed, 25 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/03/25/data-science-and-beyblades/</guid>
+      <description>IntroductionBeyblade has proven itself to be a strong-running franchise, spanning several TV series and toys. In the shows and on the boxes of said toys, there is an emphasis on the attributes of the beyblades: their Attack, Defense, and Stamina for each component that make up the beyblade. While the validity of these statistics can be questioned, one cannot help but wonder about the relationship between these three traits among the beyblades.</description>
+    </item>
+    
+    <item>
+      <title>Mapping Techniques to Maintain Data Frame Consistency in Base R</title>
+      <link>/2020/03/24/mapping-techniques-to-maintain-data-frame-consistency-in-base-r/</link>
+      <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/03/24/mapping-techniques-to-maintain-data-frame-consistency-in-base-r/</guid>
+      <description>IntroductionMaintaining data frame consistency within Base R can be difficult. The library purrr1 from the tidyverse solves this problem with its map_df() function. However, we can achieve similar results and expand upon them with base R functions. To do so, two methods will be used.
+Method 1: Use lapply(), data.frame(), and do.call()To replicate purrr’s map_df(), we use three functions: lapply() to apply the function to some data; data.</description>
+    </item>
+    
+    <item>
+      <title>mop(): a New Way to sweep()</title>
+      <link>/2020/03/24/mop-a-new-way-to-sweep/</link>
+      <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/03/24/mop-a-new-way-to-sweep/</guid>
+      <description>IntroductionThis blog post will compare sweep() and a function I’ve created called mop(). I argue that the latter is preferred over the former, as it is more concise in nature.
+The Old Way: sweep()The function sweep()1 allows one to process data based on a summary statistic function–for example, dividing each element by a column’s mean. A problem, however, arises: you are required to explicitly state the summary statistic value in the STATS input.</description>
+    </item>
+    
+    <item>
+      <title>Presenting the Sachse, TX January 2020 Special Election Pre-runoff Results with R</title>
+      <link>/2020/03/24/sachse2020/</link>
+      <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/03/24/sachse2020/</guid>
+      <description>PrefaceThe contents of this blog post originate from the PDF version (https://github.com/robertschnitman/RS_Reports/blob/master/Polls/Sachse/sachse2020.pdf) and its GitBook equivalent (https://rs-sachse2020.netlify.com/).
+EDIT 2020-03-27: This post has been updated to use flextable instead of kableExtra to produce a cleaner table for HTML. The PDF and Gitbook reports use the latter, as it is better for PDFs.
+IntroductionThe purpose of this document is to demonstrate the utility of using the R programming language in reporting polls by walking through the process via the software itself.</description>
+    </item>
+    
+    <item>
+      <title>Scatter-text Plots with Base R</title>
+      <link>/2020/03/23/scatter-text-plots-with-base-r/</link>
+      <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/03/23/scatter-text-plots-with-base-r/</guid>
+      <description>To make scatter plots with text as points in Base R, we simply need to use plot(), set the scatter points to be white, and then plot the text with text().
+# Trick R into not displaying points.with(mtcars, plot(wt ~ mpg, pch = 1, col = &amp;#39;white&amp;#39;,xlab = &amp;#39;MPG&amp;#39;,ylab = &amp;#39;Weight&amp;#39;,main = &amp;#39;Weight vs. MPG&amp;#39;))# Plot the labels on the graph.with(mtcars, text(mpg, wt, row.</description>
+    </item>
+    
+    <item>
+      <title>Using Residuals Percent in OLS Diagnostics</title>
+      <link>/2020/03/23/using-residuals-percent-in-ols-diagnostics/</link>
+      <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/03/23/using-residuals-percent-in-ols-diagnostics/</guid>
+      <description>Many students (myself included) were taught to analyze the raw residuals when diagnosing regression models, but not in terms of percent. The benefit of the latter is that we can assess the relative magnitude of error from our regression model.
+To display the residuals as a percent (henceforth Residuals, %), let’s first load some necessary libraries.
+libs &amp;lt;- c(&amp;#39;tidyverse&amp;#39;, &amp;#39;magrittr&amp;#39;, &amp;#39;ggthemes&amp;#39;, &amp;#39;gridExtra&amp;#39;)# For each library, check if they are installed.</description>
+    </item>
+    
+    <item>
+      <title>Welcome!</title>
+      <link>/2020/03/22/welcome/</link>
+      <pubDate>Sun, 22 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/03/22/welcome/</guid>
+      <description>Hello, my name is Robert Schnitman, and welcome to my site! This site describes myself and the services I provide as an independent contractor, as well as a blog to record data analysis and R programming ideas.
+Please check out the &amp;ldquo;About&amp;rdquo;, &amp;ldquo;Curriculum Vitae&amp;rdquo;, and &amp;ldquo;Services&amp;rdquo; pages for more information!
+Thank you for your time!</description>
+    </item>
+    
+  </channel>
+</rss>

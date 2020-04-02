@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>finance on Robert Schnitman</title>
+    <link>/tags/finance/</link>
+    <description>Recent content in finance on Robert Schnitman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/finance/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Web Mining bankrate.com</title>
+      <link>/2020/03/27/web-mining-bankrate.com/</link>
+      <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/03/27/web-mining-bankrate.com/</guid>
+      <description>IntroductionThe purpose of this blog post is to demonstrate how to web mine the bankrate.com, primarily focusing on extracting and graphing with the R programming language the APY and minimum deposits for 1-year1, 3-year2, and 5-year3 CD Rates.
+SetupBefore the analysis, some necessary libraries will be loaded. First, tidyverse4 and magrittr5 for their data management functions; second, flextable6 for table formatting; third, rvest7 for web mining; and fourth, plotly8 to display interactive graphs.</description>
+    </item>
+    
+  </channel>
+</rss>

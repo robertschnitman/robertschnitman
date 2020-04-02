@@ -1,0 +1,89 @@
+---
+title: Using Residuals Percent in OLS Diagnostics
+author: Robert Schnitman
+date: '2020-03-23'
+slug: using-residuals-percent-in-ols-diagnostics
+categories:
+  - R
+tags:
+  - Data Analysis
+  - OLS
+  - Ordinary Least Squares
+  - regression
+  - diagnostics
+  - graphs
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>Many students (myself included) were taught to analyze the <em>raw</em> residuals when diagnosing regression models, but not in terms of <em>percent</em>. The benefit of the latter is that we can assess the relative magnitude of error from our regression model.</p>
+<p>To display the residuals as a percent (henceforth <em>Residuals, %</em>), let’s first load some necessary libraries.</p>
+<pre class="r"><code>libs &lt;- c(&#39;tidyverse&#39;, &#39;magrittr&#39;, &#39;ggthemes&#39;, &#39;gridExtra&#39;)
+
+# For each library, check if they are installed.
+## If not, install and load them.
+for (i in libs) {
+  
+  if (!require(i, character.only = TRUE)) {
+    
+    install.packages(i)
+    library(i, character.only = TRUE)
+    
+  }
+  
+}</code></pre>
+<p>Second, let’s estimate a model and generate the fitted values and residuals. We’ll use the <code>mtcars</code> dataset pre-loaded into R for this example.</p>
+<pre class="r"><code># Estimate model.
+## mtcars is pre-loaded into R.
+mymodel &lt;- lm(mpg ~ wt + hp + gear + am, mtcars)
+
+# Generate fitted and residual values.
+fr &lt;- data.frame(fit = predict(mymodel),
+                 res = resid(mymodel))
+
+# Residuals as proportions.
+fr$res_pct &lt;- with(fr, res/(fit + res))</code></pre>
+<p>Third, let’s generate a scatter plot between the residuals percents and the fitted values, as well as a histogram of the former.</p>
+<pre class="r"><code># Set up 1x2 plot.
+par(mfrow = c(1, 2))
+
+# Scatter plot
+with(fr, plot(res_pct ~ fit,
+              ylab = &#39;Residuals, %&#39;,
+              xlab = &#39;Fitted Values&#39;,
+              col  = &#39;cyan4&#39;,
+              main = &#39;Residuals, % vs. Fitted Values&#39;))
+abline(h = 0, lty = 2)
+
+# Histogram
+hist(fr$res_pct, 
+     col  = &#39;salmon&#39;,
+     main = &#39;Distribution of Residuals %&#39;,
+     xlab = &#39;Residuals, %&#39;)</code></pre>
+<p><img src="/post/2020-03-23-using-residuals-percent-in-ols-diagnostics_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>We can replicate these graphs with <code>ggplot2</code> graphics.</p>
+<pre class="r"><code># Scatter plot
+g1 &lt;- ggplot(fr) + 
+  aes(y = res_pct, x = fit) + 
+  geom_point(col = &#39;cyan4&#39;) + 
+  geom_hline(yintercept = 0, linetype = 2) + 
+  labs(y = &#39;Residuals, %&#39;,
+       x = &#39;Fitted Values&#39;,
+       title = &#39;Residuals, % vs. Fitted Values&#39;) + 
+  theme_calc() # From ggthemes.
+
+# Histogram
+g2 &lt;- ggplot(fr) + 
+  aes(x = res_pct) + 
+  geom_histogram(col = &#39;black&#39;, 
+                 fill = &#39;salmon&#39;,
+                 bins = NROW(fr)/2) + 
+  labs(x = &#39;Residuals, %&#39;,
+       title = &#39;Distribution of Residuals %&#39;) + 
+  theme_calc() # From ggthemes.
+
+# Arrange the ggplots in a grid
+grid.arrange(g1, g2, ncol = 2, nrow = 1) # From gridExtra.</code></pre>
+<p><img src="/post/2020-03-23-using-residuals-percent-in-ols-diagnostics_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p>In summary, we have learned how to calculate <em>Residuals, %</em> and graph them with Base R and <code>ggplot2</code>. Try using these techniques the next time you diagnose your models!</p>

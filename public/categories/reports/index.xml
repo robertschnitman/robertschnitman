@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reports on Robert Schnitman</title>
+    <link>/categories/reports/</link>
+    <description>Recent content in Reports on Robert Schnitman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/reports/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ABSTRACT: The Narrator and the Noise</title>
+      <link>/2020/03/27/abstract-the-narrator-and-the-noise/</link>
+      <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/03/27/abstract-the-narrator-and-the-noise/</guid>
+      <description>PrefaceThis blog post is simply the summary of The Narrator and the Noise. Please read the full version at either of the following locations:
+Gitbook version: https://rs-ddlc.netlify.com/
+PDF version: https://github.com/robertschnitman/RS_Reports/blob/master/DDLC/DDLC.pdf
+AbstractThe focus of this study is to determine the existence and extent of statistical bias towards any of the Doki Doki Literature Club characters with respect to the points distribution of the Poem Minigame.</description>
+    </item>
+    
+    <item>
+      <title>Data Science and Beyblades</title>
+      <link>/2020/03/25/data-science-and-beyblades/</link>
+      <pubDate>Wed, 25 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/03/25/data-science-and-beyblades/</guid>
+      <description>IntroductionBeyblade has proven itself to be a strong-running franchise, spanning several TV series and toys. In the shows and on the boxes of said toys, there is an emphasis on the attributes of the beyblades: their Attack, Defense, and Stamina for each component that make up the beyblade. While the validity of these statistics can be questioned, one cannot help but wonder about the relationship between these three traits among the beyblades.</description>
+    </item>
+    
+    <item>
+      <title>Presenting the Sachse, TX January 2020 Special Election Pre-runoff Results with R</title>
+      <link>/2020/03/24/sachse2020/</link>
+      <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/03/24/sachse2020/</guid>
+      <description>PrefaceThe contents of this blog post originate from the PDF version (https://github.com/robertschnitman/RS_Reports/blob/master/Polls/Sachse/sachse2020.pdf) and its GitBook equivalent (https://rs-sachse2020.netlify.com/).
+EDIT 2020-03-27: This post has been updated to use flextable instead of kableExtra to produce a cleaner table for HTML. The PDF and Gitbook reports use the latter, as it is better for PDFs.
+IntroductionThe purpose of this document is to demonstrate the utility of using the R programming language in reporting polls by walking through the process via the software itself.</description>
+    </item>
+    
+  </channel>
+</rss>
