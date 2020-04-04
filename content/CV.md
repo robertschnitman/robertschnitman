@@ -28,7 +28,7 @@ Applied Computing (R, Stata, Julia), Applied Data Science, Literate Programming,
 
 * Developed programming scripts in R, Stata, and SPSS to facilitate reproducible results for social scientists.
 
-* Accumulated 200+ hours of tutoring with a 4.9/5.0 overall rating on WyzAnt in R, Stata, statistics, and econometrics for regression modeling and data management.
+* Accumulated 200+ hours of tutoring with a 4.9 / 5.0 overall rating on WyzAnt in R, Stata, statistics, and econometrics for regression modeling and data management.
 
 ## Research Analyst IRO | Collin College
 *2019 April – 2019 November*
