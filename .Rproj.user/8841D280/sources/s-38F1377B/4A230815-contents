@@ -79,6 +79,8 @@ Applied Computing (R, Stata, Julia), Applied Data Science, Literate Programming,
 
 # Publications 
 
+1. 2020 Schnitman, R. Handbook for the `dm` R Package. https://rs-dm.netlify.com/
+
 1. 2020 Schnitman, R. A Short Introduction to Applied Statistical Programming in R. https://rs-aspr.netlify.com/
 
 1. 2020 Schnitman, R. Handbook for the `diagnoser` R Package. https://rs-diagnoser.netlify.com/
@@ -117,7 +119,7 @@ Applied Computing (R, Stata, Julia), Applied Data Science, Literate Programming,
 
 # Software
 
-1. 2018 Schnitman, R. dm: Data management tools for R as inspired by Stata, SPSS, and other software. https://github.com/robertschnitman/dm
+1. 2020 Schnitman, R. dm: Data management tools for R as inspired by Stata, SPSS, and other software. https://github.com/robertschnitman/dm
 
 1. 2020 Schnitman, R. Price Analysis of Select Funds, 2007-2019. https://robertschnitman.shinyapps.io/funds/
 

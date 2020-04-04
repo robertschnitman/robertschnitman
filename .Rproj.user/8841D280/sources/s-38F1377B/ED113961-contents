@@ -1,6 +1,13 @@
 ---
-date: '`r format(Sys.Date(), "%B %d, %Y")`'
-title: Curriculum Vitae
+name: Robert
+surname: Schnitman
+phone: 214-676-2376
+www: robertschnitman.netlify.com
+email: "robertschnitman@gmail.com"
+github: robertschnitman
+linkedin: rschnitman
+date: "`r format(Sys.time(), '%B %Y')`"
+output: vitae::awesomecv
 ---
 
 # Teaching/Research Interests
@@ -28,7 +35,7 @@ Applied Computing (R, Stata, Julia), Applied Data Science, Literate Programming,
 
 * Developed programming scripts in R, Stata, and SPSS to facilitate reproducible results for social scientists.
 
-* Accumulated 200+ hours of tutoring with a 4.9 / 5.0 overall rating on WyzAnt in R, Stata, statistics, and econometrics for regression modeling and data management.
+* Accumulated 200+ hours of tutoring with a 4.9/5.0 overall rating on WyzAnt in R, Stata, statistics, and econometrics for regression modeling and data management.
 
 ## Research Analyst IRO | Collin College
 *2019 April – 2019 November*
@@ -44,7 +51,7 @@ Applied Computing (R, Stata, Julia), Applied Data Science, Literate Programming,
 ## Resesarch Analyst | Collin College
 *2018 January – 2019 April*
 
-* Increased data cleaning efficiency by 67% by creating an R script with 3 custom functions to merge, deduplicate, and correct discrepancies.
+* Increased data cleaning efficiency by 67\% by creating an R script with 3 custom functions to merge, deduplicate, and correct discrepancies.
       
 * Refactored existing R code for classroom utilization graphs to reduce the number of scripts from 12 to 3, producing alongside a Power BI equivalent.
       
@@ -58,7 +65,7 @@ Applied Computing (R, Stata, Julia), Applied Data Science, Literate Programming,
 
 * Performed summary computations on 3 years of transactional data with R, SQL, and Datameer to track product-level sales and costs.
 
-* Assisted in pricing experiment efforts that resulted in a 40% increase in MUNS across 25,000 products, with 33% being the expectation.
+* Assisted in pricing experiment efforts that resulted in a 40\% increase in MUNS across 25,000 products, with 33\% being the expectation.
 
 * Analyzed two weeks of hourly conversion rates for 4,000 products to determine the company-wide impact of mid-week and weekend events.
 
@@ -162,3 +169,59 @@ Applied Computing (R, Stata, Julia), Applied Data Science, Literate Programming,
 1. 2011-2012 Merit Scholarship, Cairn University (Formerly Philadelphia Biblical University)
 
 1. 2011-2011 Dean’s List, Collin College
+
+# References
+
+## Professional
+Nasreen Ahmad |
+Director, Institutional Research |
+Collin College |
+3452 TX-399 Spur
+McKinney, TX 75069 |
+972-377-1610 |
+nahmad@collin.edu 
+
+Gloria Hurtado |
+Manager, External and Enrollment Reporting |
+Collin College |
+3452 TX-399 Spur
+McKinney, TX 75069 |
+972-548-6618 |
+ghurtado@collin.edu 
+
+Faith Keith |
+Chief Executive Officer |
+Leverage Retirement, Inc. |
+PO Box 889
+Allen, TX 75013 |
+1-800-615-3687 |
+faith.keith@getleverage.io 
+
+Tammy Leonard, PhD |
+Associate Professor of Economics |
+University of Dallas |
+1845 East Northgate Drive |
+Irving, TX 75062 
+972-721-4110 |
+tleonard@udallas.edu
+
+William J. Seeger, PhD |
+President |
+Quantecon Consulting |
+555 Republic Dr. Suite #245 |
+Plano, TX 75974
+214-690-4172 |
+wjseeger@gmail.com 
+
+Nishan Sivathasan |
+VP, Head of Strategy |
+AMN Healthcare |
+nishan.sivathasan@gmail.com 
+
+## Personal
+
+Carl Mason |
+Broker/Consultant |
+Mason Real Estate |
+214-505-4746 |
+cdm.mason@gmail.com
