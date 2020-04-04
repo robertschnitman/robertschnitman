@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MMA on Robert Schnitman</title>
+    <link>/tags/mma/</link>
+    <description>Recent content in MMA on Robert Schnitman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 03 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/mma/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>UFC Stance Analysis of Welterweight Winners, 1993-2019</title>
+      <link>/2020/04/03/ufc-stance-analysis/</link>
+      <pubDate>Fri, 03 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/04/03/ufc-stance-analysis/</guid>
+      <description>UFC Fight data from Kaggle by Rajeev Warrier
+# 1. Load libraries## CRANlibs &amp;lt;- c(&amp;#39;tidyverse&amp;#39;, &amp;#39;magrittr&amp;#39;, &amp;#39;flextable&amp;#39;)for (i in libs) {if (!require(i, character.only = TRUE)) {install.packages(i)library(i, character.only = TRUE)}}## Githubif (!&amp;#39;afp&amp;#39; %in% installed.packages()[, &amp;#39;Package&amp;#39;]) {devtools::install_github(&amp;#39;robertschnitman/afp&amp;#39;)library(afp)}### 2. Import data.data &amp;lt;- read_csv(&amp;#39;data/preprocessed_data.csv&amp;#39;)### 3. Filter for welterweights.ww &amp;lt;- data %&amp;gt;% select(Winner, title_bout, no_of_rounds,matches(&amp;#39;Stance|age|Weight|Height&amp;#39;, ignore.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -117,6 +117,8 @@ Applied Computing (R, Stata, Julia), Applied Data Science, Literate Programming,
 
 # Software
 
+1. 2018 Schnitman, R. dm: Data management tools for R as inspired by Stata, SPSS, and other software. https://github.com/robertschnitman/dm
+
 1. 2020 Schnitman, R. Price Analysis of Select Funds, 2007-2019. https://robertschnitman.shinyapps.io/funds/
 
 1. 2019 Schnitman, R. Scatterplots with the Gapminder Dataset.  https://robertschnitman.shinyapps.io/scatter/
@@ -134,8 +136,6 @@ Applied Computing (R, Stata, Julia), Applied Data Science, Literate Programming,
 1. 2019 Schnitman, R. afpp: Applied Functional Programming in Python. https://github.com/robertschnitman/afpp
 
 1. 2019 Schnitman, R. diagnoserpy: Residual Diagnostic Tools in Python. https://github.com/robertschnitman/diagnoserpy
-
-1. 2018 Schnitman, R. dm: Data management tools for R as inspired by Stata, SPSS, and other software. https://github.com/robertschnitman/dm
 
 # Organizations
 
