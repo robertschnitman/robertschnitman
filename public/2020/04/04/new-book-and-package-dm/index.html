@@ -4,10 +4,10 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Profile and Services of Robert Schnitman.">
+  <meta name="description" content="">
   <meta name="generator" content="Hugo 0.68.1" />
 
-  <title>Books &middot; Robert Schnitman</title>
+  <title>New Book and Package: dm, Statistical Data Management Tools for R &middot; Robert Schnitman</title>
 
     
 
@@ -41,9 +41,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
  
-  
-  <link rel="alternate" type="application/rss+xml" title="Robert Schnitman"
-    href='/categories/books/index.xml' />
   
 
   
@@ -136,11 +133,6 @@
   <div class="pure-menu social">
   <ul class="pure-menu-list">
 
-    
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href='/categories/books/index.xml'><i
-          class="fas fa-rss"></i>RSS</a>
-    </li>
     
 
     
@@ -248,16 +240,12 @@
 
 
 <div class="header">
-  <h1>Books</h1>
+  <h1>New Book and Package: dm, Statistical Data Management Tools for R</h1>
+  <h2></h2>
 </div>
-
 <div class="content">
-  
-    <article>
-  <header>
-    <h2><a href="/2020/04/04/new-dm/">New Package and Book: dm, Statistical Data Management Tools for R</a></h2>
 
-    <div class="post-meta">
+  <div class="post-meta">
 
   <div>
     
@@ -294,81 +282,100 @@
 
 </div>
 
-  </header>
+  
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
-  <p>
-  IntroductionA couple years ago, I started a writing a package on Github that was inspired by the data managment functionalities in other statistical software such as Stata and SPSS. I got distracted by life, especially with work, and I practically stopped developing the package in 2019. This year, however, I finally sat down and finished developing this package, R documentation and all: the end-result was dm.
-You can read the documentation on this package as a Gitbook online.
-  </p>
 
+<div id="introduction" class="section level1">
+<h1>Introduction</h1>
+<p>A couple years ago, <a href="https://github.com/robertschnitman/dm">I started a writing a package on Github</a> that was inspired by the data managment functionalities in other statistical software such as Stata and SPSS. I got distracted with life, especially with work, and I practically stopped developing the package in 2019. This year, however, I finally sat down and finished developing this package, R documentation and all: the end-result was <code>dm</code>.</p>
+<p>You can read the documentation on this package as a <a href="https://rs-dm.netlify.com/">Gitbook online</a>.</p>
+</div>
+<div id="installation" class="section level1">
+<h1>Installation</h1>
+<p>Currently, this package is only available on Github, so please use <code>devtools</code> to install this package.</p>
+<pre class="r"><code>if (!require(devools)) {
   
-  <footer>
-    <a href="/2020/04/04/new-dm/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
+  install.packages(&#39;devtools&#39;)
+  library(devtools)
   
-</article>
+}
 
-  
-    <article>
-  <header>
-    <h2><a href="/2020/03/30/bip-aspr/">New Book: A Short Introduction to Applied Statistical Programming in R</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    
-    <i class="fa fa-user fa-fw"></i>
-    <span>Robert Schnitman</span>
-    
-  </div>
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>2020-03-30</time>
-  </div>
-
-  
-
-  
-  
-  
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="/tags/functional-programming">Functional Programming</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="/tags/statistics">Statistics</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="/tags/data-analysis">data analysis</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="/tags/education">Education</a>
-    
-  </div>
-  
-  
-
+install_github(&#39;robertschnitman/dm&#39;)</code></pre>
+<pre class="r"><code>library(dm)</code></pre>
+</div>
+<div id="examples" class="section level1">
+<h1>Examples</h1>
+<div id="recode" class="section level2">
+<h2><code>recode()</code></h2>
+<p>The <code>recode()</code> function presents a way to recode variables differently than <a href="https://libguides.library.kent.edu/SPSS/RecodeVariables">SPSS’s method</a>.</p>
+<pre class="r"><code>mtcars$am</code></pre>
+<pre><code>##  [1] 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 1 1 1 1 1 1 1</code></pre>
+<pre class="r"><code>recode(mtcars$am, 0:1, 2:3)</code></pre>
+<pre><code>##  [1] 3 3 3 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 2 2 2 2 2 3 3 3 3 3 3 3</code></pre>
+</div>
+<div id="numna" class="section level2">
+<h2><code>numNA()</code></h2>
+<p><a href="https://www.stata.com/manuals13/m-5missing.pdf">As inspired by Stata</a>, <code>numNA()</code> counts the number of missing values in a dataset; <code>rowNA()</code> counts the number of missing values by row; and <code>colNA()</code> counts the number of missing values by column.</p>
+<pre class="r"><code>numNA(airquality) # Total number of missing values.</code></pre>
+<pre><code>## [1] 44</code></pre>
+<pre class="r"><code>rowNA(airquality) # Number of missing values by row.</code></pre>
+<pre><code>##   [1] 0 0 0 0 2 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 2 0 0 0 0 1 1 1 1 1 1
+##  [38] 0 1 0 0 1 1 0 1 1 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 0 0 0 1 0 0 0 0 0 0 1 0 0
+##  [75] 1 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 0 1 1 0 0 0 1 0 0 0 0
+## [112] 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+## [149] 0 1 0 0 0</code></pre>
+<pre class="r"><code>colNA(airquality) # Number of missing values by column.</code></pre>
+<pre><code>##   Ozone Solar.R    Wind    Temp   Month     Day 
+##      37       7       0       0       0       0</code></pre>
+</div>
+<div id="load_libraries" class="section level2">
+<h2><code>load_libraries</code>()</h2>
+<p>The <code>load_libraries()</code> function tests whether a set of libraries has been installed: if not, then it installs and loads them; if already installed, then the function loads the libraries as intended.</p>
+<pre class="r"><code>load_libraries(c(&#39;tidyverse&#39;, &#39;ggformula&#39;, &#39;abind&#39;))</code></pre>
+</div>
+</div>
+<div id="references" class="section level1">
+<h1>References</h1>
+<p>Kent State University. <em>SPSS Recode</em>. <a href="https://libguides.library.kent.edu/SPSS/RecodeVariables" class="uri">https://libguides.library.kent.edu/SPSS/RecodeVariables</a></p>
+<p>Stata. <em>missing()</em>. <a href="https://www.stata.com/manuals13/m-5missing.pdf" class="uri">https://www.stata.com/manuals13/m-5missing.pdf</a></p>
 </div>
 
-  </header>
-
-  <p>
-  I have a new book in progress called A Short Introduction to Applied Statistical Programming in R, which can be viewed online as a Gitbook or as a PDF. [EDIT 2020-04-01: I will primarily focus on the Gitbook version, as I am running into some typesetting issues with the PDF at the moment.]
-[EDIT 2020-04-02: The Gitbook version is fairly complete and I do not foresee many major updates to it unless they are requested or if I think of anything else significant to add.
-  </p>
-
   
-  <footer>
-    <a href="/2020/03/30/bip-aspr/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
   
-</article>
+
+
+
 
   
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2020/03/30/bip-aspr/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2020/03/30/bip-aspr/">New Book: A Short Introduction to Applied Statistical Programming in R</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
+
+  
+
 </div>
 
 </div>
@@ -381,7 +388,11 @@ You can read the documentation on this package as a Gitbook online.
 
 
 
+<script src="/js/math-code.js"></script>
+  <script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  
 
 
 </body>
 </html>
+

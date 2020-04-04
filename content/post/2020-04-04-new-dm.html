@@ -1,0 +1,72 @@
+---
+title: 'New Package and Book: dm, Statistical Data Management Tools for R'
+author: Robert Schnitman
+date: '2020-04-04'
+slug: new-dm
+categories:
+  - R
+  - Books
+tags:
+  - dm
+  - data management
+description: ''
+topics: []
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<div id="introduction" class="section level1">
+<h1>Introduction</h1>
+<p>A couple years ago, <a href="https://github.com/robertschnitman/dm">I started a writing a package on Github</a> that was inspired by the data managment functionalities in other statistical software such as Stata and SPSS. I got distracted by life, especially with work, and I practically stopped developing the package in 2019. This year, however, I finally sat down and finished developing this package, R documentation and all: the end-result was <code>dm</code>.</p>
+<p>You can read the documentation on this package as a <a href="https://rs-dm.netlify.com/">Gitbook online</a>.</p>
+</div>
+<div id="installation" class="section level1">
+<h1>Installation</h1>
+<p>Currently, this package is only available on Github, so please use <code>devtools</code> to install this package.</p>
+<pre class="r"><code>if (!require(devools)) {
+  
+  install.packages(&#39;devtools&#39;)
+  library(devtools)
+  
+}
+
+install_github(&#39;robertschnitman/dm&#39;)</code></pre>
+<pre class="r"><code>library(dm)</code></pre>
+</div>
+<div id="examples" class="section level1">
+<h1>Examples</h1>
+<div id="recode" class="section level2">
+<h2><code>recode()</code></h2>
+<p>The <code>recode()</code> function presents a way to recode variables differently than <a href="https://libguides.library.kent.edu/SPSS/RecodeVariables">SPSS’s method</a>.</p>
+<pre class="r"><code>mtcars$am</code></pre>
+<pre><code>##  [1] 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 1 1 1 1 1 1 1</code></pre>
+<pre class="r"><code>recode(mtcars$am, 0:1, 2:3)</code></pre>
+<pre><code>##  [1] 3 3 3 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 2 2 2 2 2 3 3 3 3 3 3 3</code></pre>
+</div>
+<div id="numna" class="section level2">
+<h2><code>numNA()</code></h2>
+<p><a href="https://www.stata.com/manuals13/m-5missing.pdf">As inspired by Stata</a>, <code>numNA()</code> counts the number of missing values in a dataset; <code>rowNA()</code> counts the number of missing values by row; and <code>colNA()</code> counts the number of missing values by column.</p>
+<pre class="r"><code>numNA(airquality) # Total number of missing values.</code></pre>
+<pre><code>## [1] 44</code></pre>
+<pre class="r"><code>rowNA(airquality) # Number of missing values by row.</code></pre>
+<pre><code>##   [1] 0 0 0 0 2 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 2 0 0 0 0 1 1 1 1 1 1
+##  [38] 0 1 0 0 1 1 0 1 1 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 0 0 0 1 0 0 0 0 0 0 1 0 0
+##  [75] 1 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 0 1 1 0 0 0 1 0 0 0 0
+## [112] 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+## [149] 0 1 0 0 0</code></pre>
+<pre class="r"><code>colNA(airquality) # Number of missing values by column.</code></pre>
+<pre><code>##   Ozone Solar.R    Wind    Temp   Month     Day 
+##      37       7       0       0       0       0</code></pre>
+</div>
+<div id="load_libraries" class="section level2">
+<h2><code>load_libraries</code>()</h2>
+<p>The <code>load_libraries()</code> function tests whether a set of libraries has been installed: if not, then it installs and loads them; if already installed, then the function loads the libraries as intended.</p>
+<pre class="r"><code>load_libraries(c(&#39;tidyverse&#39;, &#39;ggformula&#39;, &#39;abind&#39;))</code></pre>
+</div>
+</div>
+<div id="references" class="section level1">
+<h1>References</h1>
+<p>Kent State University. <em>SPSS Recode</em>. <a href="https://libguides.library.kent.edu/SPSS/RecodeVariables" class="uri">https://libguides.library.kent.edu/SPSS/RecodeVariables</a></p>
+<p>Stata. <em>missing()</em>. <a href="https://www.stata.com/manuals13/m-5missing.pdf" class="uri">https://www.stata.com/manuals13/m-5missing.pdf</a></p>
+</div>

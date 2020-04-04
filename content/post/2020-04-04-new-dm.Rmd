@@ -1,0 +1,77 @@
+---
+title: 'New Package and Book: dm, Statistical Data Management Tools for R'
+author: Robert Schnitman
+date: '2020-04-04'
+slug: new-dm
+categories:
+  - R
+  - Books
+tags:
+  - dm
+  - data management
+description: ''
+topics: []
+---
+
+# Introduction
+
+A couple years ago, [I started a writing a package on Github](https://github.com/robertschnitman/dm) that was inspired by the data managment functionalities in other statistical software such as Stata and SPSS. I got distracted by life, especially with work, and I practically stopped developing the package in 2019. This year, however, I finally sat down and finished developing this package, R documentation and all: the end-result was `dm`.
+
+You can read the documentation on this package as a [Gitbook online](https://rs-dm.netlify.com/).
+
+# Installation
+
+Currently, this package is only available on Github, so please use `devtools` to install this package.
+
+```{r, eval = FALSE}
+if (!require(devools)) {
+  
+  install.packages('devtools')
+  library(devtools)
+  
+}
+
+install_github('robertschnitman/dm')
+```
+
+```{r, message = FALSE}
+library(dm)
+```
+
+
+# Examples
+
+## `recode()`
+
+The `recode()` function presents a way to recode variables differently than [SPSS's method](https://libguides.library.kent.edu/SPSS/RecodeVariables).
+
+```{r, warning = FALSE}
+mtcars$am
+recode(mtcars$am, 0:1, 2:3)
+```
+
+## `numNA()`
+
+[As inspired by Stata](https://www.stata.com/manuals13/m-5missing.pdf), `numNA()` counts the number of missing values in a dataset; `rowNA()` counts the number of missing values by row; and `colNA()` counts the number of missing values by column.
+
+[^1]: 
+
+```{r}
+numNA(airquality) # Total number of missing values.
+rowNA(airquality) # Number of missing values by row.
+colNA(airquality) # Number of missing values by column.
+```
+
+## `load_libraries`()
+
+The `load_libraries()` function tests whether a set of libraries has been installed: if not, then it installs and loads them; if already installed, then the function loads the libraries as intended.
+
+```{r, eval = FALSE}
+load_libraries(c('tidyverse', 'ggformula', 'abind'))
+```
+
+# References
+
+Kent State University. *SPSS Recode*. https://libguides.library.kent.edu/SPSS/RecodeVariables
+
+Stata. *missing()*. https://www.stata.com/manuals13/m-5missing.pdf
