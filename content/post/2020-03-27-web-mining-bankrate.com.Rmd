@@ -68,7 +68,7 @@ links <- data.frame(category = c('1-Year CD Rates',
 
 ```
 
-To scrape the websets, I use the rvest functions `read_html()`, `html_node()`, and `html_table()`. The first imports the URL into R; the second searches for a specific node (in this case, a table); and the third converts the information into a data frame. Then I use `purrr`'s `set_names()` to rename the key columns for easier referencing, followed by creating a new column based on the `category` column in the `links` data frame.
+To scrape the websites, I use the rvest functions `read_html()`, `html_node()`, and `html_table()`. The first imports the URL into R; the second searches for a specific node (in this case, a table); and the third converts the information into a data frame. Then I use `purrr`'s `set_names()` to rename the key columns for easier referencing, followed by creating a new column based on the `category` column in the `links` data frame.
 
 ```{r}
 

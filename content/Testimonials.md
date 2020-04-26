@@ -25,6 +25,8 @@ I am thankful to have the opportunity to work with intellectual minds and their 
 
 * "This is my second tutoring session with Robert and I can tell you that Robert is extremely knowledgeable with R. He is probably the most knowledgeable person in the subject that I have came across. He can break down and help you maneuver the coding with ease. I understand the program much more when he teaches me code in an hour of tutoring than the hours upon hours that I spend in class with my professor! Along with that, he explains the econometrics homework that we have been working on in a better fashion as well and makes the analysis easier to understand. I'll definitely continue to reach out to Robert whenever I have questions about R coding or econometrics. If you need help with econometrics or R coding, this is your guy!" - United States
 
+* "I got much more than expected from my session. The session was very efficient and Robert was fast in troubleshooting and answering my questions. I am completely satisfied and will have sessions with him again if I need too. Totally recommended to anyone struggling with R/Rstudio questions or projects." - United States
+
 * "Mr. S. was very patient, knowledgeable, and displaying a thorough interest with helping in the R studio software. He helped with how to understand and write syntaxes, interpret graphs, Durbin Watson Test, went over the definitions of Independence of Observations, and Homogeneity of Variance. Showed interest and care in helping with understanding my homework." - United States
 
 * "Robert has helped me with Rstudio and Applied Regressions. I feel comfortable asking silly or obvious questions. He creates a healthy learning environment and allows me to grow one step at a time! :)" - United States
