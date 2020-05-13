@@ -79,19 +79,19 @@ Applied Computing (R, Stata, Julia), Applied Data Science, Literate Programming,
 
 # Publications 
 
-1. 2020 Schnitman, R. Handbook for the `dm` R Package. https://rs-dm.netlify.com/
+1. 2020 Schnitman, R. Handbook for the `dm` R Package. https://rs-dm.netlify.app/
 
-1. 2020 Schnitman, R. A Short Introduction to Applied Statistical Programming in R. https://rs-aspr.netlify.com/
+1. 2020 Schnitman, R. A Short Introduction to Applied Statistical Programming in R. https://rs-aspr.netlify.app/
 
-1. 2020 Schnitman, R. Handbook for the `diagnoser` R Package. https://rs-diagnoser.netlify.com/
+1. 2020 Schnitman, R. Handbook for the `diagnoser` R Package. https://rs-diagnoser.netlify.app/
 
-1. 2020 Schnitman, R. Data Science and Beyblades. https://robertschnitman.netlify.com/2020/03/25/data-science-and-beyblades
+1. 2020 Schnitman, R. Data Science and Beyblades. https://robertschnitman.netlify.app/2020/03/25/data-science-and-beyblades
 
-1. 2020 Schnitman, R. The Narrator and the Noise: The Use of Statistical Bias in a Minigame to Emphasize a Thematic Outcome in Act 1 of Doki Doki Literature Club. https://rs-ddlc.netlify.com
+1. 2020 Schnitman, R. The Narrator and the Noise: The Use of Statistical Bias in a Minigame to Emphasize a Thematic Outcome in Act 1 of Doki Doki Literature Club. https://rs-ddlc.netlify.app
 
-1. 2020 Schnitman, R. Using the R Programming Language to Report the Sachse, TX January 2020 Special Election Pre-runoff Results. https://rs-sachse2020.netlify.com/
+1. 2020 Schnitman, R. Using the R Programming Language to Report the Sachse, TX January 2020 Special Election Pre-runoff Results. https://rs-sachse2020.netlify.app/
 
-1. 2020 Schnitman, R. Handbook for the `afp` R Package. https://rs-afp.netlify.com/
+1. 2020 Schnitman, R. Handbook for the `afp` R Package. https://rs-afp.netlify.app/
 
 1. 2020 Schnitman, R. OLS in R Tutorial. GitHub. https://github.com/robertschnitman/RS_Reports/blob/master/Tutorials/R%20OLS%20Tutorial.pdf
 
