@@ -19,6 +19,10 @@ Applied Computing (R, Stata, Julia), Applied Data Science, Literate Programming,
 * Bachelor of Science in Economics  
 
 # Employment
+
+## Data Analyst / Leverage Retirement, Inc.
+*2020 June - Present*
+
 ## Statistical Consultant | Self-employed
 *2016 January – Present*
 
