@@ -23,6 +23,10 @@ Applied Computing (R, Stata, Julia), Applied Data Science, Literate Programming,
 ## Data Analyst | Leverage Retirement, Inc.
 *2020 June - Present*
 
+* Improved efficiency by 86% by employing loops via the AutoIt programming language to condense 7 existing scripts into 1 reduced executable program.
+
+* Created an AutoIt function to unnest arrays of arrays into a single vector.
+
 ## Statistical Consultant | Self-employed
 *2016 January – Present*
 
