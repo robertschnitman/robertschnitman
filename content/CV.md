@@ -27,6 +27,8 @@ Applied Computing (R, Stata, Julia), Applied Data Science, Literate Programming,
 
 * Created an AutoIt function to unnest arrays of arrays into a single vector.
 
+* Written vectorized versions of existing AutoIt string functions.
+
 ## Statistical Consultant | Self-employed
 *2016 January – Present*
 
