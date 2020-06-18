@@ -26,7 +26,7 @@ Applied Computing (R, Stata, Julia, AutoIt, Ruby), Applied Data Science, Literat
 
 * Created an AutoIt function to unnest an array of arrays into a single vector.
 
-* Generated an AutoIt function to subset an array based on a regular expression pattern.
+* Written over 30 AutoIt functions to manage files and arrays.
 
 ## Statistical Consultant | Self-employed
 *2016 January - Present*
