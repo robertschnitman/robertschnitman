@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Robert Schnitman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Vectorized String Functions in AutoIt</title>
+      <link>/2020/06/20/vectorized-string-functions-in-autoit/</link>
+      <pubDate>Sat, 20 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/06/20/vectorized-string-functions-in-autoit/</guid>
+      <description>1. IntroductionIn my current workplace at Leverage Retirement, Inc., I use Autoit to automate file management operations, such as copying files to archive directories and checking whether files exist for the morning processes. These operations involve the application of regular expressions to find out whether specific files match a given pattern (e.g. Deposit \d{4}-\d{2}-\d{2}, where \d{x} represents a number of x digits). While there are many string functions in AutoIt, most of them apply only to constants and not arrays.</description>
+    </item>
     
     <item>
       <title>Vectorized String Methods in Ruby</title>

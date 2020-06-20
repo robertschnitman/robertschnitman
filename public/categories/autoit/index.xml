@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>arrays on Robert Schnitman</title>
-    <link>/tags/arrays/</link>
-    <description>Recent content in arrays on Robert Schnitman</description>
+    <title>AutoIt on Robert Schnitman</title>
+    <link>/categories/autoit/</link>
+    <description>Recent content in AutoIt on Robert Schnitman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 20 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/arrays/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/autoit/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       
       <guid>/2020/06/20/vectorized-string-functions-in-autoit/</guid>
       <description>1. IntroductionIn my current workplace at Leverage Retirement, Inc., I use Autoit to automate file management operations, such as copying files to archive directories and checking whether files exist for the morning processes. These operations involve the application of regular expressions to find out whether specific files match a given pattern (e.g. Deposit \d{4}-\d{2}-\d{2}, where \d{x} represents a number of x digits). While there are many string functions in AutoIt, most of them apply only to constants and not arrays.</description>
-    </item>
-    
-    <item>
-      <title>Vectorized String Methods in Ruby</title>
-      <link>/2020/06/19/vectorized-string-methods-in-ruby/</link>
-      <pubDate>Fri, 19 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/2020/06/19/vectorized-string-methods-in-ruby/</guid>
-      <description>1. IntroductionI have been dabbling with the Ruby programming language for work purposes lately. Overall, I enjoy its concise, fun syntax and string methods such as .chomp to remove new-line characters–and I especially like the compactness of map. However, I believe that I have been too accustomed to R’s default property of functions being vectorized, as I initially had some trouble with handling arrays and employing string methods.</description>
     </item>
     
   </channel>

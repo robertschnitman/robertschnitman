@@ -1,0 +1,15 @@
+; StringSub()
+Func StringSub($string, $search, $replace)
+
+	Return StringRegExpReplace($string, $search, $replace)
+
+EndFunc
+
+; StringSubV()
+Func StringSubV($a, $search, $replace)
+
+	$x = StringRegExpReplaceV($a, $search, $replace)
+
+	Return $x
+
+EndFunc

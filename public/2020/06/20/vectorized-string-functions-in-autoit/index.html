@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.68.1" />
+
+  <title>Vectorized String Functions in AutoIt &middot; Robert Schnitman</title>
+
+    
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/">About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/services/">Services</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/cv/">Curriculum Vitae</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/post/">Blog Archive</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/tags/">Tags</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/testimonials/">Testimonials</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/resources/">Resources</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/contact/">Contact</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/RobertSchnitman" rel="me" target="_blank"><i class="fab fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/rschnitman" rel="me" target="_blank"><i class="fab fa-linkedin"></i></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/robertschnitman" rel="me" target="_blank"><i class="fab fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small></small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Vectorized String Functions in AutoIt</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Robert Schnitman</span>
+    
+  </div>
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2020-06-20</time>
+  </div>
+
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/autoit">AutoIt</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/strings">strings</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/arrays">arrays</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<div id="introduction" class="section level1">
+<h1>1. Introduction</h1>
+<p>In my current workplace at <a href="https://www.getleverage.io/">Leverage Retirement, Inc.</a>, I use <a href="https://www.autoitscript.com/site/">Autoit</a> to automate file management operations, such as copying files to archive directories and checking whether files exist for the morning processes. These operations involve the application of regular expressions to find out whether specific files match a given pattern (e.g. <code>Deposit \d{4}-\d{2}-\d{2}</code>, where <code>\d{x}</code> represents a number of <code>x</code> digits). <a href="https://www.autoitscript.com/autoit3/docs/functions.htm">While there are many string functions in AutoIt</a>, most of them apply only to constants and not arrays. As such, to perform string functions on arrays, a loop has to be employed. However, because multiple loops may bloat the script, I’ve developed vectorized string functions so that I can apply string operations over arrays in a more concise manner.</p>
+<p>Below are some of these functions. Give them a try!</p>
+</div>
+<div id="stringsubstringsubv" class="section level1">
+<h1>2. <code>StringSub()</code>/<code>StringSubV()</code></h1>
+<p>The functions <code>StringSub()</code> is simply a shorthand version of <code>StringRegExpReplace()</code>, since the latter is inefficient to type out every time you need to use it. <code>StringSubV()</code>is a vectorized version of <code>StringSub()</code>, performing over an array.</p>
+<p>Here is how they are defined<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> in AutoIt:</p>
+<pre><code>; StringSub()
+Func StringSub($string, $search, $replace)
+
+    Return StringRegExpReplace($string, $search, $replace)
+
+EndFunc
+
+; StringSubV()
+Func StringSubV($a, $search, $replace)
+
+  For $i = 0 to UBound($a) - 1
+  
+    $a[$i] = StringSub($a[$i], $search, $replace)
+    
+  Next
+
+    Return $a
+
+EndFunc</code></pre>
+<p>Here is an example of applying <code>StringSubV()</code>.</p>
+<pre><code>#include &lt;Array.au3&gt; ; for displaying arrays
+
+Local $gems[] = [&quot;Ruby&quot;, &quot;Crystal&quot;, &quot;Emerald&quot;]
+
+$gems2 = StringSubV($gems, &quot;r&quot;, &quot;Z&quot;)
+
+_ArrayDisplay($gems2)</code></pre>
+<p><img src="/post/AutoIt/2020-06-20_1.png" /></p>
+</div>
+<div id="stringdetectstringdetectv" class="section level1">
+<h1>3. <code>StringDetect()</code>/<code>StringDetectV()</code></h1>
+<p>The function <code>StringDetect()</code> determines whether a constant string matches a regular expression pattern, returning a Boolean value. The function <code>StringDetectV()</code> applies <code>StringDetect()</code> to each element in an array. Ultimately, <code>StringDetectV()</code> is the equivalent of <code>grepl()</code> in R.</p>
+<pre><code>; StringDetect()
+Func StringDetect($string, $pattern)
+
+    If StringRegExp($string, $pattern) = 1 Then
+
+        $x = True
+
+    Else
+
+        $x = False
+
+    EndIf
+
+    Return $x
+
+EndFunc
+
+; StringDetectV()
+Func StringDetectV($a, $pattern) ; $a is an array
+
+    For $i = 0 to UBound($a) - 1
+
+        $a[$i] = StringDetect($a[$i], $pattern)
+
+    Next
+
+    Return $a
+
+EndFunc
+</code></pre>
+<p>Here is an example of <code>StringDetectV()</code>:</p>
+<pre><code>Local $gems[] = [&quot;Ruby&quot;, &quot;Crystal&quot;, &quot;Emerald&quot;]
+
+$gems2 = StringDetectV($gems, &quot;r&quot;)
+
+_ArrayDisplay($gems2)</code></pre>
+<p><img src="/post/AutoIt/2020-06-20_2.png" /></p>
+</div>
+<div id="stringpos-stringsubset" class="section level1">
+<h1>4. <code>StringPos()</code> &amp; <code>StringSubset()</code></h1>
+<p>The function <code>StringPos()</code> returns the indices of a regular expression pattern match, while <code>StringSubset()</code> extracts only the elements in an array matching a pattern.</p>
+<pre><code>; StringPos()
+Func StringPos($a, $search_pattern)
+
+  ; 3 = regular expression pattern
+    $indices = _ArrayFindAll($a, $search_pattern, Default, Default, Default, 3)
+
+    Return $indices
+
+EndFunc
+
+; StringSubset()
+Func StringSubset($a, $search_pattern)
+
+    $indices = StringPos($a, $search_pattern) ; find the indices
+
+    Local $output[UBound($indices)] = [0] ; initialize loop
+
+    ; Insert into $indices the matching values from $a.
+    For $i = 0 to UBound($indices) - 1
+
+        $output[$i] = $a[$indices[$i]]
+
+    Next
+
+    ; Return the array.
+    Return $output
+
+EndFunc</code></pre>
+<p>Here is an example of using <code>StringSubset()</code>, which uses <code>StringPos()</code>:</p>
+<pre><code>#include &lt;Array.au3&gt; ; for displaying arrays
+
+Local $gems[] = [&quot;Ruby&quot;, &quot;Crystal&quot;, &quot;Emerald&quot;]
+
+$gems2 = StringSubset($gems, &quot;r&quot;)
+
+_ArrayDisplay($gems2)</code></pre>
+<p><img src="/post/AutoIt/2020-06-20_3.png" /></p>
+</div>
+<div id="conclusion" class="section level1">
+<h1>5. Conclusion</h1>
+<p>The functions provided in this post vectorize existing string operations in AutoIt. <code>StringSubV()</code> substitutes each string in an array with a defined replacement string, being a vectorized version of <code>StringRegExpReplace()</code>. <code>StringDetectV()</code> determines whether each string in an array matches a given pattern, being a vectorized version of <code>StringRegExp()</code>. Finally, <code>StringSubset()</code> extracts only the strings in an array that match a stated pattern, being a simpler version of <code>_ArrayFindAll()</code>. In summary, I hope that these functions will help you in your work when managing arrays of strings.</p>
+<p><a href="https://github.com/robertschnitman/rs_autoit">You can find these functions and more in my <em>RS_AutoIt</em> GitHub repository</a>.</p>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p><code>StringSubV()</code> is defined slightly differently in this post than in my GitHub repository so that you may run these functions independently of the other functions in my GitHub repository (i.e. you may run these functions in this post without dependencies).<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+
+  
+  
+
+
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2020/06/19/vectorized-string-methods-in-ruby/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2020/06/19/vectorized-string-methods-in-ruby/">Vectorized String Methods in Ruby</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
+
+  
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="/js/menus.js"></script>
+
+
+
+
+
+
+<script src="/js/math-code.js"></script>
+  <script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  
+
+
+</body>
+</html>
+
