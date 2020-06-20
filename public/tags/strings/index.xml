@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>strings on Robert Schnitman</title>
+    <link>/tags/strings/</link>
+    <description>Recent content in strings on Robert Schnitman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 19 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/strings/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Vectorized String Methods in Ruby</title>
+      <link>/2020/06/19/vectorized-string-methods-in-ruby/</link>
+      <pubDate>Fri, 19 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/06/19/vectorized-string-methods-in-ruby/</guid>
+      <description>1. IntroductionI have been dabbling with the Ruby programming language for work purposes lately. Overall, I enjoy its concise, fun syntax and string methods such as .chomp to remove new-line characters–and I especially like the compactness of map. However, I believe that I have been too accustomed to R’s default property of functions being vectorized, as I initially had some trouble with handling arrays and employing string methods.</description>
+    </item>
+    
+  </channel>
+</rss>

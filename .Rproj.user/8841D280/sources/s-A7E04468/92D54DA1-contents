@@ -1,0 +1,104 @@
+---
+title: Vectorized String Methods in Ruby
+author: Robert Schnitman
+date: '2020-06-19'
+slug: vectorized-string-methods-in-ruby
+categories:
+  - Ruby
+tags:
+  - Ruby
+  - strings
+  - arrays
+description: ''
+topics: []
+---
+
+# 1. Introduction
+
+I have been dabbling with the Ruby programming language for work purposes lately. Overall, I enjoy its concise, fun syntax and string methods such as `.chomp` to remove new-line characters--and I especially like the compactness of `map`. However, I believe that I have been too accustomed to R's default property of functions being vectorized, as I initially had some trouble with handling arrays and employing string methods. Although I could apply `map` every time I wanted to perform string operations on an array, I eventually came up with a solution: develop vectorized string methods.
+
+In this post, I will present some string methods that I've written that you may find useful. Give them a try!
+
+# 2. `gsubm`
+
+The method `gsubm` is intended to behave the same as `gsub()` from R: it searches an array based on a pattern and then replaces it with a specified string value.
+
+Here is how `gsubm` is defined and how it's applied in Ruby.
+
+```{ruby}
+# Defining gsubm()
+class Array
+  def gsubm(pattern, replace)
+
+	  self.map {|x| x.gsub(pattern, replace)}
+	  
+  end
+  
+end
+
+# Example
+## Note that regular expressions are encased in forward slashes. 
+gems = ["Ruby", "Crystal", "Emerald"]
+
+p gems.gsubm(/r/, "Z") 
+```
+
+# 3. `detect/detectm`
+
+Similar to R's `grepl()`, `detect` outputs a Boolean value based on a given regular expression pattern, while `detectm` performs `detect` over an array.
+
+```{ruby}
+# detect
+class String
+
+	def detect(pattern)
+	
+		pattern.match?(self)
+		
+	end
+end
+
+# detectm
+class Array
+
+  def detectm(pattern)
+	
+		self.map {|x| x.detect(pattern)}
+		
+	end
+	
+end
+
+# Example
+gems = ["Ruby", "Crystal", "Emerald"]
+
+p gems.detectm(/^R/)
+	
+```
+
+# 4. `extract`
+
+Similar to `grep(..., value = TRUE)` from R, `extract` will return a value that matches a given regular expression pattern--if a pattern is not found, a `nil` value (i.e., a missing value, equivalent to R's `NA`) is produced.
+
+```{ruby}
+class Array
+
+  def extract(pattern)
+	
+		self.map{|x| x[pattern]}
+	
+	end
+	
+end
+
+gems = ["Ruby", "Crystal", "Emerald"]
+
+p gems.extract(/^R.*/)
+```
+
+
+# 5. Conclusion
+
+I hope you found these methods to be useful and will apply them into your own work! The `gsubm` method would be particularly beneficial for substituting strings based on a regular expression pattern. R enthusiasts may enjoy `detect/detectm` for its similarity to `grepl()`. Finally, R programmers may also like `extract` to be able to replicate `grep()` to an extent. Overall, these methods would help in managing arrays of strings by being vectorized versions of eisting ruby methods.
+
+You may find these methods and more at my [Ruby repository *RS_Ruby* on GitHub.](https://github.com/robertschnitman/rs_ruby)

@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.68.1" />
 
-  <title>New Package and Book: dm, Statistical Data Management Tools for R &middot; Robert Schnitman</title>
+  <title>Vectorized String Methods in Ruby &middot; Robert Schnitman</title>
 
     
 
@@ -240,7 +240,7 @@
 
 
 <div class="header">
-  <h1>New Package and Book: dm, Statistical Data Management Tools for R</h1>
+  <h1>Vectorized String Methods in Ruby</h1>
   <h2></h2>
 </div>
 <div class="content">
@@ -256,7 +256,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>2020-04-04</time>
+    <time>2020-06-19</time>
   </div>
 
   
@@ -272,9 +272,11 @@
   <div>
     <i class="fa fa-tags fa-fw"></i>
     
-      <a class="post-taxonomy-tag" href="/tags/dm">dm</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="/tags/ruby">Ruby</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="/tags/data-management">data management</a>
+      <a class="post-taxonomy-tag" href="/tags/strings">strings</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/arrays">arrays</a>
     
   </div>
   
@@ -287,58 +289,84 @@
 
 
 <div id="introduction" class="section level1">
-<h1>Introduction</h1>
-<p>A couple years ago, <a href="https://github.com/robertschnitman/dm">I started a writing a package on Github</a> that was inspired by the data managment functionalities in other statistical software such as Stata and SPSS. I got distracted by life, especially with work, and I practically stopped developing the package in 2019. This year, however, I finally sat down and finished developing this package, R documentation and all: the end-result was <code>dm</code>.</p>
-<p>You can read the documentation on this package as a <a href="https://rs-dm.netlify.com/">Gitbook online</a>.</p>
+<h1>1. Introduction</h1>
+<p>I have been dabbling with the Ruby programming language for work purposes lately. Overall, I enjoy its concise, fun syntax and string methods such as <code>.chomp</code> to remove new-line characters–and I especially like the compactness of <code>map</code>. However, I believe that I have been too accustomed to R’s default property of functions being vectorized, as I initially had some trouble with handling arrays and employing string methods. Although I could apply <code>map</code> every time I wanted to perform string operations on an array, I eventually came up with a solution: develop vectorized string methods.</p>
+<p>In this post, I will present some string methods that I’ve written that you may find useful. Give them a try!</p>
 </div>
-<div id="installation" class="section level1">
-<h1>Installation</h1>
-<p>Currently, this package is only available on Github, so please use <code>devtools</code> to install this package.</p>
-<pre class="r"><code>if (!require(devools)) {
-  
-  install.packages(&#39;devtools&#39;)
-  library(devtools)
-  
-}
+<div id="gsubm" class="section level1">
+<h1>2. <code>gsubm</code></h1>
+<p>The method <code>gsubm</code> is intended to behave the same as <code>gsub()</code> from R: it searches an array based on a pattern and then replaces it with a specified string value.</p>
+<p>Here is how <code>gsubm</code> is defined and how it’s applied in Ruby.</p>
+<pre class="ruby"><code># Defining gsubm()
+class Array
+  def gsubm(pattern, replace)
 
-install_github(&#39;robertschnitman/dm&#39;)</code></pre>
-<pre class="r"><code>library(dm)</code></pre>
+      self.map {|x| x.gsub(pattern, replace)}
+      
+  end
+  
+end
+
+# Example
+## Note that regular expressions are encased in forward slashes. 
+gems = [&quot;Ruby&quot;, &quot;Crystal&quot;, &quot;Emerald&quot;]
+
+p gems.gsubm(/r/, &quot;Z&quot;) </code></pre>
+<pre><code>## [&quot;Ruby&quot;, &quot;CZystal&quot;, &quot;EmeZald&quot;]</code></pre>
 </div>
-<div id="examples" class="section level1">
-<h1>Examples</h1>
-<div id="recode" class="section level2">
-<h2><code>recode()</code></h2>
-<p>The <code>recode()</code> function presents a way to recode variables differently than <a href="https://libguides.library.kent.edu/SPSS/RecodeVariables">SPSS’s method</a>.</p>
-<pre class="r"><code>mtcars$am</code></pre>
-<pre><code>##  [1] 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 1 1 1 1 1 1 1</code></pre>
-<pre class="r"><code>recode(mtcars$am, 0:1, 2:3)</code></pre>
-<pre><code>##  [1] 3 3 3 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 2 2 2 2 2 3 3 3 3 3 3 3</code></pre>
+<div id="detectdetectm" class="section level1">
+<h1>3. <code>detect/detectm</code></h1>
+<p>Similar to R’s <code>grepl()</code>, <code>detect</code> outputs a Boolean value based on a given regular expression pattern, while <code>detectm</code> performs <code>detect</code> over an array.</p>
+<pre class="ruby"><code># detect
+class String
+
+    def detect(pattern)
+    
+        pattern.match?(self)
+        
+    end
+end
+
+# detectm
+class Array
+
+  def detectm(pattern)
+    
+        self.map {|x| x.detect(pattern)}
+        
+    end
+    
+end
+
+# Example
+gems = [&quot;Ruby&quot;, &quot;Crystal&quot;, &quot;Emerald&quot;]
+
+p gems.detectm(/^R/)
+    </code></pre>
+<pre><code>## [true, false, false]</code></pre>
 </div>
-<div id="numna" class="section level2">
-<h2><code>numNA()</code></h2>
-<p><a href="https://www.stata.com/manuals13/m-5missing.pdf">As inspired by Stata</a>, <code>numNA()</code> counts the number of missing values in a dataset; <code>rowNA()</code> counts the number of missing values by row; and <code>colNA()</code> counts the number of missing values by column.</p>
-<pre class="r"><code>numNA(airquality) # Total number of missing values.</code></pre>
-<pre><code>## [1] 44</code></pre>
-<pre class="r"><code>rowNA(airquality) # Number of missing values by row.</code></pre>
-<pre><code>##   [1] 0 0 0 0 2 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 2 0 0 0 0 1 1 1 1 1 1
-##  [38] 0 1 0 0 1 1 0 1 1 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 0 0 0 1 0 0 0 0 0 0 1 0 0
-##  [75] 1 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 0 1 1 0 0 0 1 0 0 0 0
-## [112] 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-## [149] 0 1 0 0 0</code></pre>
-<pre class="r"><code>colNA(airquality) # Number of missing values by column.</code></pre>
-<pre><code>##   Ozone Solar.R    Wind    Temp   Month     Day 
-##      37       7       0       0       0       0</code></pre>
+<div id="extract" class="section level1">
+<h1>4. <code>extract</code></h1>
+<p>Similar to <code>grep(..., value = TRUE)</code> from R, <code>extract</code> will return a value that matches a given regular expression pattern–if a pattern is not found, a <code>nil</code> value (i.e., a missing value, equivalent to R’s <code>NA</code>) is produced.</p>
+<pre class="ruby"><code>class Array
+
+  def extract(pattern)
+    
+        self.map{|x| x[pattern]}
+    
+    end
+    
+end
+
+gems = [&quot;Ruby&quot;, &quot;Crystal&quot;, &quot;Emerald&quot;]
+
+p gems.extract(/^R.*/)</code></pre>
+<pre><code>## [&quot;Ruby&quot;, nil, nil]</code></pre>
 </div>
-<div id="load_libraries" class="section level2">
-<h2><code>load_libraries</code>()</h2>
-<p>The <code>load_libraries()</code> function tests whether a set of libraries has been installed: if not, then it installs and loads them; if already installed, then the function loads the libraries as intended.</p>
-<pre class="r"><code>load_libraries(c(&#39;tidyverse&#39;, &#39;ggformula&#39;, &#39;abind&#39;))</code></pre>
-</div>
-</div>
-<div id="references" class="section level1">
-<h1>References</h1>
-<p>Kent State University. <em>SPSS Recode</em>. <a href="https://libguides.library.kent.edu/SPSS/RecodeVariables" class="uri">https://libguides.library.kent.edu/SPSS/RecodeVariables</a></p>
-<p>Stata. <em>missing()</em>. <a href="https://www.stata.com/manuals13/m-5missing.pdf" class="uri">https://www.stata.com/manuals13/m-5missing.pdf</a></p>
+<div id="conclusion" class="section level1">
+<h1>5. Conclusion</h1>
+<p>I hope you found these methods to be useful and will apply them into your own work! The <code>gsubm</code> method would be particularly beneficial for substituting strings based on a regular expression pattern. R enthusiasts may enjoy <code>detect/detectm</code> for its similarity to <code>grepl()</code>. Finally, R programmers may also like <code>extract</code> to be able to replicate <code>grep()</code> to an extent. Overall, these methods would help in managing arrays of strings by being vectorized versions of eisting ruby methods.</p>
+<p>You may find these methods and more at my <a href="https://github.com/robertschnitman/rs_ruby">Ruby repository <em>RS_Ruby</em> on GitHub.</a></p>
 </div>
 
   
@@ -351,13 +379,13 @@ install_github(&#39;robertschnitman/dm&#39;)</code></pre>
 <div class="prev-next-post pure-g">
   <div class="pure-u-1-24" style="text-align: left;">
     
-    <a href="/2020/03/30/bip-aspr/"><i class="fa fa-chevron-left"></i></a>
+    <a href="/2020/04/04/new-dm/"><i class="fa fa-chevron-left"></i></a>
     
   </div>
   <div class="pure-u-10-24">
     
     <nav class="prev">
-      <a href="/2020/03/30/bip-aspr/">New Book: A Short Introduction to Applied Statistical Programming in R</a>
+      <a href="/2020/04/04/new-dm/">New Package and Book: dm, Statistical Data Management Tools for R</a>
     </nav>
     
   </div>
@@ -366,14 +394,8 @@ install_github(&#39;robertschnitman/dm&#39;)</code></pre>
   </div>
   <div class="pure-u-10-24">
     
-    <nav class="next">
-      <a href="/2020/06/19/vectorized-string-methods-in-ruby/">Vectorized String Methods in Ruby</a>
-    </nav>
-    
   </div>
   <div class="pure-u-1-24" style="text-align: right;">
-    
-    <a href="/2020/06/19/vectorized-string-methods-in-ruby/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>
@@ -394,9 +416,6 @@ install_github(&#39;robertschnitman/dm&#39;)</code></pre>
 
 
 
-<script src="/js/math-code.js"></script>
-  <script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-  
 
 
 </body>

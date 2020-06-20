@@ -1,0 +1,98 @@
+---
+title: Vectorized String Methods in Ruby
+author: Robert Schnitman
+date: '2020-06-19'
+slug: vectorized-string-methods-in-ruby
+categories:
+  - Ruby
+tags:
+  - Ruby
+  - strings
+  - arrays
+description: ''
+topics: []
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<div id="introduction" class="section level1">
+<h1>1. Introduction</h1>
+<p>I have been dabbling with the Ruby programming language for work purposes lately. Overall, I enjoy its concise, fun syntax and string methods such as <code>.chomp</code> to remove new-line characters–and I especially like the compactness of <code>map</code>. However, I believe that I have been too accustomed to R’s default property of functions being vectorized, as I initially had some trouble with handling arrays and employing string methods. Although I could apply <code>map</code> every time I wanted to perform string operations on an array, I eventually came up with a solution: develop vectorized string methods.</p>
+<p>In this post, I will present some string methods that I’ve written that you may find useful. Give them a try!</p>
+</div>
+<div id="gsubm" class="section level1">
+<h1>2. <code>gsubm</code></h1>
+<p>The method <code>gsubm</code> is intended to behave the same as <code>gsub()</code> from R: it searches an array based on a pattern and then replaces it with a specified string value.</p>
+<p>Here is how <code>gsubm</code> is defined and how it’s applied in Ruby.</p>
+<pre class="ruby"><code># Defining gsubm()
+class Array
+  def gsubm(pattern, replace)
+
+      self.map {|x| x.gsub(pattern, replace)}
+      
+  end
+  
+end
+
+# Example
+## Note that regular expressions are encased in forward slashes. 
+gems = [&quot;Ruby&quot;, &quot;Crystal&quot;, &quot;Emerald&quot;]
+
+p gems.gsubm(/r/, &quot;Z&quot;) </code></pre>
+<pre><code>## [&quot;Ruby&quot;, &quot;CZystal&quot;, &quot;EmeZald&quot;]</code></pre>
+</div>
+<div id="detectdetectm" class="section level1">
+<h1>3. <code>detect/detectm</code></h1>
+<p>Similar to R’s <code>grepl()</code>, <code>detect</code> outputs a Boolean value based on a given regular expression pattern, while <code>detectm</code> performs <code>detect</code> over an array.</p>
+<pre class="ruby"><code># detect
+class String
+
+    def detect(pattern)
+    
+        pattern.match?(self)
+        
+    end
+end
+
+# detectm
+class Array
+
+  def detectm(pattern)
+    
+        self.map {|x| x.detect(pattern)}
+        
+    end
+    
+end
+
+# Example
+gems = [&quot;Ruby&quot;, &quot;Crystal&quot;, &quot;Emerald&quot;]
+
+p gems.detectm(/^R/)
+    </code></pre>
+<pre><code>## [true, false, false]</code></pre>
+</div>
+<div id="extract" class="section level1">
+<h1>4. <code>extract</code></h1>
+<p>Similar to <code>grep(..., value = TRUE)</code> from R, <code>extract</code> will return a value that matches a given regular expression pattern–if a pattern is not found, a <code>nil</code> value (i.e., a missing value, equivalent to R’s <code>NA</code>) is produced.</p>
+<pre class="ruby"><code>class Array
+
+  def extract(pattern)
+    
+        self.map{|x| x[pattern]}
+    
+    end
+    
+end
+
+gems = [&quot;Ruby&quot;, &quot;Crystal&quot;, &quot;Emerald&quot;]
+
+p gems.extract(/^R.*/)</code></pre>
+<pre><code>## [&quot;Ruby&quot;, nil, nil]</code></pre>
+</div>
+<div id="conclusion" class="section level1">
+<h1>5. Conclusion</h1>
+<p>I hope you found these methods to be useful and will apply them into your own work! The <code>gsubm</code> method would be particularly beneficial for substituting strings based on a regular expression pattern. R enthusiasts may enjoy <code>detect/detectm</code> for its similarity to <code>grepl()</code>. Finally, R programmers may also like <code>extract</code> to be able to replicate <code>grep()</code> to an extent. Overall, these methods would help in managing arrays of strings by being vectorized versions of eisting ruby methods.</p>
+<p>You may find these methods and more at my <a href="https://github.com/robertschnitman/rs_ruby">Ruby repository <em>RS_Ruby</em> on GitHub.</a></p>
+</div>
