@@ -29,6 +29,8 @@ I am thankful to have the opportunity to work with intellectual minds and their 
 
 * "Mr. S. was very patient, knowledgeable, and displaying a thorough interest with helping in the R studio software. He helped with how to understand and write syntaxes, interpret graphs, Durbin Watson Test, went over the definitions of Independence of Observations, and Homogeneity of Variance. Showed interest and care in helping with understanding my homework." - United States
 
+* "Robert was an excellent tutor, who I highly recommend! He was so helpful in answering my questions and establishing our agenda for each work session. Scheduling our phone appointments was a breeze! Thank you Robert for all your assistance!" - United States
+
 * "Robert is literally a lifesaver. I should have connected with him sooner just to save myself 3 weeks of agony with this whole R business. Do not hesitate to ask for his help." - United States
 
 * "Robert has helped me with Rstudio and Applied Regressions. I feel comfortable asking silly or obvious questions. He creates a healthy learning environment and allows me to grow one step at a time! :)" - United States
