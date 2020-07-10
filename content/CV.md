@@ -24,9 +24,7 @@ Applied Computing (R, Stata, Julia, AutoIt, Ruby), Applied Data Science, Literat
 
 * Improved efficiency by 86% by employing loops via the AutoIt programming language to condense 7 existing scripts into 1 reduced executable program.
 
-* Created an AutoIt function to unnest an array of arrays into a single vector.
-
-* Written over 30 AutoIt functions to manage files and vectorize string functions.
+* Written over 60 AutoIt functions to manage files and vectorize string functions.
 
 * Developed over 20 Ruby methods that vectorize string operations.
 
