@@ -26,7 +26,7 @@ Applied Computing (R, Stata, Julia, AutoIt, Ruby), Applied Data Science, Literat
 
 * Written over 60 AutoIt functions to manage files and vectorize string functions.
 
-* Developed over 20 Ruby methods that vectorize string operations.
+* Developed parameterized Crystal Reports to automate quarterly documents.
 
 ## Statistical Consultant | Self-employed
 *2016 January - Present*
