@@ -310,9 +310,6 @@ devtools::install_github(&#39;robertschnitman/stringops&#39;)</code></pre>
 <div id="section" class="section level1">
 <h1><code>%&amp;%</code></h1>
 <p>As inspired by <a href="https://www.autoitscript.com/autoit3/docs/intro/lang_operators.htm">AutoIt</a>, the <code>%&amp;%</code> (concatenation) operator joins two strings together. This operator facilitates readable code by avoiding the function syntax of the <code>paste/paste0()</code>.</p>
-<p><em>Note: The operator currently is not loaded when installing the package, but it works locally if you assign it <code>string_concat</code>. This is a bug that I’m trying to fix at this time!</em></p>
-<pre class="r"><code># Temporary fix
-`%&amp;%` &lt;- string_concat</code></pre>
 <pre class="r"><code>&#39;a&#39; %&amp;% &#39;b&#39;</code></pre>
 <pre><code>## [1] &quot;ab&quot;</code></pre>
 <pre class="r"><code>&quot;Car: &quot; %&amp;% rownames(mtcars)</code></pre>
