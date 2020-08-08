@@ -6,10 +6,19 @@
     <description>Recent content in strings on Robert Schnitman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/strings/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Package in Progress: stringops</title>
+      <link>/2020/08/08/package-in-progress-stringops/</link>
+      <pubDate>Sat, 08 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/08/08/package-in-progress-stringops/</guid>
+      <description>IntroductionWhen creating syntax, one has to ask themselves about the naming scheme: should I make the functions short for typing efficiency, or long for increased readability? Ruby has the former benefit, but sometimes the methods can be difficult to remember (e.g. is it len or length? Is it swapcase or swap_case?), as there isn’t a consistent naming scheme–however, some functions have synonyms to help those from other programming languages learn Ruby faster (e.</description>
+    </item>
     
     <item>
       <title>Vectorized String Functions in AutoIt</title>

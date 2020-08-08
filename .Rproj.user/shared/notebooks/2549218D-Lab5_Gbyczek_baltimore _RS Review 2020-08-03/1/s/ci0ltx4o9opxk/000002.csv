@@ -1,0 +1,83 @@
+"0","if (!require('twitteR')) install.packages('twitteR');"
+"2","Loading required package: twitteR
+"
+"2","package ‘twitteR’ was built under R version 3.6.3"
+"0","if (!require('NLP')) install.packages('NLP'); "
+"2","Loading required package: NLP
+"
+"0","if (!require('tm')) install.packages('tm'); "
+"2","Loading required package: tm
+"
+"0","if (!require('RColorBrewer')) install.packages('RColorBrewer'); "
+"2","Loading required package: RColorBrewer
+"
+"0","if (!require('wordcloud')) install.packages('wordcloud'); "
+"2","Loading required package: wordcloud
+"
+"0","if (!require('topicmodels')) install.packages('topicmodels'); "
+"2","Loading required package: topicmodels
+"
+"2","package ‘topicmodels’ was built under R version 3.6.3"
+"0","if (!require('SnowballC')) install.packages('SnowballC'); "
+"2","Loading required package: SnowballC
+"
+"0","if (!require('httr')) install.packages('httr'); "
+"2","Loading required package: httr
+"
+"2","package ‘httr’ was built under R version 3.6.3"
+"2","
+Attaching package: ‘httr’
+
+"
+"2","The following object is masked from ‘package:NLP’:
+
+    content
+
+"
+"0","if (!require('Rmpfr')) install.packages('Rmpfr'); "
+"2","Loading required package: Rmpfr
+"
+"2","package ‘Rmpfr’ was built under R version 3.6.3"
+"2","Loading required package: gmp
+"
+"2","package ‘gmp’ was built under R version 3.6.3"
+"2","
+Attaching package: ‘gmp’
+
+"
+"2","The following objects are masked from ‘package:base’:
+
+    %*%, apply, crossprod, matrix, tcrossprod
+
+"
+"2","C code of R package 'Rmpfr': GMP using 64 bits per limb
+
+"
+"2","
+Attaching package: ‘Rmpfr’
+
+"
+"2","The following object is masked from ‘package:gmp’:
+
+    outer
+
+"
+"2","The following objects are masked from ‘package:stats’:
+
+    dbinom, dgamma, dnorm, dpois, pnorm
+
+"
+"2","The following objects are masked from ‘package:base’:
+
+    cbind, pmax, pmin, rbind
+
+"
+"0","library(twitteR)"
+"0","library(NLP)"
+"0","library(tm)"
+"0","library(RColorBrewer)"
+"0","library(wordcloud)"
+"0","library(topicmodels)"
+"0","library(SnowballC)"
+"0","library(httr)"
+"0","library(Rmpfr)"

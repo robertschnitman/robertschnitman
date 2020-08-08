@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.68.1" />
+
+  <title>Package in Progress: stringops &middot; Robert Schnitman</title>
+
+    
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/">About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/services/">Services</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/cv/">Curriculum Vitae</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/post/">Blog Archive</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/tags/">Tags</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/testimonials/">Testimonials</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/resources/">Resources</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/contact/">Contact</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/RobertSchnitman" rel="me" target="_blank"><i class="fab fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/rschnitman" rel="me" target="_blank"><i class="fab fa-linkedin"></i></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/robertschnitman" rel="me" target="_blank"><i class="fab fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small></small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Package in Progress: stringops</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    
+    <i class="fa fa-user fa-fw"></i>
+    <span>Robert Schnitman</span>
+    
+  </div>
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2020-08-08</time>
+  </div>
+
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/strings">strings</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/data-management">data management</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/stringops">stringops</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<div id="introduction" class="section level1">
+<h1>Introduction</h1>
+<p>When creating syntax, one has to ask themselves about the naming scheme: should I make the functions short for typing efficiency, or long for increased readability? Ruby has the former benefit, but sometimes the methods can be difficult to remember (e.g. is it <code>len</code> or <code>length</code>? Is it <code>swapcase</code> or <code>swap_case</code>?), as there isn’t a consistent naming scheme–however, some functions have synonyms to help those from other programming languages learn Ruby faster (e.g. <code>reduce</code> and <code>inject</code> do the same thing). On the other hand, the <code>stringr</code> library has a consisent naming scheme for its functions, but does not have synonyms, so you are forced to learn the <code>stringr</code> way. Thirdly, and perhaps tagentially, R does not have concatenation operator (only functions) like in Ruby and BASIC, which is odd, as many situations require concatenation; so using the <code>paste/paste0()</code> functions can make code less readable. As such, I am introducing a new package to take these considerations into account: <code>stringops</code>, a work-in-progress library consisting of tools for processing strings in R.</p>
+<p>What this package brings are (1) a consistent naming-scheme for functions, (2) synonyms for said functions, and (3) a concatenation operator. The first item benefits users of all skill levels, as it makes certain functions easier to remember while making use of RStudio’s predictive text. The second item is useful when one tires of typing <code>string_cull()</code>, for example, and wishes to use a shorthand to simplify the code (in this case, the shorthand would be <code>cull()</code>). The third item’s benefit is more readable code by avoiding the function syntax of <code>paste/paste0()</code>. Ultimately, these items will hopefully make processing strings in R more fun for the user!</p>
+<p>The following sections detail the installation procedure and a sample of functions from this package.</p>
+</div>
+<div id="installation" class="section level1">
+<h1>Installation</h1>
+<p>This package currently is only available on GitHub–there are no plans to submit this package to CRAN at this time. As such, please use the <code>devtools</code> library to install <code>stringops</code>.</p>
+<pre class="r"><code># install.packages(&#39;devtools&#39;)
+
+devtools::install_github(&#39;robertschnitman/stringops&#39;)</code></pre>
+<pre class="r"><code>library(stringops)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;stringops&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:utils&#39;:
+## 
+##     find</code></pre>
+</div>
+<div id="section" class="section level1">
+<h1><code>%&amp;%</code></h1>
+<p>As inspired by <a href="https://www.autoitscript.com/autoit3/docs/intro/lang_operators.htm">AutoIt</a>, the <code>%&amp;%</code> (concatenation) operator joins two strings together. This operator facilitates readable code by avoiding the function syntax of the <code>paste/paste0()</code>.</p>
+<p><em>Note: The operator currently is not loaded when installing the package, but it works locally if you assign it <code>string_concat</code>. This is a bug that I’m trying to fix at this time!</em></p>
+<pre class="r"><code># Temporary fix
+`%&amp;%` &lt;- string_concat</code></pre>
+<pre class="r"><code>&#39;a&#39; %&amp;% &#39;b&#39;</code></pre>
+<pre><code>## [1] &quot;ab&quot;</code></pre>
+<pre class="r"><code>&quot;Car: &quot; %&amp;% rownames(mtcars)</code></pre>
+<pre><code>##  [1] &quot;Car: Mazda RX4&quot;           &quot;Car: Mazda RX4 Wag&quot;      
+##  [3] &quot;Car: Datsun 710&quot;          &quot;Car: Hornet 4 Drive&quot;     
+##  [5] &quot;Car: Hornet Sportabout&quot;   &quot;Car: Valiant&quot;            
+##  [7] &quot;Car: Duster 360&quot;          &quot;Car: Merc 240D&quot;          
+##  [9] &quot;Car: Merc 230&quot;            &quot;Car: Merc 280&quot;           
+## [11] &quot;Car: Merc 280C&quot;           &quot;Car: Merc 450SE&quot;         
+## [13] &quot;Car: Merc 450SL&quot;          &quot;Car: Merc 450SLC&quot;        
+## [15] &quot;Car: Cadillac Fleetwood&quot;  &quot;Car: Lincoln Continental&quot;
+## [17] &quot;Car: Chrysler Imperial&quot;   &quot;Car: Fiat 128&quot;           
+## [19] &quot;Car: Honda Civic&quot;         &quot;Car: Toyota Corolla&quot;     
+## [21] &quot;Car: Toyota Corona&quot;       &quot;Car: Dodge Challenger&quot;   
+## [23] &quot;Car: AMC Javelin&quot;         &quot;Car: Camaro Z28&quot;         
+## [25] &quot;Car: Pontiac Firebird&quot;    &quot;Car: Fiat X1-9&quot;          
+## [27] &quot;Car: Porsche 914-2&quot;       &quot;Car: Lotus Europa&quot;       
+## [29] &quot;Car: Ford Pantera L&quot;      &quot;Car: Ferrari Dino&quot;       
+## [31] &quot;Car: Maserati Bora&quot;       &quot;Car: Volvo 142E&quot;</code></pre>
+</div>
+<div id="string_cull" class="section level1">
+<h1><code>string_cull</code>()</h1>
+<p>As inspired by Ruby, the function <code>string_cull()</code> culls (or extracts) pattern matches from strings–if a pattern is not found, then <code>NA</code> is returned. The synonyms for this function are <code>s_cull()</code>, <code>cull()</code>, <code>string_extract()</code>, <code>s_extract()</code>, and <code>extract()</code>.</p>
+<pre class="r"><code># extract beginning &quot;M&quot; from each element.
+string_cull(rownames(mtcars), &#39;^M&#39;)</code></pre>
+<pre><code>##  [1] &quot;M&quot; &quot;M&quot; NA  NA  NA  NA  NA  &quot;M&quot; &quot;M&quot; &quot;M&quot; &quot;M&quot; &quot;M&quot; &quot;M&quot; &quot;M&quot; NA  NA  NA  NA  NA 
+## [20] NA  NA  NA  NA  NA  NA  NA  NA  NA  NA  NA  &quot;M&quot; NA</code></pre>
+<pre class="r"><code># extract elements in full that begin with &quot;M&quot;.
+string_cull(rownames(mtcars), &quot;^M.*&quot;)</code></pre>
+<pre><code>##  [1] &quot;Mazda RX4&quot;     &quot;Mazda RX4 Wag&quot; NA              NA             
+##  [5] NA              NA              NA              &quot;Merc 240D&quot;    
+##  [9] &quot;Merc 230&quot;      &quot;Merc 280&quot;      &quot;Merc 280C&quot;     &quot;Merc 450SE&quot;   
+## [13] &quot;Merc 450SL&quot;    &quot;Merc 450SLC&quot;   NA              NA             
+## [17] NA              NA              NA              NA             
+## [21] NA              NA              NA              NA             
+## [25] NA              NA              NA              NA             
+## [29] NA              NA              &quot;Maserati Bora&quot; NA</code></pre>
+</div>
+<div id="string_find" class="section level1">
+<h1><code>string_find()</code></h1>
+<p>The function “string_find” acts similar to <code>grep(string, x, value = TRUE)</code>: it subsets a vector to found pattern matches, returning the full element. The synonyms for this function are <code>s_find()</code>, and <code>find()</code>.</p>
+<pre class="r"><code>string_find(rownames(mtcars), &#39;^M&#39;)</code></pre>
+<pre><code>##  [1] &quot;Mazda RX4&quot;     &quot;Mazda RX4 Wag&quot; &quot;Merc 240D&quot;     &quot;Merc 230&quot;     
+##  [5] &quot;Merc 280&quot;      &quot;Merc 280C&quot;     &quot;Merc 450SE&quot;    &quot;Merc 450SL&quot;   
+##  [9] &quot;Merc 450SLC&quot;   &quot;Maserati Bora&quot;</code></pre>
+</div>
+<div id="conclusion" class="section level1">
+<h1>Conclusion</h1>
+<p>Hopefully, this package’s API, syononyms, and concatenation operator make processing strings in R more fun for you! You can find these functions and more at the <a href="https://github.com/robertschnitman/stringops">Github repository, <code>stringops</code></a>.</p>
+</div>
+
+  
+  
+
+
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/2020/06/20/vectorized-string-functions-in-autoit/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/2020/06/20/vectorized-string-functions-in-autoit/">Vectorized String Functions in AutoIt</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
+
+  
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+<script src="/js/menus.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
+

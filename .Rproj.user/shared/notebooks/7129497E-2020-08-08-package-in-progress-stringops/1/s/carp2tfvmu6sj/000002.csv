@@ -1,0 +1,11 @@
+"0","library(stringops)
+"
+"2","
+Attaching package: ‘stringops’
+
+"
+"2","The following object is masked from ‘package:utils’:
+
+    find
+
+"
