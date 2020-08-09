@@ -13,8 +13,8 @@ Let's discuss how I may help you manage, model, and visualize your data. You may
 
 * Quantitative Methods: descriptive statistics, regression analysis, and model diagnostics.
 
-* Statistical/Numerical Programming: R, Stata, Julia, PSPP, gretl.
+* Programming: R, Stata, Julia, AutoIt, Ruby.
 
 * Database Management: Microsoft Access, SQL.
 
-* Dashboard Reporting: R Shiny, Microsoft Power BI, Tableau.
+* Reporting: R Markdown, R Shiny, Microsoft Power BI, Crystal Reports.

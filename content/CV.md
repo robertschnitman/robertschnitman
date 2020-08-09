@@ -88,6 +88,8 @@ Applied Computing (R, Stata, Julia, AutoIt, Ruby), Applied Data Science, Literat
 
 # Publications 
 
+1. 2020 Schnitman, R. Handbook for the `stringops` R Package. https://rs-stringops.netlify.app/
+
 1. 2020 Schnitman, R. Handbook for the `dm` R Package. https://rs-dm.netlify.app/
 
 1. 2020 Schnitman, R. A Short Introduction to Applied Statistical Programming in R. https://rs-aspr.netlify.app/
@@ -128,6 +130,8 @@ Applied Computing (R, Stata, Julia, AutoIt, Ruby), Applied Data Science, Literat
 
 # Software
 
+1. 2020 Schnitman, R. stringops: String-processing tools and synonyms for R. https://github.com/robertschnitman/stringops
+
 1. 2020 Schnitman, R. dm: Data management tools for R as inspired by Stata, SPSS, and other software. https://github.com/robertschnitman/dm
 
 1. 2020 Schnitman, R. Price Analysis of Select Funds, 2007-2019. https://robertschnitman.shinyapps.io/funds/
@@ -143,8 +147,6 @@ Applied Computing (R, Stata, Julia, AutoIt, Ruby), Applied Data Science, Literat
 1. 2017 Schnitman, R. diagnoser: Residual Diagnostic Tools. https://github.com/robertschnitman/diagnoser
 
 # Works-in-Progress
-
-1. 2020 Schnitman, R. stringops: Tools for processing strings in R. https://github.com/robertschnitman/stringops
 
 1. 2019 Schnitman, R. afpp: Applied Functional Programming in Python. https://github.com/robertschnitman/afpp
 
