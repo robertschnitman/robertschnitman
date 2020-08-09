@@ -1,8 +1,8 @@
 ---
-title: 'Package in Progress: stringops'
+title: 'New Package and Book: stringops, String-Processing Tools and Synonyms for R'
 author: Robert Schnitman
 date: '2020-08-08'
-slug: package-in-progress-stringops
+slug: new-package-stringops
 categories:
   - R
 tags:
@@ -19,7 +19,7 @@ When creating syntax, one has to ask themselves about the naming scheme: should 
 
 What this package brings are (1) a consistent naming-scheme for functions, (2) synonyms for said functions, and (3) a concatenation operator. The first item benefits users of all skill levels, as it makes certain functions easier to remember while making use of RStudio's predictive text. The second item is useful when one tires of typing `string_cull()`, for example, and wishes to use a shorthand to simplify the code (in this case, the shorthand would be `cull()`). The third item's benefit is more readable code by avoiding the function syntax of `paste/paste0()`. Ultimately, these items will hopefully make processing strings in R more fun for the user!
 
-The following sections detail the installation procedure and a sample of functions from this package. The documentation for this package can be found at https://rs-stringops.netlify.app/.
+The following sections detail the installation procedure and a sample of functions from this package. The documentation for this library is at https://rs-stringops.netlify.app/.
 
 # Installation
 This package currently is only available on GitHub--there are no plans to submit this package to CRAN at this time. As such, please use the `devtools` library to install `stringops`.

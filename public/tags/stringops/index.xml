@@ -12,11 +12,11 @@
     
     
     <item>
-      <title>Package in Progress: stringops</title>
-      <link>/2020/08/08/package-in-progress-stringops/</link>
+      <title>New Package and Book: stringops, String-Processing Tools and Synonyms for R</title>
+      <link>/2020/08/08/new-package-stringops/</link>
       <pubDate>Sat, 08 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/08/08/package-in-progress-stringops/</guid>
+      <guid>/2020/08/08/new-package-stringops/</guid>
       <description>IntroductionWhen creating syntax, one has to ask themselves about the naming scheme: should I make the functions short for typing efficiency, or long for increased readability? Ruby has the former benefit, but sometimes the methods can be difficult to remember (e.g. is it len or length? Is it swapcase or swap_case?), as there isn’t a consistent naming scheme–however, some functions have synonyms to help those from other programming languages learn Ruby faster (e.</description>
     </item>
     
