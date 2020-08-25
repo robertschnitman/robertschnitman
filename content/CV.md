@@ -53,7 +53,7 @@ Applied Computing (R, Stata, Julia, AutoIt, Ruby), Applied Data Science, Literat
 ## Research Analyst | Collin College
 *2018 January - 2019 April*
 
-* Increased data cleaning efficiency by 67\% by creating an R script with 3 custom functions to merge, deduplicate, and correct discrepancies.
+* Increased data cleaning efficiency by 67% by creating an R script with 3 custom functions to merge, deduplicate, and correct discrepancies.
       
 * Refactored existing R code for classroom utilization graphs to reduce the number of scripts from 12 to 3, producing alongside a Power BI equivalent.
       
@@ -67,7 +67,7 @@ Applied Computing (R, Stata, Julia, AutoIt, Ruby), Applied Data Science, Literat
 
 * Performed summary computations on 3 years of transactional data with R, SQL, and Datameer to track product-level sales and costs.
 
-* Assisted in pricing experiment efforts that resulted in a 40\% increase in MUNS across 25,000 products, with 33\% being the expectation.
+* Assisted in pricing experiment efforts that resulted in a 40% increase in MUNS across 25,000 products, with 33% being the expectation.
 
 * Analyzed two weeks of hourly conversion rates for 4,000 products to determine the company-wide impact of mid-week and weekend events.
 
