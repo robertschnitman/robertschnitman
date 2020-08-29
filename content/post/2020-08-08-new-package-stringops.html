@@ -56,13 +56,55 @@ devtools::install_github(&#39;robertschnitman/stringops&#39;)</code></pre>
 </div>
 <div id="string_cull" class="section level1">
 <h1><code>string_cull</code>()</h1>
-<p>As inspired by Ruby, the function <code>string_cull()</code> culls (or extracts) pattern matches from strings–if a pattern is not found, then <code>NA</code> is returned. The synonyms for this function are <code>s_cull()</code>, <code>cull()</code>, <code>string_extract()</code>, <code>s_extract()</code>, and <code>extract()</code>.</p>
+<p>As inspired by Ruby, the function <code>string_cull()</code> culls (or extracts) pattern matches from strings–if a pattern is not found, then <code>NA</code> is returned. The synonyms for this function are <code>s_cull()</code>, and <code>cull()</code>. To get all matches, you can set <code>get_all = TRUE</code>.</p>
 <pre class="r"><code># extract beginning &quot;M&quot; from each element.
 string_cull(rownames(mtcars), &#39;^M&#39;)</code></pre>
 <pre><code>##  [1] &quot;M&quot; &quot;M&quot; NA  NA  NA  NA  NA  &quot;M&quot; &quot;M&quot; &quot;M&quot; &quot;M&quot; &quot;M&quot; &quot;M&quot; &quot;M&quot; NA  NA  NA  NA  NA 
 ## [20] NA  NA  NA  NA  NA  NA  NA  NA  NA  NA  NA  &quot;M&quot; NA</code></pre>
-<pre class="r"><code># extract elements in full that begin with &quot;M&quot;.
-string_cull(rownames(mtcars), &quot;^M.*&quot;)</code></pre>
+<pre class="r"><code># extract beginning &quot;M&quot; and any &quot;a&quot;.
+# By default, multiple matches are separated by a comma.
+string_cull(rownames(mtcars), &quot;^M|a&quot;, get_all = TRUE, collapse = &#39;,&#39;)</code></pre>
+<pre><code>##  [1] &quot;M,a,a&quot;   &quot;M,a,a,a&quot; &quot;a&quot;       NA        &quot;a&quot;       &quot;a,a&quot;     NA       
+##  [8] &quot;M&quot;       &quot;M&quot;       &quot;M&quot;       &quot;M&quot;       &quot;M&quot;       &quot;M&quot;       &quot;M&quot;      
+## [15] &quot;a,a&quot;     &quot;a&quot;       &quot;a&quot;       &quot;a&quot;       &quot;a&quot;       &quot;a,a&quot;     &quot;a,a&quot;    
+## [22] &quot;a&quot;       &quot;a&quot;       &quot;a,a&quot;     &quot;a&quot;       &quot;a&quot;       NA        &quot;a&quot;      
+## [29] &quot;a,a&quot;     &quot;a&quot;       &quot;M,a,a,a&quot; NA</code></pre>
+</div>
+<div id="string_spot" class="section level1">
+<h1><code>string_spot()</code></h1>
+<p>The function <code>string_spot()</code> acts similar to <code>grep(string, x, value = TRUE)</code>: it subsets a vector to found pattern matches, returning the full element. The synonyms for this function are <code>s_spot()</code>, and <code>spot()</code>. Optional inputs get passed to <code>grep()</code>.</p>
+<pre class="r"><code># Get elements that start with an &quot;M&quot;.
+string_spot(rownames(mtcars), &#39;^M&#39;)</code></pre>
+<pre><code>##  [1] &quot;Mazda RX4&quot;     &quot;Mazda RX4 Wag&quot; &quot;Merc 240D&quot;     &quot;Merc 230&quot;     
+##  [5] &quot;Merc 280&quot;      &quot;Merc 280C&quot;     &quot;Merc 450SE&quot;    &quot;Merc 450SL&quot;   
+##  [9] &quot;Merc 450SLC&quot;   &quot;Maserati Bora&quot;</code></pre>
+<pre class="r"><code># Get elements that do NOT start with an &quot;M&quot;.
+string_spot(rownames(mtcars), &#39;^M&#39;, invert = TRUE)</code></pre>
+<pre><code>##  [1] &quot;Datsun 710&quot;          &quot;Hornet 4 Drive&quot;      &quot;Hornet Sportabout&quot;  
+##  [4] &quot;Valiant&quot;             &quot;Duster 360&quot;          &quot;Cadillac Fleetwood&quot; 
+##  [7] &quot;Lincoln Continental&quot; &quot;Chrysler Imperial&quot;   &quot;Fiat 128&quot;           
+## [10] &quot;Honda Civic&quot;         &quot;Toyota Corolla&quot;      &quot;Toyota Corona&quot;      
+## [13] &quot;Dodge Challenger&quot;    &quot;AMC Javelin&quot;         &quot;Camaro Z28&quot;         
+## [16] &quot;Pontiac Firebird&quot;    &quot;Fiat X1-9&quot;           &quot;Porsche 914-2&quot;      
+## [19] &quot;Lotus Europa&quot;        &quot;Ford Pantera L&quot;      &quot;Ferrari Dino&quot;       
+## [22] &quot;Volvo 142E&quot;</code></pre>
+<p>Other variations of <code>string_spot()</code> are</p>
+<ul>
+<li><p><code>string_spoti()</code>, which returns the indices of matches (optional inputs get passed to <code>grep()</code>);</p></li>
+<li><p><code>string_spotl()</code>, which returns <code>TRUE</code> if a match is found and <code>FALSE</code> otherwise (optional inputs get passed to <code>grepl()</code>); and</p></li>
+<li><p><code>string_spotm()</code>, which returns the element in full if a match is found and <code>NA</code> otherwise (optional inputs get pased to <code>grepl()</code>.</p></li>
+</ul>
+<p>The three functions above have the <code>s_*()/*()</code> synonym pattern, as well.</p>
+<pre class="r"><code># Get indices of matches.
+string_spoti(rownames(mtcars), &#39;^M&#39;)</code></pre>
+<pre><code>##  [1]  1  2  8  9 10 11 12 13 14 31</code></pre>
+<pre class="r"><code># Detect whether a match is found.
+string_spotl(rownames(mtcars), &#39;^M&#39;)</code></pre>
+<pre><code>##  [1]  TRUE  TRUE FALSE FALSE FALSE FALSE FALSE  TRUE  TRUE  TRUE  TRUE  TRUE
+## [13]  TRUE  TRUE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+## [25] FALSE FALSE FALSE FALSE FALSE FALSE  TRUE FALSE</code></pre>
+<pre class="r"><code># Get matching element in full.
+string_spotm(rownames(mtcars), &#39;^M&#39;)</code></pre>
 <pre><code>##  [1] &quot;Mazda RX4&quot;     &quot;Mazda RX4 Wag&quot; NA              NA             
 ##  [5] NA              NA              NA              &quot;Merc 240D&quot;    
 ##  [9] &quot;Merc 230&quot;      &quot;Merc 280&quot;      &quot;Merc 280C&quot;     &quot;Merc 450SE&quot;   
@@ -71,14 +113,6 @@ string_cull(rownames(mtcars), &quot;^M.*&quot;)</code></pre>
 ## [21] NA              NA              NA              NA             
 ## [25] NA              NA              NA              NA             
 ## [29] NA              NA              &quot;Maserati Bora&quot; NA</code></pre>
-</div>
-<div id="string_spot" class="section level1">
-<h1><code>string_spot()</code></h1>
-<p>The function <code>string_spot()</code> acts similar to <code>grep(string, x, value = TRUE)</code>: it subsets a vector to found pattern matches, returning the full element. The synonyms for this function are <code>s_spot()</code>, and <code>spot()</code>.</p>
-<pre class="r"><code>string_spot(rownames(mtcars), &#39;^M&#39;)</code></pre>
-<pre><code>##  [1] &quot;Mazda RX4&quot;     &quot;Mazda RX4 Wag&quot; &quot;Merc 240D&quot;     &quot;Merc 230&quot;     
-##  [5] &quot;Merc 280&quot;      &quot;Merc 280C&quot;     &quot;Merc 450SE&quot;    &quot;Merc 450SL&quot;   
-##  [9] &quot;Merc 450SLC&quot;   &quot;Maserati Bora&quot;</code></pre>
 </div>
 <div id="conclusion" class="section level1">
 <h1>Conclusion</h1>
