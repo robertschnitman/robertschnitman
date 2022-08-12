@@ -1,0 +1,512 @@
+}
+```{r}
+summ_strings <- data.frame(Function = c('paste(x, y)/paste0(x, y)',
+"strsplit(x, split = ' ')",
+'gsub(pattern, replacement, x)',
+'grep/grepl(pattern, vector)'),
+Description = c('Concatenation of x and y.',
+'Split a string by a splitting character.',
+'Substitute a portion of a string vector based on a given pattern.',
+'Pattern match a string and output its position OR Boolean (i.e. TRUE/FALSE).'),
+Example = c("paste('a', 'b'); paste0('a', 'b')",
+"x <- c('This is a sentence.',
+'This is another sentence.',
+'This is yet another sentence.')
+\n strsplit(x, split = ' ')",
+"gsub('sentence', 'drink', x)",
+"grep('^M', rownames(mtcars), value = TRUE)"))
+summ(summ_strings, 'Summary of String Functions')
+blogdown:::serve_site()
+blogdown:::serve_site()
+blogdown:::serve_site()
+funs <- data.frame(Function = c('lapply(X, FUN)',
+'sapply(X, FUN)',
+'apply(X, MARGIN, FUN)',
+'vapply(X, FUN, FUN.VALUE)',
+'mapply(FUN, ...)',
+'Map(f, ...)',
+'rapply(object, f, classes)',
+'aggregate(formula, data, FUN)'),
+Description = c('Compute a function over data and output a list.',
+'Compute a function over data and output a matrix (sometimes a list, depending on the function being passed).',
+'Compute a function row-wise or column-wise.',
+'Compute a function over data and check if the output matches a pre-specified type.',
+'Compute a function over one or more data inputs and output an array (vector or matrix).',
+'Compute a function over one or more data inputs and output a list.',
+'Recursively compute a function over data and output a vector or list.',
+'Generate grouped computations and output a data frame.'),
+Example     = c('lapply(mtcars, mean)',
+'sapply(mtcars, mean)',
+'apply(mtcars, 1, mean); apply(mtcars, 2, mean)',
+'vapply(mtcars, mean, numeric(1))',
+'mapply(rbind, mtcars\\$mpg, mtcars\\$wt)',
+'Map(rbind, mtcars\\$mpg, mtcars\\$wt)',
+'rapply(iris, mean, classes = "numeric")',
+'aggregate(mpg ~ gear, mtcars, mean)'))
+#summ_funs <- summ(funs, caption = 'Summary of Functionals')
+summ_funs <- flextable(funs) %>%
+set_caption(caption = 'Summary of Functionals')
+library(knitr)
+library(kableExtra)
+library(flextable)
+# Summary Table
+summ <- function(data, caption) {
+summ_dat <- kable(data,
+booktabs = TRUE,
+caption  = caption,
+linesep  = '') %>%
+kable_styling(full_width    = TRUE,
+latex_options = "hold_position") %>%
+row_spec(1:(NROW(data)-1),
+hline_after = TRUE)
+summ_dat
+}
+funs <- data.frame(Function = c('lapply(X, FUN)',
+'sapply(X, FUN)',
+'apply(X, MARGIN, FUN)',
+'vapply(X, FUN, FUN.VALUE)',
+'mapply(FUN, ...)',
+'Map(f, ...)',
+'rapply(object, f, classes)',
+'aggregate(formula, data, FUN)'),
+Description = c('Compute a function over data and output a list.',
+'Compute a function over data and output a matrix (sometimes a list, depending on the function being passed).',
+'Compute a function row-wise or column-wise.',
+'Compute a function over data and check if the output matches a pre-specified type.',
+'Compute a function over one or more data inputs and output an array (vector or matrix).',
+'Compute a function over one or more data inputs and output a list.',
+'Recursively compute a function over data and output a vector or list.',
+'Generate grouped computations and output a data frame.'),
+Example     = c('lapply(mtcars, mean)',
+'sapply(mtcars, mean)',
+'apply(mtcars, 1, mean); apply(mtcars, 2, mean)',
+'vapply(mtcars, mean, numeric(1))',
+'mapply(rbind, mtcars\\$mpg, mtcars\\$wt)',
+'Map(rbind, mtcars\\$mpg, mtcars\\$wt)',
+'rapply(iris, mean, classes = "numeric")',
+'aggregate(mpg ~ gear, mtcars, mean)'))
+#summ_funs <- summ(funs, caption = 'Summary of Functionals')
+summ_funs <- flextable(funs) %>%
+set_caption(caption = 'Summary of Functionals')
+summ_funs
+blogdown:::serve_site()
+blogdown:::serve_site()
+blogdown:::serve_site()
+blogdown:::serve_site()
+blogdown:::serve_site()
+blogdown:::serve_site()
+blogdown:::serve_site()
+blogdown:::serve_site()
+### Stance Analysis of Welterweight winners
+### 1. Load libraries
+library(tidyverse)
+library(magrittr)
+### 2. Import data.
+csv_files  <- grep('\\.csv', list.files(), value = TRUE)
+data <- map(csv_files, ~ read_csv(.x)) %>%
+set_names(csv_files) %>%
+map2(csv_files, ~ mutate(.x, file_name = .y))
+### 3. Filter for welterweights.
+ww <- data$preprocessed_data.csv %>%
+select(Winner,
+title_bout,
+no_of_rounds,
+matches('Stance|age|Weight|Height', ignore.case = FALSE),
+weight_class_Welterweight) %>%
+filter(weight_class_Welterweight == 1)
+### 4. Welterweight profiles: stances
+stance_vs <- ww %>%
+select(matches('_Stance')) %>%
+map(~ with(ww, table(Winner, .x)))
+for (i in 1:length(stance_vs)) {
+names(attr(stance_vs[[i]], 'dimnames'))[2] <- names(stance_vs)[i]
+}
+stance_vs
+data
+blogdown:::new_post_addin()
+### Stance Analysis of Welterweight Winners
+### 1. Load libraries
+library(tidyverse)
+library(magrittr)
+library(afp) # devtools::install_github('robertschnitman/afp')
+### Stance Analysis of Welterweight Winners
+### 1. Load libraries
+library(tidyverse)
+library(magrittr)
+library(afp) # devtools::install_github('robertschnitman/afp')
+rm(list = ls()
+### 2. Import data.
+data <- read_csv('data/preprocessed_data.csv')
+library(afp)
+### Stance Analysis of Welterweight Winners
+### 1. Load libraries
+library(tidyverse)
+library(magrittr)
+library(afp)
+### 2. Import data.
+data <- read_csv('data/preprocessed_data.csv')
+### Stance Analysis of Welterweight Winners
+### 1. Load libraries
+library(tidyverse)
+library(magrittr)
+# devtools::install_github('robertschnitman/afp')
+library(afp)
+### 2. Import data.
+data <- read_csv('data/preprocessed_data.csv')
+### 2. Import data.
+data <- read_csv('data/preprocessed_data.csv')
+### 2. Import data.
+data <- read_csv('data/preprocessed_data.csv')
+### 3. Filter for welterweights.
+ww <- data$preprocessed_data.csv %>%
+select(Winner,
+title_bout,
+no_of_rounds,
+matches('Stance|age|Weight|Height', ignore.case = FALSE),
+weight_class_Welterweight) %>%
+filter(weight_class_Welterweight == 1)
+data
+### 3. Filter for welterweights.
+ww <- data %>%
+select(Winner,
+title_bout,
+no_of_rounds,
+matches('Stance|age|Weight|Height', ignore.case = FALSE),
+weight_class_Welterweight) %>%
+filter(weight_class_Welterweight == 1)
+### 4. Welterweight profiles: stances
+stance_vs <- ww %>%
+select(matches('_Stance')) %>%
+map(~ with(ww, table(Winner, .x)))
+for (i in 1:length(stance_vs)) {
+names(attr(stance_vs[[i]], 'dimnames'))[2] <- names(stance_vs)[i]
+}
+stance_vs2 <- stance_vs %>%
+map(as.data.frame) %>%
+map(~ pivot_wider(.x,
+names_from = names(.x)[2],
+values_from = names(.x)[3]))
+stance_vs_props <- stance_vs %>%
+map(prop.table) %>%
+map(as.data.frame) %>%
+map(~ pivot_wider(.x,
+names_from = names(.x)[2],
+values_from = names(.x)[3]))
+# Pairbind_df is from the afp library
+stance_vs_tables <- map2(stance_vs2, stance_vs_props, pairbind_df)
+installed.packages()
+k <- installed.packages()
+str(k)
+k$Package
+head(k[['Package']])
+head(k[, 1
+])
+head(k['Package'])
+names(k)
+colnames(k)
+k[, 'Package']
+stance_vs_tables
+# 1. Load libraries
+## CRAN
+libs <- c('tidyverse', 'magrittr', 'flextable')
+for (i in libs) {
+if (!require(i, character.only = TRUE)) {
+install.packages(i)
+library(i, character.only = TRUE)
+}
+}
+## Github
+if (!'afp' %in% installed.packages()[, 'Package']) {
+devtools::install_github('robertschnitman/afp')
+library(afp)
+}
+# 1. Load libraries
+## CRAN
+libs <- c('tidyverse', 'magrittr', 'flextable')
+for (i in libs) {
+if (!require(i, character.only = TRUE)) {
+install.packages(i)
+library(i, character.only = TRUE)
+}
+}
+## Github
+if (!'afp' %in% installed.packages()[, 'Package']) {
+devtools::install_github('robertschnitman/afp')
+library(afp)
+}
+### 2. Import data.
+data <- read_csv('data/preprocessed_data.csv')
+### 3. Filter for welterweights.
+ww <- data %>%
+select(Winner,
+title_bout,
+no_of_rounds,
+matches('Stance|age|Weight|Height', ignore.case = FALSE),
+weight_class_Welterweight) %>%
+filter(weight_class_Welterweight == 1)
+stance_vs_tables
+View(data)
+Sys.Time
+Sys.time()
+Sys.Date()
+stance_vs_tables2
+stance_vs_tables
+View(ww)
+blogdown:::serve_site()
+blogdown:::serve_site()
+blogdown:::new_post_addin()
+blogdown:::serve_site()
+blogdown:::serve_site()
+blogdown:::serve_site()
+blogdown:::serve_site()
+blogdown:::serve_site()
+library(knitr)
+library(kableExtra)
+library(flextable)
+# Summary Table
+summ <- function(data, caption) {
+summ_dat <- kable(data,
+booktabs = TRUE,
+caption  = caption,
+linesep  = '') %>%
+kable_styling(full_width    = TRUE,
+latex_options = "hold_position") %>%
+row_spec(1:(NROW(data)-1),
+hline_after = TRUE)
+summ_dat
+}
+funs <- data.frame(Function = c('lapply(X, FUN)',
+'sapply(X, FUN)',
+'apply(X, MARGIN, FUN)',
+'vapply(X, FUN, FUN.VALUE)',
+'mapply(FUN, ...)',
+'Map(f, ...)',
+'rapply(object, f, classes)',
+'tapply(X, INDEX, FUN)',
+'aggregate(formula, data, FUN)'),
+Description = c('Compute a function over data and output a list.',
+'Compute a function over data and output a matrix (sometimes a list, depending on the function being passed).',
+'Compute a function row-wise or column-wise.',
+'Compute a function over data and check if the output matches a pre-specified type.',
+'Compute a function over one or more data inputs and output an array (vector or matrix).',
+'Compute a function over one or more data inputs and output a list.',
+'Recursively compute a function over data and output a vector or list.',
+'Generate grouped computations and output a vector.',
+'Generate grouped computations and output a data frame.'),
+Example     = c('lapply(mtcars, mean)',
+'sapply(mtcars, mean)',
+'apply(mtcars, 1, mean); apply(mtcars, 2, mean)',
+'vapply(mtcars, mean, numeric(1))',
+'mapply(rbind, mtcars\\$mpg, mtcars\\$wt)',
+'Map(rbind, mtcars\\$mpg, mtcars\\$wt)',
+'rapply(iris, mean, classes = "numeric")',
+'with(iris, tapply(Sepal.Length, Species, mean))',
+'aggregate(mpg ~ gear, mtcars, mean)'))
+#summ_funs <- summ(funs, caption = 'Summary of Functionals')
+summ_funs <- flextable(funs) %>%
+set_caption(caption = 'Summary of Functionals') %>%
+theme_vanilla() %>%
+autofit()
+summ_funs
+blogdown:::serve_site()
+blogdown:::serve_site()
+blogdown:::serve_site()
+blogdown:::serve_site()
+blogdown:::serve_site()
+blogdown:::serve_site()
+blogdown:::serve_site()
+blogdown::serve_site()
+blogdown::serve_site()
+blogdown::serve_site()
+blogdown::serve_site()
+blogdown::serve_site()
+blogdown:::new_post_addin()
+blogdown:::serve_site()
+gems <- c("Ruby", "Crystal", "Emerald")
+gsub('r', 'Z', gems)
+blogdown:::new_post_addin()
+blogdown::serve_site()
+blogdown:::serve_site()
+blogdown::serve_site()
+blogdown::serve_site()
+blogdown::serve_site()
+blogdown::serve_site()
+blogdown::serve_site()
+blogdown:::serve_site()
+blogdown:::serve_site()
+if (!require('twitteR')) install.packages('twitteR');
+if (!require('NLP')) install.packages('NLP');
+if (!require('tm')) install.packages('tm');
+if (!require('RColorBrewer')) install.packages('RColorBrewer');
+if (!require('wordcloud')) install.packages('wordcloud');
+if (!require('topicmodels')) install.packages('topicmodels');
+if (!require('SnowballC')) install.packages('SnowballC');
+if (!require('httr')) install.packages('httr');
+if (!require('Rmpfr')) install.packages('Rmpfr');
+library(twitteR)
+library(NLP)
+library(tm)
+library(RColorBrewer)
+library(wordcloud)
+library(topicmodels)
+library(SnowballC)
+library(httr)
+library(Rmpfr)
+#load credentials
+consumer_key <- "ydFzt9FACBu9GOR8MBpi2fRR2"
+consumer_secret<- "yKn0RVDCrZhqBhiTQf81n0js5lDeVXO1qO0KcTgn7uzRsF5lu3"
+access_token <- "1267600607143170049-wd3gA4Psj229yz3zugvfXkr9vhTW83"
+access_secret <- "438RNfdN7G3jqa5itnCJm5ahWlvzqlDniJcqHBeh1N6Ra"
+#set up to authenticate
+setup_twitter_oauth(consumer_key,consumer_secret,access_token,access_secret)
+# Grab latest tweets
+tweet_text <- function(x) x$getText() # getText() function use for extract the text content of tweets
+# Submit a search query (terms separated by "+") and get a return set of data (corpus).
+tweet_corpus <- function(search, n = 5000,since = "2020-07-24", until = "2020-07-31", ...) {
+payload <- searchTwitter(search, n = n, ...)
+sapply(payload, tweet_text)
+}
+# apply() function takes list, vector or data frame as input and gives output in vector or matrix.
+tweets <- tweet_corpus("Baltimore", n = 5000, lang = 'en')
+tweets
+# Save your corpus (because you're limited in how often you can do this for free!)
+saveRDS(tweets, file = "tweets.Rds", compress = 'xz')
+head(tweets, 50)
+# Here we pre-process the data in some standard ways.
+tweets <- iconv(tweets, to = "ASCII", sub = " ")  # Convert to basic ASCII text to avoid silly characters
+tweets [1:50]
+tweets <- tolower(tweets)  # Make everything consistently lower case
+tweets <- gsub("rt", " ", tweets)  # Remove the "RT" (retweet) so duplicates are duplicates
+tweets <- gsub("@\\w+", " ", tweets)  # Remove user names (all proper names if you're wise!)
+tweets <- gsub("http.+ |http.+$", " ", tweets)  # Remove links
+tweets <- gsub("[[:punct:]]", " ", tweets)  # Remove punctuation
+tweets <- gsub("[ |\t]{2,}", " ", tweets)  # Remove tabs
+tweets <- gsub("amp", " ", tweets)  # "&" is "&amp" in HTML, so after punctuation removed ...
+tweets <- gsub("^ ", "", tweets)  # Leading blanks
+tweets <- gsub(" $", "", tweets)  # Lagging blanks
+tweets <- gsub(" +", " ", tweets) # General spaces (should just do all whitespaces no?)
+tweets <- unique(tweets)  # Now get rid of duplicates!
+corpus <- Corpus(VectorSource(tweets))  # Create corpus object
+# Remove English stop words. This could be greatly expanded!
+corpus <- tm_map(corpus, removeWords, stopwords("english"))
+# Remove numbers.
+corpus <- tm_map(corpus, removeNumbers)
+# Stem the words. stemming refers to a crude process of stripping affixes based on a set of heuristics with the hope of correctly achieving the goal to reduce inflections or variant forms. After the process, words are stripped to become stems.
+corpus <- tm_map(corpus, stemDocument)
+# Remove the stems associated with our search terms! Use this demo https://snowballstem.org/demo.html to find stems of a word.
+corpus <- tm_map(corpus, removeWords, c("Baltimor", "e", "Baltimore"))
+corpus[1]
+blogdown:::new_post_addin()
+library(stringops)
+utils::find
+'a' %&% 'b'
+library(stringops)
+'a' %&% 'b'
+?string_compare
+?string_concat
+stringops::%&%
+stringops::`%&%``
+stringops::`%&%`
+#' @rdname string_concat
+`%&%` <- function(a, b) paste0(a, b)
+'a' %&% 'b'
+"Car: " %&% rownames(mtcars)
+rm(list = ls)
+rm(list = ls())
+library(stringops)
+'a' %&% 'b'
+roxygen2::roxygenise()
+devtools::install_github('robertschnitman/stringops')
+string_concat
+?stringops
+remove.packages("stringops", lib="~/R/win-library/3.6")
+devtools::install_github('robertschnitman/stringops')
+stringops::string_con
+stringops::string_concat
+?string_concat
+?string_chomp
+?stringops::string_chomp
+?stringops::string_concat
+?stringops::string_join
+library(stringops)
+'a' %&% 'b'
+'a' `%&%` 'b'
+?string_ops
+?stringops::string_cull
+library("stringops", lib.loc="~/R/win-library/3.6")
+detach("package:stringops", unload=TRUE)
+remove.packages("stringops", lib="~/R/win-library/3.6")
+devtools::install_github('robertschnitman/stringops')
+library(stringops)
+'a' %&% 'b'
+"Car: " %&% rownames(mtcars)
+string_cull(rownames(mtcars), '^M')
+string_concat('a', 'b')
+cull(rownames(mtcars), '^M')
+remove.packages("stringops", lib="~/R/win-library/3.6")
+devtools::install_github('robertschnitman/stringops')
+library(stringops)
+'a' %&% 'b'
+'a' %&% 'b'
+?string_concat
+'a' %&% 'b'
+# Temporary fix
+`%&%` <- string_concat
+'a' %&% 'b'
+"Car: " %&% rownames(mtcars)
+# extract elements in full that begin with "M".
+string_cull(rownames(mtcars, "^M.*"))
+# extract elements in full that begin with "M".
+string_cull(rownames(mtcars), "^M.*")
+# extract beginning "M" from each element.
+string_cull(rownames(mtcars), '^M')
+?string_extract
+?string_cull
+string_find(rownames(mtcars), '^M')
+blogdown:::serve_site()
+blogdown:::serve_site()
+library(stringops)
+blogdown:::serve_site()
+remove.packages("stringops", lib="~/R/win-library/3.6")
+devtools::install_github('robertschnitman/stringops')
+library(stringops)
+'a' %&% 'b'
+blogdown:::serve_site()
+library(stringops)
+blogdown:::serve_site()
+library(stringops)
+'a' %&% 'b'
+devtools::install_github('robertschnitman/stringops')
+devtools::install_github('robertschnitman/stringops', force = TRUE)
+library(stringops)
+'a' %&% 'b'
+remove.packages("stringops", lib="~/R/win-library/3.6")
+'a' %&% 'b'
+library(stringops)
+'a' %&% 'b'
+'a' %&% 'b'
+stringops::%&%
+'a' %&% 'b'
+blogdown:::serve_site()
+devtools::install_github('robertschnitman/stringops')
+library(stringops)
+'a' %&% 'b'
+'a' %&% 'b'
+blogdown:::serve_site()
+blogdown:::serve_site()
+blogdown::serve_site()
+blogdown:::serve_site()
+blogdown:::serve_site()
+blogdown::serve_site()
+blogdown::serve_site()
+blogdown::serve_site()
+blogdown::build_site()
+blogdown::serve_site()
+blogdown:::serve_site()
+library(stringops)
+'a' %&% 'b'
+"Car: " %&% rownames(mtcars)
+# extract beginning "M" from each element.
+string_cull(rownames(mtcars), '^M')
+# extract beginning "M"" or any "a"'s
+string_cull(rownames(mtcars), "^M|a")

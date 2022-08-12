@@ -2,50 +2,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R on Robert Schnitman</title>
-    <link>/categories/r/</link>
+    <link>https://robertschnitman.netlify.com/categories/r/</link>
     <description>Recent content in R on Robert Schnitman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 08 Aug 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://robertschnitman.netlify.com/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>New Package: stringops, String-Processing Tools and Synonyms for R</title>
-      <link>/2020/08/08/new-package-stringops/</link>
+      <link>https://robertschnitman.netlify.com/2020/08/08/new-package-stringops/</link>
       <pubDate>Sat, 08 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/08/08/new-package-stringops/</guid>
+      <guid>https://robertschnitman.netlify.com/2020/08/08/new-package-stringops/</guid>
       <description>IntroductionWhen creating syntax, one has to ask themselves about the naming scheme: should I make the functions short for typing efficiency, or long for increased readability? Ruby has the former benefit, but sometimes the methods can be difficult to remember (e.g. is it len or length? Is it swapcase or swap_case?), as there isn’t a consistent naming scheme–however, some functions have synonyms to help those from other programming languages learn Ruby faster (e.</description>
     </item>
     
     <item>
       <title>New Package and Book: dm, Statistical Data Management Tools for R</title>
-      <link>/2020/04/04/new-dm/</link>
+      <link>https://robertschnitman.netlify.com/2020/04/04/new-dm/</link>
       <pubDate>Sat, 04 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/04/04/new-dm/</guid>
+      <guid>https://robertschnitman.netlify.com/2020/04/04/new-dm/</guid>
       <description>IntroductionA couple years ago, I started a writing a package on Github that was inspired by the data managment functionalities in other statistical software such as Stata and SPSS. I got distracted by life, especially with work, and I practically stopped developing the package in 2019. This year, however, I finally sat down and finished developing this package, R documentation and all: the end-result was dm.
 You can read the documentation on this package as a Gitbook online.</description>
     </item>
     
     <item>
       <title>New Book: A Short Introduction to Applied Statistical Programming in R</title>
-      <link>/2020/03/30/bip-aspr/</link>
+      <link>https://robertschnitman.netlify.com/2020/03/30/bip-aspr/</link>
       <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/03/30/bip-aspr/</guid>
+      <guid>https://robertschnitman.netlify.com/2020/03/30/bip-aspr/</guid>
       <description>I have a new book in progress called A Short Introduction to Applied Statistical Programming in R, which can be viewed online as a Gitbook or as a PDF. [EDIT 2020-04-01: I will primarily focus on the Gitbook version, as I am running into some typesetting issues with the PDF at the moment.]
 [EDIT 2020-04-02: The Gitbook version is fairly complete and I do not foresee many major updates to it unless they are requested or if I think of anything else significant to add.</description>
     </item>
     
     <item>
       <title>Handbook for the diagnoser R package</title>
-      <link>/2020/03/29/handbook-for-the-diagnoser-r-package/</link>
+      <link>https://robertschnitman.netlify.com/2020/03/29/handbook-for-the-diagnoser-r-package/</link>
       <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/03/29/handbook-for-the-diagnoser-r-package/</guid>
+      <guid>https://robertschnitman.netlify.com/2020/03/29/handbook-for-the-diagnoser-r-package/</guid>
       <description>The book for my package diagnoser has just been published online! You may view it as a Gitbook (https://rs-diagnoser.netlify.com/) or PDF (https://github.com/robertschnitman/diagnoser/blob/master/docs/diagnoser_handbook.pdf).
 I recommend reading it if you are interested in a new perspective on diagnosing your model residuals!
 Installing diagnoserThe library diagnoser currently is only installable via GitHub and is contingent on R versions at or above 3.4.2. To install the package, first install devtools so that you may make use of the function install_github, referencing diagnoser by the package creator’s username (“robertschnitman”) followed by “/diagnoser” as shown in the code below:</description>
@@ -53,10 +53,10 @@ Installing diagnoserThe library diagnoser currently is only installable via Git
     
     <item>
       <title>ABSTRACT: The Narrator and the Noise</title>
-      <link>/2020/03/27/abstract-the-narrator-and-the-noise/</link>
+      <link>https://robertschnitman.netlify.com/2020/03/27/abstract-the-narrator-and-the-noise/</link>
       <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/03/27/abstract-the-narrator-and-the-noise/</guid>
+      <guid>https://robertschnitman.netlify.com/2020/03/27/abstract-the-narrator-and-the-noise/</guid>
       <description>PrefaceThis blog post is simply the summary of The Narrator and the Noise. Please read the full version at either of the following locations:
 Gitbook version: https://rs-ddlc.netlify.com/
 PDF version: https://github.com/robertschnitman/RS_Reports/blob/master/DDLC/DDLC.pdf
@@ -65,49 +65,49 @@ Gitbook version: https://rs-ddlc.netlify.com/
     
     <item>
       <title>Web Mining bankrate.com</title>
-      <link>/2020/03/27/web-mining-bankrate.com/</link>
+      <link>https://robertschnitman.netlify.com/2020/03/27/web-mining-bankrate.com/</link>
       <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/03/27/web-mining-bankrate.com/</guid>
+      <guid>https://robertschnitman.netlify.com/2020/03/27/web-mining-bankrate.com/</guid>
       <description>IntroductionThe purpose of this blog post is to demonstrate how to web mine the bankrate.com, primarily focusing on extracting and graphing with the R programming language the APY and minimum deposits for 1-year1, 3-year2, and 5-year3 CD Rates.
 SetupBefore the analysis, some necessary libraries will be loaded. First, tidyverse4 and magrittr5 for their data management functions; second, flextable6 for table formatting; third, rvest7 for web mining; and fourth, plotly8 to display interactive graphs.</description>
     </item>
     
     <item>
       <title>Data Science and Beyblades</title>
-      <link>/2020/03/25/data-science-and-beyblades/</link>
+      <link>https://robertschnitman.netlify.com/2020/03/25/data-science-and-beyblades/</link>
       <pubDate>Wed, 25 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/03/25/data-science-and-beyblades/</guid>
+      <guid>https://robertschnitman.netlify.com/2020/03/25/data-science-and-beyblades/</guid>
       <description>IntroductionBeyblade has proven itself to be a strong-running franchise, spanning several TV series and toys. In the shows and on the boxes of said toys, there is an emphasis on the attributes of the beyblades: their Attack, Defense, and Stamina for each component that make up the beyblade. While the validity of these statistics can be questioned, one cannot help but wonder about the relationship between these three traits among the beyblades.</description>
     </item>
     
     <item>
       <title>Mapping Techniques to Maintain Data Frame Consistency in Base R</title>
-      <link>/2020/03/24/mapping-techniques-to-maintain-data-frame-consistency-in-base-r/</link>
+      <link>https://robertschnitman.netlify.com/2020/03/24/mapping-techniques-to-maintain-data-frame-consistency-in-base-r/</link>
       <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/03/24/mapping-techniques-to-maintain-data-frame-consistency-in-base-r/</guid>
+      <guid>https://robertschnitman.netlify.com/2020/03/24/mapping-techniques-to-maintain-data-frame-consistency-in-base-r/</guid>
       <description>IntroductionMaintaining data frame consistency within Base R can be difficult. The library purrr1 from the tidyverse solves this problem with its map_df() function. However, we can achieve similar results and expand upon them with base R functions. To do so, two methods will be used.
 Method 1: Use lapply(), data.frame(), and do.call()To replicate purrr’s map_df(), we use three functions: lapply() to apply the function to some data; data.</description>
     </item>
     
     <item>
       <title>mop(): a New Way to sweep()</title>
-      <link>/2020/03/24/mop-a-new-way-to-sweep/</link>
+      <link>https://robertschnitman.netlify.com/2020/03/24/mop-a-new-way-to-sweep/</link>
       <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/03/24/mop-a-new-way-to-sweep/</guid>
+      <guid>https://robertschnitman.netlify.com/2020/03/24/mop-a-new-way-to-sweep/</guid>
       <description>IntroductionThis blog post will compare sweep() and a function I’ve created called mop(). I argue that the latter is preferred over the former, as it is more concise in nature.
 The Old Way: sweep()The function sweep()1 allows one to process data based on a summary statistic function–for example, dividing each element by a column’s mean. A problem, however, arises: you are required to explicitly state the summary statistic value in the STATS input.</description>
     </item>
     
     <item>
       <title>Presenting the Sachse, TX January 2020 Special Election Pre-runoff Results with R</title>
-      <link>/2020/03/24/sachse2020/</link>
+      <link>https://robertschnitman.netlify.com/2020/03/24/sachse2020/</link>
       <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/03/24/sachse2020/</guid>
+      <guid>https://robertschnitman.netlify.com/2020/03/24/sachse2020/</guid>
       <description>PrefaceThe contents of this blog post originate from the PDF version (https://github.com/robertschnitman/RS_Reports/blob/master/Polls/Sachse/sachse2020.pdf) and its GitBook equivalent (https://rs-sachse2020.netlify.com/).
 EDIT 2020-03-27: This post has been updated to use flextable instead of kableExtra to produce a cleaner table for HTML. The PDF and Gitbook reports use the latter, as it is better for PDFs.
 IntroductionThe purpose of this document is to demonstrate the utility of using the R programming language in reporting polls by walking through the process via the software itself.</description>
@@ -115,20 +115,20 @@ EDIT 2020-03-27: This post has been updated to use flextable instead of kableExt
     
     <item>
       <title>Scatter-text Plots with Base R</title>
-      <link>/2020/03/23/scatter-text-plots-with-base-r/</link>
+      <link>https://robertschnitman.netlify.com/2020/03/23/scatter-text-plots-with-base-r/</link>
       <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/03/23/scatter-text-plots-with-base-r/</guid>
+      <guid>https://robertschnitman.netlify.com/2020/03/23/scatter-text-plots-with-base-r/</guid>
       <description>To make scatter plots with text as points in Base R, we simply need to use plot(), set the scatter points to be white, and then plot the text with text().
 # Trick R into not displaying points.with(mtcars, plot(wt ~ mpg, pch = 1, col = &amp;#39;white&amp;#39;,xlab = &amp;#39;MPG&amp;#39;,ylab = &amp;#39;Weight&amp;#39;,main = &amp;#39;Weight vs. MPG&amp;#39;))# Plot the labels on the graph.with(mtcars, text(mpg, wt, row.</description>
     </item>
     
     <item>
       <title>Using Residuals Percent in OLS Diagnostics</title>
-      <link>/2020/03/23/using-residuals-percent-in-ols-diagnostics/</link>
+      <link>https://robertschnitman.netlify.com/2020/03/23/using-residuals-percent-in-ols-diagnostics/</link>
       <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/03/23/using-residuals-percent-in-ols-diagnostics/</guid>
+      <guid>https://robertschnitman.netlify.com/2020/03/23/using-residuals-percent-in-ols-diagnostics/</guid>
       <description>Many students (myself included) were taught to analyze the raw residuals when diagnosing regression models, but not in terms of percent. The benefit of the latter is that we can assess the relative magnitude of error from our regression model.
 To display the residuals as a percent (henceforth Residuals, %), let’s first load some necessary libraries.
 libs &amp;lt;- c(&amp;#39;tidyverse&amp;#39;, &amp;#39;magrittr&amp;#39;, &amp;#39;ggthemes&amp;#39;, &amp;#39;gridExtra&amp;#39;)# For each library, check if they are installed.</description>
@@ -136,10 +136,10 @@ libs &amp;lt;- c(&amp;#39;tidyverse&amp;#39;, &amp;#39;magrittr&amp;#39;, &amp;#
     
     <item>
       <title>Welcome!</title>
-      <link>/2020/03/22/welcome/</link>
+      <link>https://robertschnitman.netlify.com/2020/03/22/welcome/</link>
       <pubDate>Sun, 22 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/03/22/welcome/</guid>
+      <guid>https://robertschnitman.netlify.com/2020/03/22/welcome/</guid>
       <description>Hello, my name is Robert Schnitman, and welcome to my site! This site describes myself and the services I provide as an independent contractor, as well as a blog to record data analysis and R programming ideas.
 Please check out the &amp;ldquo;About&amp;rdquo;, &amp;ldquo;Curriculum Vitae&amp;rdquo;, and &amp;ldquo;Services&amp;rdquo; pages for more information!
 Thank you for your time!</description>

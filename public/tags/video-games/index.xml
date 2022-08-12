@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>video games on Robert Schnitman</title>
-    <link>/tags/video-games/</link>
+    <link>https://robertschnitman.netlify.com/tags/video-games/</link>
     <description>Recent content in video games on Robert Schnitman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 27 Mar 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/video-games/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://robertschnitman.netlify.com/tags/video-games/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ABSTRACT: The Narrator and the Noise</title>
-      <link>/2020/03/27/abstract-the-narrator-and-the-noise/</link>
+      <link>https://robertschnitman.netlify.com/2020/03/27/abstract-the-narrator-and-the-noise/</link>
       <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/03/27/abstract-the-narrator-and-the-noise/</guid>
+      <guid>https://robertschnitman.netlify.com/2020/03/27/abstract-the-narrator-and-the-noise/</guid>
       <description>PrefaceThis blog post is simply the summary of The Narrator and the Noise. Please read the full version at either of the following locations:
 Gitbook version: https://rs-ddlc.netlify.com/
 PDF version: https://github.com/robertschnitman/RS_Reports/blob/master/DDLC/DDLC.pdf

@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>data management on Robert Schnitman</title>
-    <link>/tags/data-management/</link>
+    <link>https://robertschnitman.netlify.com/tags/data-management/</link>
     <description>Recent content in data management on Robert Schnitman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 08 Aug 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/data-management/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://robertschnitman.netlify.com/tags/data-management/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>New Package: stringops, String-Processing Tools and Synonyms for R</title>
-      <link>/2020/08/08/new-package-stringops/</link>
+      <link>https://robertschnitman.netlify.com/2020/08/08/new-package-stringops/</link>
       <pubDate>Sat, 08 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/08/08/new-package-stringops/</guid>
+      <guid>https://robertschnitman.netlify.com/2020/08/08/new-package-stringops/</guid>
       <description>IntroductionWhen creating syntax, one has to ask themselves about the naming scheme: should I make the functions short for typing efficiency, or long for increased readability? Ruby has the former benefit, but sometimes the methods can be difficult to remember (e.g. is it len or length? Is it swapcase or swap_case?), as there isn’t a consistent naming scheme–however, some functions have synonyms to help those from other programming languages learn Ruby faster (e.</description>
     </item>
     
     <item>
       <title>New Package and Book: dm, Statistical Data Management Tools for R</title>
-      <link>/2020/04/04/new-dm/</link>
+      <link>https://robertschnitman.netlify.com/2020/04/04/new-dm/</link>
       <pubDate>Sat, 04 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/04/04/new-dm/</guid>
+      <guid>https://robertschnitman.netlify.com/2020/04/04/new-dm/</guid>
       <description>IntroductionA couple years ago, I started a writing a package on Github that was inspired by the data managment functionalities in other statistical software such as Stata and SPSS. I got distracted by life, especially with work, and I practically stopped developing the package in 2019. This year, however, I finally sat down and finished developing this package, R documentation and all: the end-result was dm.
 You can read the documentation on this package as a Gitbook online.</description>
     </item>

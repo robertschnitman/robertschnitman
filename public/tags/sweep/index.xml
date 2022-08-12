@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>sweep on Robert Schnitman</title>
-    <link>/tags/sweep/</link>
+    <link>https://robertschnitman.netlify.com/tags/sweep/</link>
     <description>Recent content in sweep on Robert Schnitman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 24 Mar 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/sweep/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://robertschnitman.netlify.com/tags/sweep/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>mop(): a New Way to sweep()</title>
-      <link>/2020/03/24/mop-a-new-way-to-sweep/</link>
+      <link>https://robertschnitman.netlify.com/2020/03/24/mop-a-new-way-to-sweep/</link>
       <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/03/24/mop-a-new-way-to-sweep/</guid>
+      <guid>https://robertschnitman.netlify.com/2020/03/24/mop-a-new-way-to-sweep/</guid>
       <description>IntroductionThis blog post will compare sweep() and a function I’ve created called mop(). I argue that the latter is preferred over the former, as it is more concise in nature.
 The Old Way: sweep()The function sweep()1 allows one to process data based on a summary statistic function–for example, dividing each element by a column’s mean. A problem, however, arises: you are required to explicitly state the summary statistic value in the STATS input.</description>
     </item>

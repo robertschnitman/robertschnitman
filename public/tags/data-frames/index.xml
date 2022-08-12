@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>data frames on Robert Schnitman</title>
-    <link>/tags/data-frames/</link>
+    <link>https://robertschnitman.netlify.com/tags/data-frames/</link>
     <description>Recent content in data frames on Robert Schnitman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 24 Mar 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/data-frames/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://robertschnitman.netlify.com/tags/data-frames/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Mapping Techniques to Maintain Data Frame Consistency in Base R</title>
-      <link>/2020/03/24/mapping-techniques-to-maintain-data-frame-consistency-in-base-r/</link>
+      <link>https://robertschnitman.netlify.com/2020/03/24/mapping-techniques-to-maintain-data-frame-consistency-in-base-r/</link>
       <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/03/24/mapping-techniques-to-maintain-data-frame-consistency-in-base-r/</guid>
+      <guid>https://robertschnitman.netlify.com/2020/03/24/mapping-techniques-to-maintain-data-frame-consistency-in-base-r/</guid>
       <description>IntroductionMaintaining data frame consistency within Base R can be difficult. The library purrr1 from the tidyverse solves this problem with its map_df() function. However, we can achieve similar results and expand upon them with base R functions. To do so, two methods will be used.
 Method 1: Use lapply(), data.frame(), and do.call()To replicate purrr’s map_df(), we use three functions: lapply() to apply the function to some data; data.</description>
     </item>

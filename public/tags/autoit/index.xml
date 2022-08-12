@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AutoIt on Robert Schnitman</title>
-    <link>/tags/autoit/</link>
+    <link>https://robertschnitman.netlify.com/tags/autoit/</link>
     <description>Recent content in AutoIt on Robert Schnitman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 20 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/autoit/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://robertschnitman.netlify.com/tags/autoit/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Vectorized String Functions in AutoIt</title>
-      <link>/2020/06/20/vectorized-string-functions-in-autoit/</link>
+      <link>https://robertschnitman.netlify.com/2020/06/20/vectorized-string-functions-in-autoit/</link>
       <pubDate>Sat, 20 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/06/20/vectorized-string-functions-in-autoit/</guid>
+      <guid>https://robertschnitman.netlify.com/2020/06/20/vectorized-string-functions-in-autoit/</guid>
       <description>1. IntroductionIn my current workplace at Leverage Retirement, Inc., I use Autoit to automate file management operations, such as copying files to archive directories and checking whether files exist for the morning processes. These operations involve the application of regular expressions to find out whether specific files match a given pattern (e.g. Deposit \d{4}-\d{2}-\d{2}, where \d{x} represents a number of x digits). While there are many string functions in AutoIt, most of them apply only to constants and not arrays.</description>
     </item>
     

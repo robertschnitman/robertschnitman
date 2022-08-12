@@ -2,327 +2,327 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Robert Schnitman</title>
-    <link>/tags/</link>
+    <link>https://robertschnitman.netlify.com/tags/</link>
     <description>Recent content in Tags on Robert Schnitman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 08 Aug 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://robertschnitman.netlify.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>data management</title>
-      <link>/tags/data-management/</link>
+      <link>https://robertschnitman.netlify.com/tags/data-management/</link>
       <pubDate>Sat, 08 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/data-management/</guid>
+      <guid>https://robertschnitman.netlify.com/tags/data-management/</guid>
       <description></description>
     </item>
     
     <item>
       <title>stringops</title>
-      <link>/tags/stringops/</link>
+      <link>https://robertschnitman.netlify.com/tags/stringops/</link>
       <pubDate>Sat, 08 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/stringops/</guid>
+      <guid>https://robertschnitman.netlify.com/tags/stringops/</guid>
       <description></description>
     </item>
     
     <item>
       <title>strings</title>
-      <link>/tags/strings/</link>
+      <link>https://robertschnitman.netlify.com/tags/strings/</link>
       <pubDate>Sat, 08 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/strings/</guid>
+      <guid>https://robertschnitman.netlify.com/tags/strings/</guid>
       <description></description>
     </item>
     
     <item>
       <title>arrays</title>
-      <link>/tags/arrays/</link>
+      <link>https://robertschnitman.netlify.com/tags/arrays/</link>
       <pubDate>Sat, 20 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/arrays/</guid>
+      <guid>https://robertschnitman.netlify.com/tags/arrays/</guid>
       <description></description>
     </item>
     
     <item>
       <title>AutoIt</title>
-      <link>/tags/autoit/</link>
+      <link>https://robertschnitman.netlify.com/tags/autoit/</link>
       <pubDate>Sat, 20 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/autoit/</guid>
+      <guid>https://robertschnitman.netlify.com/tags/autoit/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ruby</title>
-      <link>/tags/ruby/</link>
+      <link>https://robertschnitman.netlify.com/tags/ruby/</link>
       <pubDate>Fri, 19 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/ruby/</guid>
+      <guid>https://robertschnitman.netlify.com/tags/ruby/</guid>
       <description></description>
     </item>
     
     <item>
       <title>dm</title>
-      <link>/tags/dm/</link>
+      <link>https://robertschnitman.netlify.com/tags/dm/</link>
       <pubDate>Sat, 04 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/dm/</guid>
+      <guid>https://robertschnitman.netlify.com/tags/dm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Data Analysis</title>
-      <link>/tags/data-analysis/</link>
+      <link>https://robertschnitman.netlify.com/tags/data-analysis/</link>
       <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/data-analysis/</guid>
+      <guid>https://robertschnitman.netlify.com/tags/data-analysis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Education</title>
-      <link>/tags/education/</link>
+      <link>https://robertschnitman.netlify.com/tags/education/</link>
       <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/education/</guid>
+      <guid>https://robertschnitman.netlify.com/tags/education/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Functional Programming</title>
-      <link>/tags/functional-programming/</link>
+      <link>https://robertschnitman.netlify.com/tags/functional-programming/</link>
       <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/functional-programming/</guid>
+      <guid>https://robertschnitman.netlify.com/tags/functional-programming/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Statistics</title>
-      <link>/tags/statistics/</link>
+      <link>https://robertschnitman.netlify.com/tags/statistics/</link>
       <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/statistics/</guid>
+      <guid>https://robertschnitman.netlify.com/tags/statistics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>diagnoser</title>
-      <link>/tags/diagnoser/</link>
+      <link>https://robertschnitman.netlify.com/tags/diagnoser/</link>
       <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/diagnoser/</guid>
+      <guid>https://robertschnitman.netlify.com/tags/diagnoser/</guid>
       <description></description>
     </item>
     
     <item>
       <title>diagnostics</title>
-      <link>/tags/diagnostics/</link>
+      <link>https://robertschnitman.netlify.com/tags/diagnostics/</link>
       <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/diagnostics/</guid>
+      <guid>https://robertschnitman.netlify.com/tags/diagnostics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>OLS</title>
-      <link>/tags/ols/</link>
+      <link>https://robertschnitman.netlify.com/tags/ols/</link>
       <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/ols/</guid>
+      <guid>https://robertschnitman.netlify.com/tags/ols/</guid>
       <description></description>
     </item>
     
     <item>
       <title>residuals</title>
-      <link>/tags/residuals/</link>
+      <link>https://robertschnitman.netlify.com/tags/residuals/</link>
       <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/residuals/</guid>
+      <guid>https://robertschnitman.netlify.com/tags/residuals/</guid>
       <description></description>
     </item>
     
     <item>
       <title>finance</title>
-      <link>/tags/finance/</link>
+      <link>https://robertschnitman.netlify.com/tags/finance/</link>
       <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/finance/</guid>
+      <guid>https://robertschnitman.netlify.com/tags/finance/</guid>
       <description></description>
     </item>
     
     <item>
       <title>thematic analysis</title>
-      <link>/tags/thematic-analysis/</link>
+      <link>https://robertschnitman.netlify.com/tags/thematic-analysis/</link>
       <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/thematic-analysis/</guid>
+      <guid>https://robertschnitman.netlify.com/tags/thematic-analysis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>video games</title>
-      <link>/tags/video-games/</link>
+      <link>https://robertschnitman.netlify.com/tags/video-games/</link>
       <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/video-games/</guid>
+      <guid>https://robertschnitman.netlify.com/tags/video-games/</guid>
       <description></description>
     </item>
     
     <item>
       <title>web mining</title>
-      <link>/tags/web-mining/</link>
+      <link>https://robertschnitman.netlify.com/tags/web-mining/</link>
       <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/web-mining/</guid>
+      <guid>https://robertschnitman.netlify.com/tags/web-mining/</guid>
       <description></description>
     </item>
     
     <item>
       <title>beyblade</title>
-      <link>/tags/beyblade/</link>
+      <link>https://robertschnitman.netlify.com/tags/beyblade/</link>
       <pubDate>Wed, 25 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/beyblade/</guid>
+      <guid>https://robertschnitman.netlify.com/tags/beyblade/</guid>
       <description></description>
     </item>
     
     <item>
       <title>data science</title>
-      <link>/tags/data-science/</link>
+      <link>https://robertschnitman.netlify.com/tags/data-science/</link>
       <pubDate>Wed, 25 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/data-science/</guid>
+      <guid>https://robertschnitman.netlify.com/tags/data-science/</guid>
       <description></description>
     </item>
     
     <item>
       <title>graphs</title>
-      <link>/tags/graphs/</link>
+      <link>https://robertschnitman.netlify.com/tags/graphs/</link>
       <pubDate>Wed, 25 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/graphs/</guid>
+      <guid>https://robertschnitman.netlify.com/tags/graphs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>afp</title>
-      <link>/tags/afp/</link>
+      <link>https://robertschnitman.netlify.com/tags/afp/</link>
       <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/afp/</guid>
+      <guid>https://robertschnitman.netlify.com/tags/afp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>apply</title>
-      <link>/tags/apply/</link>
+      <link>https://robertschnitman.netlify.com/tags/apply/</link>
       <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/apply/</guid>
+      <guid>https://robertschnitman.netlify.com/tags/apply/</guid>
       <description></description>
     </item>
     
     <item>
       <title>data frames</title>
-      <link>/tags/data-frames/</link>
+      <link>https://robertschnitman.netlify.com/tags/data-frames/</link>
       <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/data-frames/</guid>
+      <guid>https://robertschnitman.netlify.com/tags/data-frames/</guid>
       <description></description>
     </item>
     
     <item>
       <title>map</title>
-      <link>/tags/map/</link>
+      <link>https://robertschnitman.netlify.com/tags/map/</link>
       <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/map/</guid>
+      <guid>https://robertschnitman.netlify.com/tags/map/</guid>
       <description></description>
     </item>
     
     <item>
       <title>polls</title>
-      <link>/tags/polls/</link>
+      <link>https://robertschnitman.netlify.com/tags/polls/</link>
       <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/polls/</guid>
+      <guid>https://robertschnitman.netlify.com/tags/polls/</guid>
       <description></description>
     </item>
     
     <item>
       <title>sweep</title>
-      <link>/tags/sweep/</link>
+      <link>https://robertschnitman.netlify.com/tags/sweep/</link>
       <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/sweep/</guid>
+      <guid>https://robertschnitman.netlify.com/tags/sweep/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Base R</title>
-      <link>/tags/base-r/</link>
+      <link>https://robertschnitman.netlify.com/tags/base-r/</link>
       <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/base-r/</guid>
+      <guid>https://robertschnitman.netlify.com/tags/base-r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ordinary Least Squares</title>
-      <link>/tags/ordinary-least-squares/</link>
+      <link>https://robertschnitman.netlify.com/tags/ordinary-least-squares/</link>
       <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/ordinary-least-squares/</guid>
+      <guid>https://robertschnitman.netlify.com/tags/ordinary-least-squares/</guid>
       <description></description>
     </item>
     
     <item>
       <title>plot</title>
-      <link>/tags/plot/</link>
+      <link>https://robertschnitman.netlify.com/tags/plot/</link>
       <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/plot/</guid>
+      <guid>https://robertschnitman.netlify.com/tags/plot/</guid>
       <description></description>
     </item>
     
     <item>
       <title>regression</title>
-      <link>/tags/regression/</link>
+      <link>https://robertschnitman.netlify.com/tags/regression/</link>
       <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/regression/</guid>
+      <guid>https://robertschnitman.netlify.com/tags/regression/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Blog</title>
-      <link>/tags/blog/</link>
+      <link>https://robertschnitman.netlify.com/tags/blog/</link>
       <pubDate>Sun, 22 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/blog/</guid>
+      <guid>https://robertschnitman.netlify.com/tags/blog/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Intro</title>
-      <link>/tags/intro/</link>
+      <link>https://robertschnitman.netlify.com/tags/intro/</link>
       <pubDate>Sun, 22 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/intro/</guid>
+      <guid>https://robertschnitman.netlify.com/tags/intro/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Welcome</title>
-      <link>/tags/welcome/</link>
+      <link>https://robertschnitman.netlify.com/tags/welcome/</link>
       <pubDate>Sun, 22 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/welcome/</guid>
+      <guid>https://robertschnitman.netlify.com/tags/welcome/</guid>
       <description></description>
     </item>
     

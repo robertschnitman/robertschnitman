@@ -3,331 +3,331 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/categories/</loc>
+    <loc>https://robertschnitman.netlify.com/categories/</loc>
     <lastmod>2020-08-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/data-management/</loc>
+    <loc>https://robertschnitman.netlify.com/tags/data-management/</loc>
     <lastmod>2020-08-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020/08/08/new-package-stringops/</loc>
+    <loc>https://robertschnitman.netlify.com/2020/08/08/new-package-stringops/</loc>
     <lastmod>2020-08-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/</loc>
+    <loc>https://robertschnitman.netlify.com/post/</loc>
     <lastmod>2020-08-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/r/</loc>
+    <loc>https://robertschnitman.netlify.com/categories/r/</loc>
     <lastmod>2020-08-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>https://robertschnitman.netlify.com/</loc>
     <lastmod>2020-08-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/stringops/</loc>
+    <loc>https://robertschnitman.netlify.com/tags/stringops/</loc>
     <lastmod>2020-08-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/strings/</loc>
+    <loc>https://robertschnitman.netlify.com/tags/strings/</loc>
     <lastmod>2020-08-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>https://robertschnitman.netlify.com/tags/</loc>
     <lastmod>2020-08-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/arrays/</loc>
+    <loc>https://robertschnitman.netlify.com/tags/arrays/</loc>
     <lastmod>2020-06-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/autoit/</loc>
+    <loc>https://robertschnitman.netlify.com/tags/autoit/</loc>
     <lastmod>2020-06-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/autoit/</loc>
+    <loc>https://robertschnitman.netlify.com/categories/autoit/</loc>
     <lastmod>2020-06-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020/06/20/vectorized-string-functions-in-autoit/</loc>
+    <loc>https://robertschnitman.netlify.com/2020/06/20/vectorized-string-functions-in-autoit/</loc>
     <lastmod>2020-06-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/ruby/</loc>
+    <loc>https://robertschnitman.netlify.com/tags/ruby/</loc>
     <lastmod>2020-06-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/ruby/</loc>
+    <loc>https://robertschnitman.netlify.com/categories/ruby/</loc>
     <lastmod>2020-06-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020/06/19/vectorized-string-methods-in-ruby/</loc>
+    <loc>https://robertschnitman.netlify.com/2020/06/19/vectorized-string-methods-in-ruby/</loc>
     <lastmod>2020-06-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/books/</loc>
+    <loc>https://robertschnitman.netlify.com/categories/books/</loc>
     <lastmod>2020-04-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/dm/</loc>
+    <loc>https://robertschnitman.netlify.com/tags/dm/</loc>
     <lastmod>2020-04-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020/04/04/new-dm/</loc>
+    <loc>https://robertschnitman.netlify.com/2020/04/04/new-dm/</loc>
     <lastmod>2020-04-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/data-analysis/</loc>
+    <loc>https://robertschnitman.netlify.com/tags/data-analysis/</loc>
     <lastmod>2020-03-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/education/</loc>
+    <loc>https://robertschnitman.netlify.com/tags/education/</loc>
     <lastmod>2020-03-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/functional-programming/</loc>
+    <loc>https://robertschnitman.netlify.com/tags/functional-programming/</loc>
     <lastmod>2020-03-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020/03/30/bip-aspr/</loc>
+    <loc>https://robertschnitman.netlify.com/2020/03/30/bip-aspr/</loc>
     <lastmod>2020-03-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/statistics/</loc>
+    <loc>https://robertschnitman.netlify.com/tags/statistics/</loc>
     <lastmod>2020-03-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/diagnoser/</loc>
+    <loc>https://robertschnitman.netlify.com/tags/diagnoser/</loc>
     <lastmod>2020-03-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/diagnostics/</loc>
+    <loc>https://robertschnitman.netlify.com/tags/diagnostics/</loc>
     <lastmod>2020-03-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020/03/29/handbook-for-the-diagnoser-r-package/</loc>
+    <loc>https://robertschnitman.netlify.com/2020/03/29/handbook-for-the-diagnoser-r-package/</loc>
     <lastmod>2020-03-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/ols/</loc>
+    <loc>https://robertschnitman.netlify.com/tags/ols/</loc>
     <lastmod>2020-03-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/residuals/</loc>
+    <loc>https://robertschnitman.netlify.com/tags/residuals/</loc>
     <lastmod>2020-03-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020/03/27/abstract-the-narrator-and-the-noise/</loc>
+    <loc>https://robertschnitman.netlify.com/2020/03/27/abstract-the-narrator-and-the-noise/</loc>
     <lastmod>2020-03-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/abstracts/</loc>
+    <loc>https://robertschnitman.netlify.com/categories/abstracts/</loc>
     <lastmod>2020-03-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/finance/</loc>
+    <loc>https://robertschnitman.netlify.com/tags/finance/</loc>
     <lastmod>2020-03-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/reports/</loc>
+    <loc>https://robertschnitman.netlify.com/categories/reports/</loc>
     <lastmod>2020-03-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/thematic-analysis/</loc>
+    <loc>https://robertschnitman.netlify.com/tags/thematic-analysis/</loc>
     <lastmod>2020-03-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/video-games/</loc>
+    <loc>https://robertschnitman.netlify.com/tags/video-games/</loc>
     <lastmod>2020-03-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/web-mining/</loc>
+    <loc>https://robertschnitman.netlify.com/tags/web-mining/</loc>
     <lastmod>2020-03-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020/03/27/web-mining-bankrate.com/</loc>
+    <loc>https://robertschnitman.netlify.com/2020/03/27/web-mining-bankrate.com/</loc>
     <lastmod>2020-03-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/beyblade/</loc>
+    <loc>https://robertschnitman.netlify.com/tags/beyblade/</loc>
     <lastmod>2020-03-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/data-science/</loc>
+    <loc>https://robertschnitman.netlify.com/tags/data-science/</loc>
     <lastmod>2020-03-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020/03/25/data-science-and-beyblades/</loc>
+    <loc>https://robertschnitman.netlify.com/2020/03/25/data-science-and-beyblades/</loc>
     <lastmod>2020-03-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/graphs/</loc>
+    <loc>https://robertschnitman.netlify.com/tags/graphs/</loc>
     <lastmod>2020-03-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/afp/</loc>
+    <loc>https://robertschnitman.netlify.com/tags/afp/</loc>
     <lastmod>2020-03-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/apply/</loc>
+    <loc>https://robertschnitman.netlify.com/tags/apply/</loc>
     <lastmod>2020-03-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/data-frames/</loc>
+    <loc>https://robertschnitman.netlify.com/tags/data-frames/</loc>
     <lastmod>2020-03-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/map/</loc>
+    <loc>https://robertschnitman.netlify.com/tags/map/</loc>
     <lastmod>2020-03-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020/03/24/mapping-techniques-to-maintain-data-frame-consistency-in-base-r/</loc>
+    <loc>https://robertschnitman.netlify.com/2020/03/24/mapping-techniques-to-maintain-data-frame-consistency-in-base-r/</loc>
     <lastmod>2020-03-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020/03/24/mop-a-new-way-to-sweep/</loc>
+    <loc>https://robertschnitman.netlify.com/2020/03/24/mop-a-new-way-to-sweep/</loc>
     <lastmod>2020-03-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/polls/</loc>
+    <loc>https://robertschnitman.netlify.com/tags/polls/</loc>
     <lastmod>2020-03-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020/03/24/sachse2020/</loc>
+    <loc>https://robertschnitman.netlify.com/2020/03/24/sachse2020/</loc>
     <lastmod>2020-03-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/sweep/</loc>
+    <loc>https://robertschnitman.netlify.com/tags/sweep/</loc>
     <lastmod>2020-03-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/base-r/</loc>
+    <loc>https://robertschnitman.netlify.com/tags/base-r/</loc>
     <lastmod>2020-03-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/ordinary-least-squares/</loc>
+    <loc>https://robertschnitman.netlify.com/tags/ordinary-least-squares/</loc>
     <lastmod>2020-03-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/plot/</loc>
+    <loc>https://robertschnitman.netlify.com/tags/plot/</loc>
     <lastmod>2020-03-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/regression/</loc>
+    <loc>https://robertschnitman.netlify.com/tags/regression/</loc>
     <lastmod>2020-03-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020/03/23/scatter-text-plots-with-base-r/</loc>
+    <loc>https://robertschnitman.netlify.com/2020/03/23/scatter-text-plots-with-base-r/</loc>
     <lastmod>2020-03-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020/03/23/using-residuals-percent-in-ols-diagnostics/</loc>
+    <loc>https://robertschnitman.netlify.com/2020/03/23/using-residuals-percent-in-ols-diagnostics/</loc>
     <lastmod>2020-03-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/blog/</loc>
+    <loc>https://robertschnitman.netlify.com/tags/blog/</loc>
     <lastmod>2020-03-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/intro/</loc>
+    <loc>https://robertschnitman.netlify.com/tags/intro/</loc>
     <lastmod>2020-03-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/welcome/</loc>
+    <loc>https://robertschnitman.netlify.com/tags/welcome/</loc>
     <lastmod>2020-03-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020/03/22/welcome/</loc>
+    <loc>https://robertschnitman.netlify.com/2020/03/22/welcome/</loc>
     <lastmod>2020-03-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/about/</loc>
+    <loc>https://robertschnitman.netlify.com/about/</loc>
   </url>
   
   <url>
-    <loc>/authors/</loc>
+    <loc>https://robertschnitman.netlify.com/authors/</loc>
   </url>
   
   <url>
-    <loc>/contact/</loc>
+    <loc>https://robertschnitman.netlify.com/contact/</loc>
   </url>
   
   <url>
-    <loc>/cv/</loc>
+    <loc>https://robertschnitman.netlify.com/cv/</loc>
   </url>
   
   <url>
-    <loc>/resources/</loc>
+    <loc>https://robertschnitman.netlify.com/resources/</loc>
   </url>
   
   <url>
-    <loc>/services/</loc>
+    <loc>https://robertschnitman.netlify.com/services/</loc>
   </url>
   
   <url>
-    <loc>/testimonials/</loc>
+    <loc>https://robertschnitman.netlify.com/testimonials/</loc>
   </url>
   
 </urlset>
