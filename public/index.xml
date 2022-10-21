@@ -6,10 +6,19 @@
     <description>Recent content on Robert Schnitman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 21 Oct 2022 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://robertschnitman.netlify.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>BASops: Utility Functions for BASIC Dialects</title>
+      <link>https://robertschnitman.netlify.com/2022/10/21/basops/</link>
+      <pubDate>Fri, 21 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://robertschnitman.netlify.com/2022/10/21/basops/</guid>
+      <description>While I primarily have been focusing on my current employment and freelance projects, I also have made incremental changes to existing packages/repos on my GitHub. In particular, I have merged my VBAOps and LOBOps repos, as the latter is a translation of the former. As such, I have a new repo called BASops, which serves as the primary repo where I will write and maintain utility functions for dialects of BASIC, such as VBA and LibreOffice Basic (LO Basic).</description>
+    </item>
     
     <item>
       <title>New Package: stringops, String-Processing Tools and Synonyms for R</title>
