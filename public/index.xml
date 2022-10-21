@@ -170,8 +170,8 @@ Thank you for your time!</description>
       
       <guid>https://robertschnitman.netlify.com/about/</guid>
       <description>Hello, my name is Robert Schnitman. I am an independent contractor providing statistical consulting and data analysis services to organizations and individuals. My services include preparing statistical reports, restructuring datasets, and creating visualizations.
-Let&amp;rsquo;s discuss how I may help you manage, model, and visualize your data. You may contact me at robertschnitman@gmail.com for a free quote. I look forward to hearing from you.
-Skills Summary   Academic Research: economics, public policy, applied econometrics/statistics.</description>
+Let&amp;rsquo;s discuss how I may help you manage, model, and visualize your data. You may contact me at robertschnitman(@)duck(.)com for a free quote. I look forward to hearing from you.
+Skills Summary   Academic Research: pension, public policy, applied econometrics/statistics.</description>
     </item>
     
     <item>
@@ -191,7 +191,7 @@ https://github.com/robertschnitman/</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://robertschnitman.netlify.com/cv/</guid>
-      <description>Teaching/Research Interests Applied Computing (R, Stata, Julia, AutoIt, Ruby), Applied Data Science, Literate Programming, Pension Economics
+      <description>Teaching/Research Interests Applied Computing (R, Stata, Julia, AutoIt, LibreOffice Basic, VBA), Applied Data Science, Literate Programming, Pension Economics
 Education The University of Texas at Dallas 2015 December
   Master of Science in Economics, 3.704 GPA
   Graduate Certificate in Economic &amp;amp; Demographic Data Analysis
@@ -217,7 +217,7 @@ UNdata provides international statistics hosted by the United Nations Statistics
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://robertschnitman.netlify.com/services/</guid>
-      <description>I offer a free 30-minute initial, pre-contract consultation on the phone or another voice communication system to discuss your needs and whether I am a suitable fit for you. The below items are an overview of my services and specialties.
+      <description>I offer a free 30-minute initial, pre-contract consultation on the phone or another communication system to discuss your needs and whether I am a suitable fit for you. The below items are an overview of my services and specialties.
   Prepare statistical documentation of methodology and results.
   Automate reoccurring reports in PDF or Microsoft Word via R Markdown.
   Manage datasets, including merging, recoding, and restructuring.</description>

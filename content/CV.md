@@ -4,7 +4,7 @@ title: Curriculum Vitae
 ---
 
 # Teaching/Research Interests
-Applied Computing (R, Stata, Julia, AutoIt, Ruby), Applied Data Science, Literate Programming, Pension Economics
+Applied Computing (R, Stata, Julia, AutoIt, LibreOffice Basic, VBA), Applied Data Science, Literate Programming, Pension Economics
 
 # Education
 ## The University of Texas at Dallas
@@ -86,6 +86,33 @@ Applied Computing (R, Stata, Julia, AutoIt, Ruby), Applied Data Science, Literat
 
 * Trained new employees to process money transfers, complete distribution requests, and conduct the daily operations of the firm.
 
+# Software
+1. 2022 Schnitman, R. `BASops`: Utility functions/subroutines for BASIC dialects. https://github.com/robertschnitman/BASops
+
+1. 2020 Schnitman, R. `AutoOps`: AutoIt utility functions. https://github.com/robertschnitman/AutoOps
+
+1. 2020 Schnitman, R. `RubyOps`: Ruby utility functions. https://github.com/robertschnitman/RubyOps
+
+1. 2020 Schnitman, R. `stringops`: String-processing tools and synonyms for R. https://github.com/robertschnitman/stringops
+
+1. 2020 Schnitman, R. `dm`: Data management tools for R as inspired by Stata, SPSS, and other software. https://github.com/robertschnitman/dm
+
+1. 2020 Schnitman, R. `Price Analysis of Select Funds, 2007-2019`. https://robertschnitman.shinyapps.io/funds
+
+1. 2019 Schnitman, R. `Scatterplots with the Gapminder Dataset`.  https://robertschnitman.shinyapps.io/scatter
+
+1. 2018 Schnitman, R. `afpj`: Applied Functional Programming in Julia. https://github.com/robertschnitman/afpj
+
+1. 2018 Schnitman, R. `afp`: Applied Functional Programming. https://github.com/robertschnitman/afp
+
+1. 2018 Schnitman, R. `diagnoserjl`: Residual Diagnostic Tools for Julia. https://github.com/robertschnitman/diagnoserjl
+
+1. 2017 Schnitman, R. `diagnoser`: Residual Diagnostic Tools. https://github.com/robertschnitman/diagnoser
+
+# Acknowledgment
+
+1. 2016 Arocha, D. Characteristics of Adult ICU Patients with Device Associated Nosocomial Infections. Walden University.
+
 # Publications 
 
 1. 2020 Schnitman, R. stringops: String-processing Tools for R. https://stringops.netlify.app/
@@ -124,34 +151,9 @@ Applied Computing (R, Stata, Julia, AutoIt, Ruby), Applied Data Science, Literat
 
 1. 2011 Schnitman, R. Ignoratio Elenchi: Faith and Reason in Robert Louis Stevenson's Dr. Jekyll and Mr. Hyde. Academia.edu. https://www.academia.edu/41688127/Ignoratio_Elenchi_Faith_and_Reason_in_Robert_Louis_Stevensons_Dr._Jekyll_and_Mr._Hyde
 
-# Acknowledgment
-
-1. 2016 Arocha, D. Characteristics of Adult ICU Patients with Device Associated Nosocomial Infections. Walden University.
-
-# Software
-1. 2020 Schnitman, R. VBAOps: VBA utility functions/subroutines. https://github.com/robertschnitman/VBAOps
-
-1. 2020 Schnitman, R. AutoOps: AutoIt utility functions. https://github.com/robertschnitman/AutoOps
-
-1. 2020 Schnitman, R. stringops: String-processing tools and synonyms for R. https://github.com/robertschnitman/stringops
-
-1. 2020 Schnitman, R. dm: Data management tools for R as inspired by Stata, SPSS, and other software. https://github.com/robertschnitman/dm
-
-1. 2020 Schnitman, R. Price Analysis of Select Funds, 2007-2019. https://robertschnitman.shinyapps.io/funds/
-
-1. 2019 Schnitman, R. Scatterplots with the Gapminder Dataset.  https://robertschnitman.shinyapps.io/scatter/
-
-1. 2018 Schnitman, R. afpj: Applied Functional Programming in Julia. https://github.com/robertschnitman/afpj
-
-1. 2018 Schnitman, R. afp: Applied Functional Programming. https://github.com/robertschnitman/afp
-
-1. 2018 Schnitman, R. diagnoserjl: Residual Diagnostic Tools for Julia. https://github.com/robertschnitman/diagnoserjl
-
-1. 2017 Schnitman, R. diagnoser: Residual Diagnostic Tools. https://github.com/robertschnitman/diagnoser
-
 # Organizations
 
-1. 2017-Present American Economic Association, Member
+1. 2017-2022 American Economic Association, Member
 
 1. 2015-2015 Consulting Club, University of Texas at Dallas, Member
 

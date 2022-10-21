@@ -3,7 +3,7 @@ date: '`r format(Sys.Date(), "%B %d, %Y")`'
 title: Services
 ---
 
-I offer a free 30-minute initial, pre-contract consultation on the phone or another voice communication system to discuss your needs and whether I am a suitable fit for you. The below items are an overview of my services and specialties.
+I offer a free 30-minute initial, pre-contract consultation on the phone or another communication system to discuss your needs and whether I am a suitable fit for you. The below items are an overview of my services and specialties.
 
 * Prepare statistical documentation of methodology and results.
 
@@ -21,11 +21,11 @@ Other consulting services available upon request and feasibility.
 
 ## Pricing
 
-My standard rate is $30.00 (USD)/hour for consulting; however, please feel free to ask me to quote a fixed price for your project.
+My standard rate is $30.00 USD/hour for consulting; however, please feel free to ask me to quote a fixed price for your project.
 
-My standard rate for tutoring is $25.00 (USD)/hour.
+My standard rate for tutoring is $25.00 USD/hour.
 
-To provide an accurate quote and turnaround time, please send your objectives, problems, and current draft (if applicable) with an established deadline for your project to robertschnitman@gmail.com. I also am open to arranging a call or in-person meeting with you.
+To provide an accurate quote and turnaround time, please send your objectives, problems, and current draft (if applicable) with an established deadline for your project to robertschnitman(@)duck(.)com. I also am open to arranging a call or video meeting with you.
 
 All prices are negotiable.
 
