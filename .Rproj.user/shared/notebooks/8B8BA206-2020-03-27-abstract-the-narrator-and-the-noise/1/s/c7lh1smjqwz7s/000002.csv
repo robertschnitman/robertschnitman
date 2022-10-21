@@ -1,3 +1,0 @@
-"0","# Import Dataset "
-"0","## Saved data from the following link into a CSV: https://ddlcwiki.net/wiki/Poem_game)"
-"0","data <- read.csv('ddlc.csv', stringsAsFactors = FALSE)"

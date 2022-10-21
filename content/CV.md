@@ -129,6 +129,9 @@ Applied Computing (R, Stata, Julia, AutoIt, Ruby), Applied Data Science, Literat
 1. 2016 Arocha, D. Characteristics of Adult ICU Patients with Device Associated Nosocomial Infections. Walden University.
 
 # Software
+1. 2020 Schnitman, R. VBAOps: VBA utility functions/subroutines. https://github.com/robertschnitman/VBAOps
+
+1. 2020 Schnitman, R. AutoOps: AutoIt utility functions. https://github.com/robertschnitman/AutoOps
 
 1. 2020 Schnitman, R. stringops: String-processing tools and synonyms for R. https://github.com/robertschnitman/stringops
 
@@ -145,12 +148,6 @@ Applied Computing (R, Stata, Julia, AutoIt, Ruby), Applied Data Science, Literat
 1. 2018 Schnitman, R. diagnoserjl: Residual Diagnostic Tools for Julia. https://github.com/robertschnitman/diagnoserjl
 
 1. 2017 Schnitman, R. diagnoser: Residual Diagnostic Tools. https://github.com/robertschnitman/diagnoser
-
-# Works-in-Progress
-
-1. 2019 Schnitman, R. afpp: Applied Functional Programming in Python. https://github.com/robertschnitman/afpp
-
-1. 2019 Schnitman, R. diagnoserpy: Residual Diagnostic Tools in Python. https://github.com/robertschnitman/diagnoserpy
 
 # Organizations
 

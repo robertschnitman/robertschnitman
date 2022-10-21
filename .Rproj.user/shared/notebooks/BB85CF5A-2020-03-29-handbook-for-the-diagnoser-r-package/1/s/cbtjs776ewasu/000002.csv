@@ -1,4 +1,0 @@
-"0","model.lm <- lm(data = mtcars, formula = mpg ~ wt + gear)"
-"0","diagnose(model.lm, "
-"0","         fit_type      = 'response', "
-"0","         residual_type = 'response')"

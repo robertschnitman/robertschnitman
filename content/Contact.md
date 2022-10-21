@@ -3,7 +3,7 @@ date: '`r format(Sys.Date(), "%B %d, %Y")`'
 title: Contact
 ---
 
-robertschnitman@gmail.com
+robertschnitman(@)duck(.)com
 
 https://www.linkedin.com/in/rschnitman/
 
