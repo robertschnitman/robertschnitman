@@ -21,13 +21,13 @@ While I primarily have been focusing on my current employment and freelance proj
 
 Both subfolders in the repo--*LO* and *MS*--contain the following modules for `LO Basic` and `VBA` respectively:
 
-`funs_text`: Functions for parsing text.
+`FunsText`: Functions for parsing text.
 
-`funs_dates`: Functions for parsing dates.
+`FunsDates`: Functions for parsing dates.
 
-`funs_logic`: Boolean functions for common scenarios.
+`FunsLogic`: Boolean functions for common scenarios.
 
-`funs_lookup`: Simplified variations of `*LOOKUP()`/`*MATCH()` functions.
+`FunsLookup`: Simplified variations of `*LOOKUP()`/`*MATCH()` functions.
 
 # Location
 
