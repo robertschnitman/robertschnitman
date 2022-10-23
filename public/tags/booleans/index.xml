@@ -12,12 +12,14 @@
     
     
     <item>
-      <title>BASops: Utility Functions for BASIC Dialects</title>
-      <link>https://robertschnitman.netlify.com/2022/10/21/basops/</link>
+      <title>XLops &amp; LBops: Utility Functions for Excel/VBA and LibreOffice Basic/Calc</title>
+      <link>https://robertschnitman.netlify.com/2022/10/21/xlops/</link>
       <pubDate>Fri, 21 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://robertschnitman.netlify.com/2022/10/21/basops/</guid>
-      <description>While I primarily have been focusing on my current employment and freelance projects, I also have made incremental changes to existing packages/repos on my GitHub. In particular, I have merged my VBAOps and LOBOps repos, as the latter is a translation of the former. As such, I have a new repo called BASops, which serves as the primary repo where I will write and maintain utility functions for dialects of BASIC, such as VBA and LibreOffice Basic (LO Basic).</description>
+      <guid>https://robertschnitman.netlify.com/2022/10/21/xlops/</guid>
+      <description>While I primarily have been focusing on my current employment and freelance projects, I also have made incremental changes to existing packages/repos on my GitHub. In particular, I have renamed VBAops to XLops, which serves as the primary repo where I will write and maintain utility functions for Excel and VBA. Similarly, LBops contains similar modules for LibreOffice Basic/Calc.
+Modules FunText: Functions for parsing text.
+FunDates: Functions for parsing dates.</description>
     </item>
     
   </channel>

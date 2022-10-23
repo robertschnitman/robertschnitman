@@ -8,11 +8,6 @@
   </url>
   
   <url>
-    <loc>https://robertschnitman.netlify.com/2022/10/21/basops/</loc>
-    <lastmod>2022-10-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://robertschnitman.netlify.com/tags/booleans/</loc>
     <lastmod>2022-10-21T00:00:00+00:00</lastmod>
   </url>
@@ -54,6 +49,11 @@
   
   <url>
     <loc>https://robertschnitman.netlify.com/categories/vba/</loc>
+    <lastmod>2022-10-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robertschnitman.netlify.com/2022/10/21/xlops/</loc>
     <lastmod>2022-10-21T00:00:00+00:00</lastmod>
   </url>
   
