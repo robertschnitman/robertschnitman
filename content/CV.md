@@ -87,9 +87,9 @@ Applied Computing (R, Stata, Julia, AutoIt, LibreOffice Basic, VBA), Applied Dat
 * Trained new employees to process money transfers, complete distribution requests, and conduct the daily operations of the firm.
 
 # Software
-1. 2022 Schnitman, R. `XLops`: Utility functions/subroutines for Excel/VBA. https://github.com/robertschnitman/XLops
+1. 2022 Schnitman, R. `XLops`: Utility functions for Excel/VBA. https://github.com/robertschnitman/XLops
 
-1. 2022 Schnitman, R. `LBops`: Utility functions/subroutines for LibreOffice Basic/Calc. https://github.com/robertschnitman/LBops
+1. 2022 Schnitman, R. `LBops`: Utility functions for LibreOffice Basic/Calc. https://github.com/robertschnitman/LBops
 
 1. 2020 Schnitman, R. `AutoOps`: AutoIt utility functions. https://github.com/robertschnitman/AutoOps
 
